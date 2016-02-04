@@ -1,0 +1,1109 @@
+Archive member included because of file (symbol)
+
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o)
+                              cmd_isp.o (printf)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o) (stdout)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_wcommit.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o) (__stdio_wcommit)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o) (_cs_close)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o) (vfprintf)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o) (_vfprintf_internal)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_init.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_ppfs_init)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_prepargs.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_ppfs_prepargs)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_setargs.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_ppfs_setargs)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_ppfs_parsespec)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fputs_unlocked.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (fputs_unlocked)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fwrite_unlocked.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fputs_unlocked.o) (fwrite_unlocked)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o) (memcpy)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memset.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_init.o) (memset)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strcmp.o)
+                              cmd_isp.o (strcmp)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strlen.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (strlen)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strnlen.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (strnlen)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(isatty.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o) (isatty)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(tcgetattr.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(isatty.o) (tcgetattr)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o)
+                              cmd_isp.o (getenv)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o) (__environ)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(close.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o) (close)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(ioctl.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(tcgetattr.o) (ioctl)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(llseek.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o) (lseek64)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(read.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o) (read)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(write.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o) (write)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__C_ctype_b.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o) (__ctype_b)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__errno_location.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o) (__errno_location)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcrtomb.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (wcrtomb)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsrtombs.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (wcsrtombs)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsnrtombs.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcrtomb.o) (wcsnrtombs)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_WRITE.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_wcommit.o) (__stdio_WRITE)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (__stdio_fwrite)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_trans2w.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o) (__stdio_trans2w_o)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_load_inttype.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_load_inttype)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_store_inttype.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_store_inttype)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_uintmaxtostr.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_uintmaxtostr)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o) (_fpmaxtostr)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_memcpy.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o) (_memcpy)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcmp.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o) (memcmp)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memchr.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o) (memchr)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memrchr.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o) (memrchr)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strrchr.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o) (strrchr)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(exit.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o) (exit)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_exit.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(exit.o) (_exit)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(errno.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__errno_location.o) (errno)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_trans2w.o) (fseek)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko64.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko.o) (fseeko64)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_adjust_pos.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko64.o) (__stdio_adjust_position)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fwrite_unlocked.o) (__aeabi_uidiv)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o) (__aeabi_idiv)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_dvmd_tls.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_addsubdf3.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o) (__aeabi_dsub)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_muldivdf3.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o) (__aeabi_dmul)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_cmpdf2.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o) (__aeabi_dcmpeq)
+/mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_fixunsdfsi.o)
+                              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o) (__aeabi_d2uiz)
+
+Allocating common symbols
+Common symbol       size              file
+
+_custom_printf_arginfo
+                    0x28              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+_custom_printf_handler
+                    0x28              /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memset.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strcmp.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strlen.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_memcpy.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcmp.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_dvmd_tls.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_addsubdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_muldivdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_cmpdf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_fixunsdfsi.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x0
+LOAD cmd_isp.o
+LOAD ../cpu/arm_cortexm3/m2s/clock.o
+LOAD /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a
+LOAD /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a
+LOAD ../lib_generic/time.o
+LOAD ../drivers/serial/ns16550.o
+LOAD ../drivers/mtd/spi/spi_flash.o
+LOAD ../drivers/spi/m2s_spi.o
+LOAD ../drivers/mtd/spi/winbond.o
+LOAD ../drivers/mtd/spi/spansion.o
+                0x00008000                PROVIDE (__executable_start, 0x8000)
+                0x00008094                . = (0x8000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ifunc)
+
+.rel.plt        0x00008094        0x0
+ *(.rel.plt)
+                0x00008094                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+                0x00008094                PROVIDE (__rel_iplt_end, .)
+
+.rela.plt       0x00008094        0x0
+ *(.rela.plt)
+                0x00008094                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                0x00008094                PROVIDE (__rela_iplt_end, .)
+
+.init
+ *(.init)
+
+.plt
+ *(.plt)
+ *(.iplt)
+
+.text           0x00000000     0x59c0
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000      0xf28 cmd_isp.o
+                0x0000008c                exec_comblk_send_paged_cmd
+                0x00000180                exec_comblk_init
+                0x00000358                exec_start_isp
+                0x00000404                exec_comblk_send_cmd_with_ptr
+                0x000004d4                exec_comblk_get_design_version
+                0x0000056c                exec_comblk_get_serial_number
+                0x00000764                exec_clock_switch
+                0x00000c48                exec_ComBlk_IRQHandler
+ .text          0x00000f28      0x188 ../cpu/arm_cortexm3/m2s/clock.o
+                0x00000f28                clock_init
+                0x00001090                clock_get
+                0x000010a4                clock_update
+ .text          0x000010b0       0x30 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o)
+                0x000010b0                printf
+ .text          0x000010e0      0x13c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o)
+                0x000010e0                __stdio_init_mutex
+                0x00001104                _stdio_init
+                0x0000115c                _stdio_term
+ .text          0x0000121c       0x30 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_wcommit.o)
+                0x0000121c                __stdio_wcommit
+ .text          0x0000124c       0x6c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o)
+                0x0000124c                _cs_close
+                0x00001260                _cs_seek
+                0x00001290                _cs_write
+                0x000012a4                _cs_read
+ .text          0x000012b8       0x98 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o)
+                0x000012b8                vfprintf
+ .text          0x00001350      0x6e4 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+                0x0000141c                _vfprintf_internal
+ .text          0x00001a34       0x94 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_init.o)
+                0x00001a34                _ppfs_init
+ .text          0x00001ac8       0x3c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_prepargs.o)
+                0x00001ac8                _ppfs_prepargs
+ .text          0x00001b04      0x178 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_setargs.o)
+                0x00001b04                _ppfs_setargs
+ .text          0x00001c7c      0x50c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+                0x00001cb4                _ppfs_parsespec
+ .text          0x00002188       0x38 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fputs_unlocked.o)
+                0x00002188                fputs_unlocked
+ .text          0x000021c0       0x98 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fwrite_unlocked.o)
+                0x000021c0                fwrite_unlocked
+ *fill*         0x00002258        0x8 00000000
+ .text          0x00002260       0x10 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o)
+                0x00002260                memcpy
+ .text          0x00002270       0xa0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memset.o)
+                0x00002270                memset
+ .text          0x00002310       0x20 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strcmp.o)
+                0x00002310                strcoll
+                0x00002310                strcmp
+ .text          0x00002330       0x60 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strlen.o)
+                0x00002330                strlen
+ .text          0x00002390       0x2c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strnlen.o)
+                0x00002390                strnlen
+ .text          0x000023bc       0x24 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(isatty.o)
+                0x000023bc                isatty
+ .text          0x000023e0       0x7c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(tcgetattr.o)
+                0x000023e0                tcgetattr
+ .text          0x0000245c       0x70 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o)
+                0x0000245c                getenv
+ .text          0x000024cc      0x228 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o)
+                0x000024cc                __uClibc_fini
+                0x0000253c                __pthread_mutex_lock
+                0x0000253c                __pthread_mutex_init
+                0x0000253c                __pthread_mutex_unlock
+                0x0000253c                __pthread_mutex_trylock
+                0x00002544                _pthread_cleanup_pop_restore
+                0x00002544                _pthread_cleanup_push_defer
+                0x00002548                __uClibc_init
+                0x00002598                __uClibc_main
+ .text          0x000026f4       0x34 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(close.o)
+                0x000026f4                __libc_close
+                0x000026f4                close
+ .text          0x00002728       0x4c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(ioctl.o)
+                0x00002728                ioctl
+ .text          0x00002774       0x64 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(llseek.o)
+                0x00002774                __libc_lseek64
+                0x00002774                lseek64
+ .text          0x000027d8       0x34 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(read.o)
+                0x000027d8                __libc_read
+                0x000027d8                read
+ .text          0x0000280c       0x34 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(write.o)
+                0x0000280c                write
+                0x0000280c                __libc_write
+ .text          0x00002840        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__C_ctype_b.o)
+ .text          0x00002840        0xc /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__errno_location.o)
+                0x00002840                __errno_location
+ .text          0x0000284c       0x4c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcrtomb.o)
+                0x0000284c                wcrtomb
+ .text          0x00002898       0x20 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsrtombs.o)
+                0x00002898                wcsrtombs
+ .text          0x000028b8       0x9c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsnrtombs.o)
+                0x000028b8                wcsnrtombs
+ .text          0x00002954       0xc0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_WRITE.o)
+                0x00002954                __stdio_WRITE
+ .text          0x00002a14      0x134 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o)
+                0x00002a14                __stdio_fwrite
+ .text          0x00002b48       0xd8 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_trans2w.o)
+                0x00002b48                __stdio_trans2w_o
+ .text          0x00002c20       0x7c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_load_inttype.o)
+                0x00002c20                _load_inttype
+ .text          0x00002c9c       0x2c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_store_inttype.o)
+                0x00002c9c                _store_inttype
+ .text          0x00002cc8      0x164 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_uintmaxtostr.o)
+                0x00002cc8                _uintmaxtostr
+ .text          0x00002e2c      0x9b0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o)
+                0x00002e2c                _fpmaxtostr
+ *fill*         0x000037dc        0x4 00000000
+ .text          0x000037e0      0x490 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_memcpy.o)
+                0x000037e0                _memcpy
+ .text          0x00003c70       0x30 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcmp.o)
+                0x00003c70                bcmp
+                0x00003c70                memcmp
+ .text          0x00003ca0       0x2c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memchr.o)
+                0x00003ca0                memchr
+ .text          0x00003ccc       0x2c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memrchr.o)
+                0x00003ccc                memrchr
+ .text          0x00003cf8       0x28 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strrchr.o)
+                0x00003cf8                strrchr
+                0x00003cf8                rindex
+ .text          0x00003d20       0x6c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(exit.o)
+                0x00003d20                exit
+ .text          0x00003d8c       0x30 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_exit.o)
+                0x00003d8c                _exit
+ .text          0x00003dbc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(errno.o)
+ .text          0x00003dbc       0x1c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko.o)
+                0x00003dbc                fseeko
+                0x00003dbc                fseek
+ .text          0x00003dd8      0x118 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko64.o)
+                0x00003dd8                fseeko64
+ .text          0x00003ef0       0xb4 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_adjust_pos.o)
+                0x00003ef0                __stdio_adjust_position
+ .text          0x00003fa4      0x114 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+                0x00003fa4                __udivsi3
+                0x00003fa4                __aeabi_uidiv
+                0x00004098                __aeabi_uidivmod
+ .text          0x000040b8      0x148 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+                0x000040b8                __aeabi_idiv
+                0x000040b8                __divsi3
+                0x000041e0                __aeabi_idivmod
+ .text          0x00004200        0x4 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_dvmd_tls.o)
+                0x00004200                __aeabi_ldiv0
+                0x00004200                __aeabi_idiv0
+ .text          0x00004204      0x41c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_addsubdf3.o)
+                0x00004204                __aeabi_drsub
+                0x0000420c                __aeabi_dsub
+                0x0000420c                __subdf3
+                0x00004210                __adddf3
+                0x00004210                __aeabi_dadd
+                0x00004520                __aeabi_ui2d
+                0x00004520                __floatunsidf
+                0x00004544                __floatsidf
+                0x00004544                __aeabi_i2d
+                0x0000456c                __extendsfdf2
+                0x0000456c                __aeabi_f2d
+                0x000045ac                __aeabi_ul2d
+                0x000045ac                __floatundidf
+                0x000045c0                __floatdidf
+                0x000045c0                __aeabi_l2d
+ .text          0x00004620      0x49c /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_muldivdf3.o)
+                0x00004620                __aeabi_dmul
+                0x00004620                __muldf3
+                0x000048b0                __aeabi_ddiv
+                0x000048b0                __divdf3
+ .text          0x00004abc      0x144 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_cmpdf2.o)
+                0x00004abc                __gtdf2
+                0x00004abc                __gedf2
+                0x00004ac4                __ltdf2
+                0x00004ac4                __ledf2
+                0x00004acc                __cmpdf2
+                0x00004acc                __eqdf2
+                0x00004acc                __nedf2
+                0x00004b54                __aeabi_cdrcmple
+                0x00004b70                __aeabi_cdcmple
+                0x00004b70                __aeabi_cdcmpeq
+                0x00004b88                __aeabi_dcmpeq
+                0x00004ba0                __aeabi_dcmplt
+                0x00004bb8                __aeabi_dcmple
+                0x00004bd0                __aeabi_dcmpge
+                0x00004be8                __aeabi_dcmpgt
+ .text          0x00004c00       0x54 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_fixunsdfsi.o)
+                0x00004c00                __fixunsdfsi
+                0x00004c00                __aeabi_d2uiz
+ .text          0x00004c54       0x20 ../lib_generic/time.o
+                0x00004c54                udelay
+ .text          0x00004c74       0xa0 ../drivers/serial/ns16550.o
+                0x00004c74                NS16550_init
+                0x00004cb8                NS16550_reinit
+                0x00004cec                NS16550_putc
+                0x00004cfc                NS16550_getc
+                0x00004d0c                NS16550_tstc
+ .text          0x00004d14      0x1b0 ../drivers/mtd/spi/spi_flash.o
+                0x00004d14                spi_flash_free
+                0x00004d28                spi_flash_cmd_write
+                0x00004d68                spi_flash_cmd_read
+                0x00004da8                spi_flash_read_common
+                0x00004dd8                spi_flash_cmd
+                0x00004e1c                spi_flash_probe
+ .text          0x00004ec4      0x448 ../drivers/spi/m2s_spi.o
+                0x00004ec4                spi_init
+                0x00004ec8                spi_claim_bus
+                0x00004f78                spi_release_bus
+                0x00004fd8                spi_xfer
+                0x00005220                spi_free_slave
+                0x00005238                spi_setup_slave
+ .text          0x0000530c      0x320 ../drivers/mtd/spi/winbond.o
+                0x00005340                spi_flash_probe_winbond
+                0x0000555c                winbond_erase
+ .text          0x0000562c      0x388 ../drivers/mtd/spi/spansion.o
+                0x0000562c                spi_flash_probe_spansion
+                0x00005898                spansion_erase
+ *fill*         0x000059b4        0x4 00000000
+ .text.stub     0x000059b8        0x8 linker stubs
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(.fini)
+                0x000059c0                PROVIDE (__etext, .)
+                0x000059c0                PROVIDE (_etext, .)
+                0x000059c0                PROVIDE (etext, .)
+
+.rodata         0x000059c0      0xc6c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000059c0       0x20 cmd_isp.o
+                0x000059dc                apb_divisors_mask
+ .rodata.str1.4
+                0x000059e0      0x578 cmd_isp.o
+                                0x57c (size before relaxing)
+ .rodata        0x00005f58       0x1c ../cpu/arm_cortexm3/m2s/clock.o
+ .rodata        0x00005f74       0x14 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+ .rodata.str1.1
+                0x00005f88        0xd /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+ *fill*         0x00005f95        0x3 00
+ .rodata        0x00005f98       0x84 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+ .rodata.str1.1
+                0x00000000        0xd /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o)
+                                  0x1 (size before relaxing)
+ .rodata        0x0000601c      0x300 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__C_ctype_b.o)
+ *fill*         0x0000631c        0x4 00
+ .rodata        0x00006320       0xa8 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o)
+ .rodata.str1.4
+                0x000063c8       0x69 ../drivers/mtd/spi/spi_flash.o
+                                 0x6c (size before relaxing)
+ *fill*         0x00006431        0x3 00
+ .rodata.str1.4
+                0x00006434       0x60 ../drivers/spi/m2s_spi.o
+ .rodata        0x00006494       0x30 ../drivers/mtd/spi/winbond.o
+ .rodata.str1.4
+                0x000064c4       0xfb ../drivers/mtd/spi/winbond.o
+                                 0xfc (size before relaxing)
+ *fill*         0x000065bf        0x1 00
+ .rodata.str1.4
+                0x000065c0       0x6c ../drivers/mtd/spi/spansion.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000662c                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000662c                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x0000662c                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
+                0x0000e62c                . = (0x8000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000e62c        0x0
+                0x0000e62c                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000e62c                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000e62c        0x0
+                0x0000e62c                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0000e62c                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000e62c        0x0
+                0x0000e62c                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x0000e62c                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+                0x0000e62c                . = (. DATA_SEGMENT_RELRO_END 0x0)
+
+.got
+ *(.got.plt)
+ *(.igot.plt)
+ *(.got)
+ *(.igot)
+
+.data           0x0000e62c      0x2b0
+                0x0000e62c                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000e62c        0x8 cmd_isp.o
+ .data          0x0000e634        0x0 ../cpu/arm_cortexm3/m2s/clock.o
+ .data          0x0000e634        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o)
+ .data          0x0000e634      0x178 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o)
+                0x0000e760                _stdio_openlist_add_lock
+                0x0000e778                _stdio_openlist_del_lock
+                0x0000e790                _stdio_openlist
+                0x0000e794                stdin
+                0x0000e798                stdout
+                0x0000e79c                stderr
+                0x0000e7a0                __stdin
+                0x0000e7a4                __stdout
+                0x0000e7a8                _stdio_user_locking
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_wcommit.o)
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o)
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o)
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_init.o)
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_prepargs.o)
+ .data          0x0000e7ac        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_setargs.o)
+ .data          0x0000e7ac        0x4 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+                0x0000e7ac                _custom_printf_spec
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fputs_unlocked.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fwrite_unlocked.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memset.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strcmp.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strlen.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strnlen.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(isatty.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(tcgetattr.o)
+ .data          0x0000e7b0        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o)
+ .data          0x0000e7b0        0xc /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o)
+                0x0000e7b0                __uclibc_progname
+                0x0000e7b4                program_invocation_name
+                0x0000e7b4                __progname_full
+                0x0000e7b8                __progname
+                0x0000e7b8                program_invocation_short_name
+ .data          0x0000e7bc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(close.o)
+ .data          0x0000e7bc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(ioctl.o)
+ .data          0x0000e7bc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(llseek.o)
+ .data          0x0000e7bc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(read.o)
+ .data          0x0000e7bc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(write.o)
+ .data          0x0000e7bc        0x8 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__C_ctype_b.o)
+                0x0000e7bc                __C_ctype_b
+                0x0000e7c0                __ctype_b
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__errno_location.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcrtomb.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsrtombs.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsnrtombs.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_WRITE.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_trans2w.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_load_inttype.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_store_inttype.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_uintmaxtostr.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_memcpy.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcmp.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memchr.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memrchr.o)
+ .data          0x0000e7c4        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strrchr.o)
+ .data          0x0000e7c4       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(exit.o)
+                0x0000e7c4                __atexit_lock
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_exit.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(errno.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko64.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_adjust_pos.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_dvmd_tls.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000e7dc        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x0000e7dc        0x0 ../lib_generic/time.o
+ .data          0x0000e7dc        0x0 ../drivers/serial/ns16550.o
+ .data          0x0000e7dc        0x0 ../drivers/mtd/spi/spi_flash.o
+ .data          0x0000e7dc        0x0 ../drivers/spi/m2s_spi.o
+ .data          0x0000e7dc        0x0 ../drivers/mtd/spi/winbond.o
+ .data          0x0000e7dc      0x100 ../drivers/mtd/spi/spansion.o
+
+.u_boot_cmd     0x0000e8dc       0x14
+ .u_boot_cmd    0x0000e8dc       0x14 cmd_isp.o
+                0x0000e8dc                __u_boot_cmd_isp
+
+.data1
+ *(.data1)
+                0x0000e8f0                _edata = .
+                0x0000e8f0                PROVIDE (edata, .)
+                0x0000e8f0                __bss_start = .
+                0x0000e8f0                __bss_start__ = .
+
+.bss            0x0000e8f0     0x2388
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000e8f0      0x158 cmd_isp.o
+ .bss           0x0000ea48       0x18 ../cpu/arm_cortexm3/m2s/clock.o
+ .bss           0x0000ea60        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o)
+ .bss           0x0000ea60     0x2008 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o)
+                0x0000ea60                _stdio_openlist_use_count
+                0x0000ea64                _stdio_openlist_del_count
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_wcommit.o)
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o)
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o)
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_init.o)
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_prepargs.o)
+ .bss           0x00010a68        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_setargs.o)
+ .bss           0x00010a68        0xc /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fputs_unlocked.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fwrite_unlocked.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memset.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strcmp.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strlen.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strnlen.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(isatty.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(tcgetattr.o)
+ .bss           0x00010a74        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o)
+ .bss           0x00010a74       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o)
+                0x00010a74                __app_fini
+                0x00010a78                __rtld_fini
+                0x00010a80                __pagesize
+                0x00010a84                __libc_stack_end
+                0x00010a88                __environ
+                0x00010a88                environ
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(close.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(ioctl.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(llseek.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(read.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(write.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__C_ctype_b.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__errno_location.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcrtomb.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsrtombs.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsnrtombs.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_WRITE.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_trans2w.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_load_inttype.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_store_inttype.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_uintmaxtostr.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_memcpy.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcmp.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memchr.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memrchr.o)
+ .bss           0x00010a8c        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strrchr.o)
+ .bss           0x00010a8c        0x4 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(exit.o)
+                0x00010a8c                __exit_cleanup
+ .bss           0x00010a90        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_exit.o)
+ .bss           0x00010a90        0x8 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(errno.o)
+                0x00010a90                errno
+                0x00010a90                _errno
+                0x00010a94                _h_errno
+                0x00010a94                h_errno
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko64.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_adjust_pos.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_dvmd_tls.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00010a98        0x0 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00010a98        0x0 ../lib_generic/time.o
+ .bss           0x00010a98        0x0 ../drivers/serial/ns16550.o
+ .bss           0x00010a98        0x0 ../drivers/mtd/spi/spi_flash.o
+ .bss           0x00010a98      0x190 ../drivers/spi/m2s_spi.o
+ .bss           0x00010c28        0x0 ../drivers/mtd/spi/winbond.o
+ .bss           0x00010c28        0x0 ../drivers/mtd/spi/spansion.o
+ *(COMMON)
+ COMMON         0x00010c28       0x50 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+                0x00010c28                _custom_printf_arginfo
+                0x00010c50                _custom_printf_handler
+                0x00010c78                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00010c78                _bss_end__ = .
+                0x00010c78                __bss_end__ = .
+                0x00010c78                . = ALIGN (0x4)
+                0x00010c78                . = ALIGN (0x4)
+                0x00010c78                __end__ = .
+                0x00010c78                _end = .
+                0x00010c78                PROVIDE (end, .)
+                0x00010c78                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 cmd_isp.o
+ .ARM.attributes
+                0x00000031       0x31 ../cpu/arm_cortexm3/m2s/clock.o
+ .ARM.attributes
+                0x00000062       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(printf.o)
+ .ARM.attributes
+                0x00000094       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_stdio.o)
+ .ARM.attributes
+                0x000000c6       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_wcommit.o)
+ .ARM.attributes
+                0x000000f8       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_cs_funcs.o)
+ .ARM.attributes
+                0x0000012a       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(vfprintf.o)
+ .ARM.attributes
+                0x0000015c       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_vfprintf_internal.o)
+ .ARM.attributes
+                0x0000018e       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_init.o)
+ .ARM.attributes
+                0x000001c0       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_prepargs.o)
+ .ARM.attributes
+                0x000001f2       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_setargs.o)
+ .ARM.attributes
+                0x00000224       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_ppfs_parsespec.o)
+ .ARM.attributes
+                0x00000256       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fputs_unlocked.o)
+ .ARM.attributes
+                0x00000288       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fwrite_unlocked.o)
+ .ARM.attributes
+                0x000002ba       0x16 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcpy.o)
+ .ARM.attributes
+                0x000002d0       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memset.o)
+ .ARM.attributes
+                0x000002e8       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strcmp.o)
+ .ARM.attributes
+                0x00000300       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strlen.o)
+ .ARM.attributes
+                0x00000318       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strnlen.o)
+ .ARM.attributes
+                0x0000034a       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(isatty.o)
+ .ARM.attributes
+                0x0000037c       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(tcgetattr.o)
+ .ARM.attributes
+                0x000003ae       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(getenv.o)
+ .ARM.attributes
+                0x000003e0       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__uClibc_main.o)
+ .ARM.attributes
+                0x00000412       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(close.o)
+ .ARM.attributes
+                0x00000444       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(ioctl.o)
+ .ARM.attributes
+                0x00000476       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(llseek.o)
+ .ARM.attributes
+                0x000004a8       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(read.o)
+ .ARM.attributes
+                0x000004da       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(write.o)
+ .ARM.attributes
+                0x0000050c       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__C_ctype_b.o)
+ .ARM.attributes
+                0x0000053e       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(__errno_location.o)
+ .ARM.attributes
+                0x00000570       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcrtomb.o)
+ .ARM.attributes
+                0x000005a2       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsrtombs.o)
+ .ARM.attributes
+                0x000005d4       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(wcsnrtombs.o)
+ .ARM.attributes
+                0x00000606       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_WRITE.o)
+ .ARM.attributes
+                0x00000638       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fwrite.o)
+ .ARM.attributes
+                0x0000066a       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_trans2w.o)
+ .ARM.attributes
+                0x0000069c       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_load_inttype.o)
+ .ARM.attributes
+                0x000006ce       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_store_inttype.o)
+ .ARM.attributes
+                0x00000700       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_uintmaxtostr.o)
+ .ARM.attributes
+                0x00000732       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_fpmaxtostr.o)
+ .ARM.attributes
+                0x00000764       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_memcpy.o)
+ .ARM.attributes
+                0x0000077c       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memcmp.o)
+ .ARM.attributes
+                0x00000794       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memchr.o)
+ .ARM.attributes
+                0x000007c6       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(memrchr.o)
+ .ARM.attributes
+                0x000007f8       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(strrchr.o)
+ .ARM.attributes
+                0x0000082a       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(exit.o)
+ .ARM.attributes
+                0x0000085c       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_exit.o)
+ .ARM.attributes
+                0x0000088e       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(errno.o)
+ .ARM.attributes
+                0x000008c0       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko.o)
+ .ARM.attributes
+                0x000008f2       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(fseeko64.o)
+ .ARM.attributes
+                0x00000924       0x32 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../arm-uclinuxeabi/libc/usr/lib/libc.a(_adjust_pos.o)
+ .ARM.attributes
+                0x00000956       0x1a /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000970       0x1a /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000098a       0x18 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000009a2       0x1a /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000009bc       0x1a /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x000009d6       0x1a /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x000009f0       0x1a /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x00000a0a       0x31 ../lib_generic/time.o
+ .ARM.attributes
+                0x00000a3b       0x31 ../drivers/serial/ns16550.o
+ .ARM.attributes
+                0x00000a6c       0x31 ../drivers/mtd/spi/spi_flash.o
+ .ARM.attributes
+                0x00000a9d       0x31 ../drivers/spi/m2s_spi.o
+ .ARM.attributes
+                0x00000ace       0x31 ../drivers/mtd/spi/winbond.o
+ .ARM.attributes
+                0x00000aff       0x31 ../drivers/mtd/spi/spansion.o
+
+.comment        0x00000000      0x158
+ *(.comment)
+ .comment       0x00000000       0x2b cmd_isp.o
+ .comment       0x0000002b       0x2b ../cpu/arm_cortexm3/m2s/clock.o
+ .comment       0x00000056       0x2b ../lib_generic/time.o
+ .comment       0x00000081       0x2b ../drivers/serial/ns16550.o
+ .comment       0x000000ac       0x2b ../drivers/mtd/spi/spi_flash.o
+ .comment       0x000000d7       0x2b ../drivers/spi/m2s_spi.o
+ .comment       0x00000102       0x2b ../drivers/mtd/spi/winbond.o
+ .comment       0x0000012d       0x2b ../drivers/mtd/spi/spansion.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x100
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 cmd_isp.o
+ .debug_aranges
+                0x00000020       0x20 ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_aranges
+                0x00000040       0x20 ../lib_generic/time.o
+ .debug_aranges
+                0x00000060       0x20 ../drivers/serial/ns16550.o
+ .debug_aranges
+                0x00000080       0x20 ../drivers/mtd/spi/spi_flash.o
+ .debug_aranges
+                0x000000a0       0x20 ../drivers/spi/m2s_spi.o
+ .debug_aranges
+                0x000000c0       0x20 ../drivers/mtd/spi/winbond.o
+ .debug_aranges
+                0x000000e0       0x20 ../drivers/mtd/spi/spansion.o
+
+.debug_pubnames
+                0x00000000      0x371
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x11c cmd_isp.o
+ .debug_pubnames
+                0x0000011c       0x40 ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_pubnames
+                0x0000015c       0x1d ../lib_generic/time.o
+ .debug_pubnames
+                0x00000179       0x69 ../drivers/serial/ns16550.o
+ .debug_pubnames
+                0x000001e2       0x94 ../drivers/mtd/spi/spi_flash.o
+ .debug_pubnames
+                0x00000276       0x79 ../drivers/spi/m2s_spi.o
+ .debug_pubnames
+                0x000002ef       0x40 ../drivers/mtd/spi/winbond.o
+ .debug_pubnames
+                0x0000032f       0x42 ../drivers/mtd/spi/spansion.o
+
+.debug_info     0x00000000     0x3fb8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x188e cmd_isp.o
+ .debug_info    0x0000188e      0x5ff ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_info    0x00001e8d       0xb2 ../lib_generic/time.o
+ .debug_info    0x00001f3f      0x395 ../drivers/serial/ns16550.o
+ .debug_info    0x000022d4      0x4af ../drivers/mtd/spi/spi_flash.o
+ .debug_info    0x00002783      0xa89 ../drivers/spi/m2s_spi.o
+ .debug_info    0x0000320c      0x67e ../drivers/mtd/spi/winbond.o
+ .debug_info    0x0000388a      0x72e ../drivers/mtd/spi/spansion.o
+
+.debug_abbrev   0x00000000      0xed2
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x310 cmd_isp.o
+ .debug_abbrev  0x00000310      0x1c0 ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_abbrev  0x000004d0       0x73 ../lib_generic/time.o
+ .debug_abbrev  0x00000543      0x11c ../drivers/serial/ns16550.o
+ .debug_abbrev  0x0000065f      0x15e ../drivers/mtd/spi/spi_flash.o
+ .debug_abbrev  0x000007bd      0x2b0 ../drivers/spi/m2s_spi.o
+ .debug_abbrev  0x00000a6d      0x245 ../drivers/mtd/spi/winbond.o
+ .debug_abbrev  0x00000cb2      0x220 ../drivers/mtd/spi/spansion.o
+
+.debug_line     0x00000000     0x1384
+ *(.debug_line)
+ .debug_line    0x00000000      0x6b0 cmd_isp.o
+ .debug_line    0x000006b0      0x1d5 ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_line    0x00000885       0x97 ../lib_generic/time.o
+ .debug_line    0x0000091c       0xcc ../drivers/serial/ns16550.o
+ .debug_line    0x000009e8      0x1e6 ../drivers/mtd/spi/spi_flash.o
+ .debug_line    0x00000bce      0x2bc ../drivers/spi/m2s_spi.o
+ .debug_line    0x00000e8a      0x27a ../drivers/mtd/spi/winbond.o
+ .debug_line    0x00001104      0x280 ../drivers/mtd/spi/spansion.o
+
+.debug_frame    0x00000000      0x5ec
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x1ac cmd_isp.o
+ .debug_frame   0x000001ac       0x48 ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_frame   0x000001f4       0x20 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000214       0x20 /mnt/tmp/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/libgcc.a(_divsi3.o)
+ .debug_frame   0x00000234       0x2c ../lib_generic/time.o
+ .debug_frame   0x00000260       0x70 ../drivers/serial/ns16550.o
+ .debug_frame   0x000002d0       0xcc ../drivers/mtd/spi/spi_flash.o
+ .debug_frame   0x0000039c       0xb4 ../drivers/spi/m2s_spi.o
+ .debug_frame   0x00000450       0xdc ../drivers/mtd/spi/winbond.o
+ .debug_frame   0x0000052c       0xc0 ../drivers/mtd/spi/spansion.o
+
+.debug_str      0x00000000     0x11e1
+ *(.debug_str)
+ .debug_str     0x00000000      0xaf4 cmd_isp.o
+                                0xc52 (size before relaxing)
+ .debug_str     0x00000af4       0x95 ../cpu/arm_cortexm3/m2s/clock.o
+                                0x416 (size before relaxing)
+ .debug_str     0x00000b89       0x61 ../lib_generic/time.o
+                                 0xfc (size before relaxing)
+ .debug_str     0x00000bea       0xb4 ../drivers/serial/ns16550.o
+                                0x221 (size before relaxing)
+ .debug_str     0x00000c9e      0x117 ../drivers/mtd/spi/spi_flash.o
+                                0x216 (size before relaxing)
+ .debug_str     0x00000db5      0x1e4 ../drivers/spi/m2s_spi.o
+                                0x563 (size before relaxing)
+ .debug_str     0x00000f99      0x14d ../drivers/mtd/spi/winbond.o
+                                0x2d4 (size before relaxing)
+ .debug_str     0x000010e6       0xfb ../drivers/mtd/spi/spansion.o
+                                0x2cc (size before relaxing)
+
+.debug_loc      0x00000000     0x1ec8
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x9c5 cmd_isp.o
+ .debug_loc     0x000009c5      0x1ce ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_loc     0x00000b93       0x3d ../lib_generic/time.o
+ .debug_loc     0x00000bd0       0x9d ../drivers/serial/ns16550.o
+ .debug_loc     0x00000c6d      0x445 ../drivers/mtd/spi/spi_flash.o
+ .debug_loc     0x000010b2      0x444 ../drivers/spi/m2s_spi.o
+ .debug_loc     0x000014f6      0x459 ../drivers/mtd/spi/winbond.o
+ .debug_loc     0x0000194f      0x579 ../drivers/mtd/spi/spansion.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x958
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x4d8 cmd_isp.o
+ .debug_ranges  0x000004d8      0x2b0 ../cpu/arm_cortexm3/m2s/clock.o
+ .debug_ranges  0x00000788       0xb8 ../drivers/spi/m2s_spi.o
+ .debug_ranges  0x00000840       0x28 ../drivers/mtd/spi/winbond.o
+ .debug_ranges  0x00000868       0xf0 ../drivers/mtd/spi/spansion.o
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(cmd_isp elf32-littlearm)

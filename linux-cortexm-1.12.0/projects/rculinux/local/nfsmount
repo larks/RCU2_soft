@@ -1,0 +1,16 @@
+#!/bin/sh
+if [ ${1}x = x ]; then
+ remote=$def
+else 
+ remote=$1
+fi
+
+if [ ${2}x = x ]; then
+ loc="/mnt/default"
+else 
+ loc=$2
+fi
+
+echo using Remote: $remote
+echo using Local: $loc
+mount -t nfs -o rsize=1024,wsize=1024,nolock,vers=2 $remote $loc

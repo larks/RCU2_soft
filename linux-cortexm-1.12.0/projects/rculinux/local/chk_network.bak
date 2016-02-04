@@ -1,0 +1,14 @@
+#!/bin/sh
+
+interrupt=0
+echo "begin doing ping and checking the network"
+while [ $interrupt -ne 1 ]; do
+        ping -c 1 alitpcnfs
+        if [ $? -eq  0 ]; then
+            echo "ping success. network is ok.";
+            interrupt=1;
+        else
+            echo "ping fail. network is not ok."
+        fi
+done
+echo "end of the ping check"

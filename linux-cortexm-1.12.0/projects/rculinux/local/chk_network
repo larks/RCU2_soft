@@ -1,0 +1,15 @@
+#!/bin/sh
+
+count=200
+echo "begin doing ping and checking the network"
+while [ $count -ne 0 ]; do
+        ping -c 1 alitpcnfs
+        if [ $? -eq  0 ]; then
+            echo "ping success. network is ok.";
+            count=1;
+        else
+            echo "$count : ping fail. network is not ok."
+        fi
+	count=`expr $count - 1`
+done
+echo "end of the ping check"

@@ -1,0 +1,4 @@
+#!/bin/sh
+/bin/date
+#( ping -c 1 alitpcnfs ) && source /usr/bin/nfsmount_cns alitpcnfs:/rcu2/ /mnt/test rw
+( ping -c 1 alitpcnfs ) && source /usr/bin/nfsmount_cns alitpcnfs:/Users/gunjitaku/rcu2/ /mnt/test rw

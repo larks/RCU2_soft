@@ -1,0 +1,5 @@
+#!/bin/sh
+/bin/date
+( ping -c 1 alitpcnfs ) && source /usr/bin/nfsmount alitpcnfs:/nfs_export/dcbrw /mnt/dcbrw rw
+/bin/date
+( ping -c 1 alitpcnfs ) && source /usr/bin/nfsmount alitpcnfs:/nfs_export/dcbro /mnt/dcbro ro

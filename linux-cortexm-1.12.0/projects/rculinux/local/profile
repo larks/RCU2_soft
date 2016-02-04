@@ -1,0 +1,4 @@
+#! /etc/profile
+#PS1='\u@\h \w $ '
+PS1="\[\e[1;31m\]\h \[\e[32m\]\w\[\e[0m\] $ "
+export PS1

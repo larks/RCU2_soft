@@ -1,0 +1,29 @@
+# Object files
+*.o
+*.ko
+*.ko.cmd
+*.o.cmd
+*.symvers
+*.mod.c
+modules.order
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+*.gdb
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Gedit
+*~
+
+# Folders
+*.tmp_versions

@@ -1,0 +1,3 @@
+#!/bin/busybox sh
+#echo "timezone set to CET"
+export TZ="CET-1CEST,M3.5.0/2,M10.5.0/2"

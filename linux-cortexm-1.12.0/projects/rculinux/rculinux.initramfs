@@ -1,0 +1,226 @@
+dir /dev 0755 0 0
+dir /dev/pts 0755 0 0
+dir /root 0700 0 0
+dir /proc 0755 0 0
+dir /sys 0755 0 0
+dir /etc 0755 0 0
+dir /var 0755 0 0
+dir /var/config 0755 0 0
+dir /var/tmp 0755 0 0
+dir /var/log 0755 0 0
+dir /var/run 0755 0 0
+dir /var/lock 0755 0 0
+dir /bin 755 0 0
+dir /.ssh 700 0 0 
+
+nod /dev/tty 0666 0 0 c 5 0
+nod /dev/console 0600 0 0 c 5 1
+nod /dev/ptmx 0666 0 0 c 5 2
+nod /dev/ttyS0 0666 0 0 c 4 64
+nod /dev/ttyS1 0666 0 0 c 4 65
+nod /dev/ttyS2 0666 0 0 c 4 66
+nod /dev/null 0600 0 0 c 1 3
+nod /dev/mem 0600 0 0 c 1 1
+nod /dev/kmem 0600 0 0 c 1 2
+nod /dev/zero 0600 0 0 c 1 5
+nod /dev/random 0600 0 0 c 1 8
+nod /dev/urandom 0600 0 0 c 1 9
+
+ifarch STM file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.STM 755 0 0
+ifarch STM32F4 file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.STM 755 0 0
+ifarch A2F file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.ALL 755 0 0
+ifarch LPC file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.ALL 755 0 0
+ifarch LPC18XX file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.ALL 755 0 0
+ifarch K70 file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.K70 755 0 0
+ifarch M2S file /etc/inittab ${INSTALL_ROOT}/projects/${SAMPLE}/local/inittab.M2S 755 0 0
+file /etc/rc ${INSTALL_ROOT}/projects/${SAMPLE}/local/rc 755 0 0
+file /etc/hosts ${INSTALL_ROOT}/projects/${SAMPLE}/local/hosts 644 0 0
+file /etc/services ${INSTALL_ROOT}/projects/${SAMPLE}/local/services 644 0 0
+file /etc/protocols ${INSTALL_ROOT}/projects/${SAMPLE}/local/protocols 644 0 0
+file /etc/passwd ${INSTALL_ROOT}/projects/${SAMPLE}/local/passwd 644 0 0
+file /etc/group ${INSTALL_ROOT}/projects/${SAMPLE}/local/group 644 0 0
+file /etc/shadow ${INSTALL_ROOT}/projects/${SAMPLE}/local/shadow 644 0 0
+file /etc/securetty ${INSTALL_ROOT}/projects/${SAMPLE}/local/securetty 644 0 0
+file /etc/inetd.conf ${INSTALL_ROOT}/projects/${SAMPLE}/local/inetd.conf 644 0 0
+file /etc/timezone ${INSTALL_ROOT}/projects/${SAMPLE}/local/timezone 755 0 0
+file /etc/cron_ntpd.sh ${INSTALL_ROOT}/projects/${SAMPLE}/local/cron_ntpd.sh 755 0 0
+file /etc/profile ${INSTALL_ROOT}/projects/${SAMPLE}/local/profile 755 0 0
+file /.ssh/authorized_keys ${INSTALL_ROOT}/projects/${SAMPLE}/local/id_dsa_rcu2.pub 600 0 0
+
+file /bin/busybox ${INSTALL_ROOT}/A2F/busybox/busybox 755 0 0
+slink /bin/init busybox 777 0 0
+slink /init /bin/init 777 0 0
+slink /bin/insmod busybox 777 0 0
+slink /bin/rmmod busybox 777 0 0
+slink /bin/lsmod busybox 777 0 0
+slink /bin/hostname busybox 777 0 0
+slink /bin/cat busybox 777 0 0
+slink /bin/cp busybox 777 0 0
+slink /bin/chmod busybox 777 0 0
+slink /bin/chown busybox 777 0 0
+slink /bin/date busybox 777 0 0
+slink /bin/dd busybox 777 0 0
+slink /bin/echo busybox 777 0 0
+slink /bin/hush busybox 777 0 0
+slink /bin/kill busybox 777 0 0
+slink /bin/ln busybox 777 0 0
+slink /bin/login /bin/busybox 777 0 0
+slink /bin/ls busybox 777 0 0
+slink /bin/mkdir busybox 777 0 0
+slink /bin/mknod busybox 777 0 0
+slink /bin/mv busybox 777 0 0
+slink /bin/ps busybox 777 0 0
+slink /bin/pwd busybox 777 0 0
+slink /bin/reboot busybox 777 0 0
+slink /bin/rm busybox 777 0 0
+slink /bin/sh busybox 777 0 0
+slink /bin/sleep busybox 777 0 0
+slink /bin/mount busybox 777 0 0
+slink /bin/umount busybox 777 0 0
+slink /bin/ping busybox 777 0 0
+slink /bin/ifconfig busybox 777 0 0
+slink /bin/telnetd busybox 777 0 0
+slink /bin/wc busybox 777 0 0
+slink /bin/netstat busybox 777 0 0
+slink /bin/nslookup busybox 777 0 0
+slink /bin/ntpd busybox 777 0 0
+slink /bin/route busybox 777 0 0
+slink /bin/telnet busybox 777 0 0
+slink /bin/traceroute busybox 777 0 0
+slink /bin/wget busybox 777 0 0
+slink /bin/vi busybox 777 0 0
+slink /bin/udhcpc busybox 777 0 0
+slink /bin/inetd busybox 777 0 0
+slink /bin/syslogd busybox 777 0 0 
+slink /bin/crond busybox 777 0 0 
+slink /bin/crontab busybox 777 0 0 
+ifarch A2F file /bin/iap_tool ${INSTALL_ROOT}/A2F/root/usr/bin/iap_tool 755 0 0
+
+# Tools that are nice to have
+slink /bin/grep busybox 777 0 0
+#slink /bin/less busybox 777 0 0
+slink /bin/find busybox 777 0 0
+slink /bin/tar busybox 777 0 0
+slink /bin/dmesg busybox 777 0 0
+slink /bin/uptime busybox 777 0 0
+slink /bin/expr busybox 777 0 0
+slink /bin/printf busybox 777 0 0
+slink /bin/less busybox 777 0 0
+slink /bin/cut busybox 777 0 0
+slink /bin/awk busybox 777 0 0
+slink /bin/sed busybox 777 0 0
+slink /bin/env busybox 777 0 0
+slink /bin/printenv busybox 777 0 0
+slink /bin/top busybox 777 0 0
+slink /bin/seq busybox 777 0 0
+slink /bin/uudecode busybox 777 0 0
+slink /bin/uuencode busybox 777 0 0
+slink /bin/sort busybox 777 0 0
+slink /bin/tr busybox 777 0 0
+slink /bin/head busybox 777 0 0
+slink /bin/tail busybox 777 0 0
+slink /bin/tee busybox 777 0 0
+
+
+
+#
+dir /usr 755 0 0
+dir /usr/bin 755 0 0
+dir /usr/share 755 0 0
+dir /usr/share/udhcpc 755 0 0
+file /usr/share/udhcpc/default.script ${INSTALL_ROOT}/projects/${SAMPLE}/local/default.script 755 0 0
+
+dir /var 755 0 0
+dir /var/spool 755 0 0
+dir /var/spool/cron 755 0 0
+dir /var/spool/cron/crontabs 755 0 0
+file /var/spool/cron/crontabs/root ${INSTALL_ROOT}/projects/${SAMPLE}/local/root 755 0 0
+
+slink /usr/bin/[ ../../bin/busybox 777 0 0
+slink /usr/bin/[[ ../../bin/busybox 777 0 0
+
+#file /app ${INSTALL_ROOT}/projects/${SAMPLE}/app/app 755 0 0
+#file /sample.ko ${INSTALL_ROOT}/projects/${SAMPLE}/app/sample.ko 755 0 0
+#nod /dev/sample 0600 0 0 c 166 0
+
+# Debug tools
+file /bin/peekpoke ${INSTALL_ROOT}/projects/${SAMPLE}/peekpoke/peekpoke 755 0 0
+# TODO: make a directory for the binaries
+file /bin/rcu-sh ${INSTALL_ROOT}/projects/${SAMPLE}/app_src/rcu-sh 755 0 0
+file /usr/share/sample2.ko ${INSTALL_ROOT}/projects/${SAMPLE}/drivers/sample2.ko 755 0 0
+nod /dev/sample2 0600 0 0 c 177 0
+
+# Dropbear ssh server
+dir /etc/dropbear 0755 0 0
+file /etc/dropbear/dropbear_dss_host_key ${INSTALL_ROOT}/projects/${SAMPLE}/local/ssh_host_dss_key 644 0 0
+file /etc/dropbear/dropbear_rsa_host_key ${INSTALL_ROOT}/projects/${SAMPLE}/local/ssh_host_rsa_key 644 0 0
+file /usr/bin/dropbear ${INSTALL_ROOT}/A2F/root/usr/sbin/dropbear 755 0 0
+file /usr/bin/dbclient ${INSTALL_ROOT}/A2F/root/usr/bin/dbclient 755 0 0
+#file /usr/bin/dbclient ${INSTALL_ROOT}/A2F/root/usr/bin/dropbear 755 0 0
+#file /usr/bin/dropbearkey ${INSTALL_ROOT}/A2F/root/usr/bin/dropbearkey 755 0 0
+
+file /usr/bin/scp ${INSTALL_ROOT}/A2F/root/usr/bin/scp 755 0 0
+file /usr/bin/gdbserver ${INSTALL_ROOT}/A2F/root/usr/bin/gdbserver 755 0 0
+slink /usr/bin/ssh dbclient 777 0 0
+
+# Kernel modules
+dir /lib 0755 0 0
+dir /lib/modules 0755 0 0
+dir /lib/modules/2.6.33-linux 0755 0 0
+file /lib/modules/2.6.33-linux/ad7417.ko ${INSTALL_ROOT}/projects/${SAMPLE}/drivers/ad7417.ko 644 0 0
+file /lib/modules/2.6.33-linux/ad7417_1.ko ${INSTALL_ROOT}/projects/${SAMPLE}/drivers/ad7417_1.ko 644 0 0
+nod /dev/i2c-0   0666 0 0 c 89 0
+nod /dev/i2c-1   0666 0 0 c 89 1
+file /lib/modules/2.6.33-linux/radmon.ko ${INSTALL_ROOT}/projects/${SAMPLE}/drivers/radmon.ko 644 0 0
+#nod /dev/rcuc 0600 0 0 c 254 0
+
+file /usr/share/rcu2bm.ko ${INSTALL_ROOT}/projects/${SAMPLE}/rculinux_kernel_modules/rcu2bm/rcu2bm.ko 755 0 0
+#nod /dev/rcu2bm  0600 0 0 c 253 0
+
+#file /usr/share/envm_m2s.ko ${INSTALL_ROOT}/linux/drivers/char/envm_m2s.ko 755 0 0
+
+#debugging
+file /bin/gdbserver ${INSTALL_ROOT}/A2F/root/usr/bin/gdbserver 755 0 0
+
+# Cool tools
+#file /usr/bin/netperf ${INSTALL_ROOT}/A2F/netperf-2.6.0/build-arm/src/netperf 755 0 0
+#file /usr/bin/netserver ${INSTALL_ROOT}/A2F/netperf-2.6.0/build-arm/src/netserver 755 0 0
+
+#i2c tools
+file /usr/bin/i2cdetect ${INSTALL_ROOT}/projects/${SAMPLE}/i2c-tools/tools/i2cdetect 755 0 0
+file /usr/bin/i2cdump ${INSTALL_ROOT}/projects/${SAMPLE}/i2c-tools/tools/i2cdump 755 0 0
+file /usr/bin/i2cget ${INSTALL_ROOT}/projects/${SAMPLE}/i2c-tools/tools/i2cget 755 0 0
+file /usr/bin/i2cset ${INSTALL_ROOT}/projects/${SAMPLE}/i2c-tools/tools/i2cset 755 0 0
+file /usr/bin/ttcrx_reg ${INSTALL_ROOT}/projects/${SAMPLE}/i2c-tools/tools/ttcrx_reg 755 0 0
+file /usr/bin/i2csfp_reg ${INSTALL_ROOT}/projects/${SAMPLE}/i2c-tools/tools/i2csfp_reg 755 0 0
+
+# Radmon test tools
+file /usr/bin/radmontest ${INSTALL_ROOT}/projects/${SAMPLE}/radmontest/radmontest 755 0 0
+file /usr/bin/radmondump ${INSTALL_ROOT}/projects/${SAMPLE}/radmontest/radmondump 755 0 0
+file /usr/bin/radmonpoke ${INSTALL_ROOT}/projects/${SAMPLE}/radmontest/radmonpoke 755 0 0
+
+# Jam
+file /usr/bin/jam ${INSTALL_ROOT}/projects/${SAMPLE}/app_src/stapl_player/jam 755 0 0
+
+# Flashtool
+file /usr/bin/spidev_flash ${INSTALL_ROOT}/projects/${SAMPLE}/flashtool/spidev_flash 755 0 0
+file /usr/bin/spidev_uboot ${INSTALL_ROOT}/projects/${SAMPLE}/flashtool/spidev_uboot 755 0 0
+
+# nfsmount script
+file /usr/bin/nfsmount_all ${INSTALL_ROOT}/projects/${SAMPLE}/local/nfsmount_all 755 0 0
+file /usr/bin/nfsmount ${INSTALL_ROOT}/projects/${SAMPLE}/local/nfsmount 755 0 0
+
+
+file /usr/bin/nfsmount_cns_all ${INSTALL_ROOT}/projects/${SAMPLE}/local/nfsmount_cns_all 755 0 0
+file /usr/bin/nfsmount_cns ${INSTALL_ROOT}/projects/${SAMPLE}/local/nfsmount_cns 755 0 0
+file /usr/bin/chk_network ${INSTALL_ROOT}/projects/${SAMPLE}/local/chk_network 755 0 0
+
+
+# isp_tool (comblk)
+file /usr/bin/isp_tool ${INSTALL_ROOT}/projects/${SAMPLE}/peekpoke/isp_tool 755 0 0
+file /usr/bin/buspoke  ${INSTALL_ROOT}/projects/${SAMPLE}/rculinux_kernel_modules/rcu2bm/buspoke/buspoke 755 0 0
+
+
+file /usr/bin/cptf ${INSTALL_ROOT}/projects/${SAMPLE}/peekpoke/app_cptf 755 0 0
+file /usr/bin/dump_ddr ${INSTALL_ROOT}/projects/${SAMPLE}/peekpoke/dump_ddr 755 0 0
+

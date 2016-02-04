@@ -1,0 +1,162 @@
+cp -f /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/initramfs-list-min.stub \
+		/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/initramfs-list-min
+rm -f /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/usr/initramfs_data.cpio \
+		/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/usr/initramfs_data.cpio.gz
+cp -f rculinux.kernel.M2S /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/.config
+make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux vmlinux
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+scripts/kconfig/conf -s arch/arm/Kconfig
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[2]: `include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+<stdin>:46: warning: "__IGNORE_migrate_pages" redefined
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/include/asm/unistd.h:474: note: this is the location of the previous definition
+  CHK     include/generated/compile.h
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/usr/Makefile:50: target `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/bin/gdbserver' given more than once in the same rule.
+  GEN     usr/initramfs_data.cpio
+  AS      usr/initramfs_data.o
+  LD      usr/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      vmlinux
+  SYSMAP  System.map
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux modules
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[2]: `include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+<stdin>:46: warning: "__IGNORE_migrate_pages" redefined
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/include/asm/unistd.h:474: note: this is the location of the previous definition
+  Building modules, stage 2.
+  MODPOST 0 modules
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+CFLAGS="-Os -mcpu=cortex-m3 -mthumb -I/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/include" LDFLAGS="-mcpu=cortex-m3 -mthumb -L/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/lib" make -C app_src all
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/app_src'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/app_src'
+CFLAGS="-Os -mcpu=cortex-m3 -mthumb -I/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/include" LDFLAGS="-mcpu=cortex-m3 -mthumb -L/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/lib" make -C peekpoke all
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/peekpoke'
+make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux M=`pwd` modules CFLAGS="" LDFLAGS=""
+make[2]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+  Building modules, stage 2.
+  MODPOST 0 modules
+make[2]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/peekpoke'
+CFLAGS="-Os -mcpu=cortex-m3 -mthumb -I/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/include" LDFLAGS="-mcpu=cortex-m3 -mthumb -L/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/lib" make -C drivers all
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/drivers'
+make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux M=`pwd` modules CFLAGS="" LDFLAGS=""
+make[2]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+  Building modules, stage 2.
+  MODPOST 6 modules
+make[2]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/drivers'
+CFLAGS="-Os -mcpu=cortex-m3 -mthumb -I/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/include" LDFLAGS="-mcpu=cortex-m3 -mthumb -L/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/lib" make -C radmontest all
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/radmontest'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/radmontest'
+CFLAGS="-Os -mcpu=cortex-m3 -mthumb -I/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/include" LDFLAGS="-mcpu=cortex-m3 -mthumb -L/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/lib" make -C i2c-tools all
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/i2c-tools'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/projects/rculinux/i2c-tools'
+cp -f rculinux.busybox /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/busybox/.config
+make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/busybox
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/busybox'
+scripts/kconfig/conf -s Config.in
+#
+# using defaults found in .config
+#
+  SPLIT   include/autoconf.h -> include/config/*
+  GEN     include/bbconfigopts.h
+  HOSTCC  applets/usage
+  GEN     include/usage_compressed.h
+  HOSTCC  applets/applet_tables
+  GEN     include/applet_tables.h
+  CC      applets/applets.o
+  LD      applets/built-in.o
+  HOSTCC  applets/usage_pod
+  GEN     include/usage_compressed.h
+  CC      libbb/appletlib.o
+  AR      libbb/lib.a
+  LINK    busybox_unstripped
+Trying libraries: crypt m
+ Library crypt is needed, can't exclude it (yet)
+ Library m is needed, can't exclude it (yet)
+Final link with: crypt m
+  DOC     busybox.pod
+  DOC     BusyBox.txt
+  DOC     BusyBox.1
+  DOC     BusyBox.html
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/busybox'
+cp -f rculinux.initramfs /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/initramfs-list-min
+rm -f /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/usr/initramfs_data.cpio \
+		/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/usr/initramfs_data.cpio.gz
+cp -f rculinux.kernel.M2S /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/.config
+cp -f /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/kernel/vmlinux.lds.S.good \
+		/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/kernel/vmlinux.lds.S
+([ -e rculinux.lds.M2S ] && \
+		cp -f rculinux.lds.M2S \
+		/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/kernel/vmlinux.lds.S) || \
+	true;
+make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux uImage SAMPLE=rculinux
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+scripts/kconfig/conf -s arch/arm/Kconfig
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+make[1]: Entering directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[2]: `include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+<stdin>:46: warning: "__IGNORE_migrate_pages" redefined
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/include/asm/unistd.h:474: note: this is the location of the previous definition
+  CHK     include/generated/compile.h
+  GEN     usr/initramfs_data.cpio
+  AS      usr/initramfs_data.o
+  LD      usr/built-in.o
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/usr/Makefile:50: target `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/A2F/root/usr/bin/gdbserver' given more than once in the same rule.
+  LDS     arch/arm/kernel/vmlinux.lds
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      vmlinux
+  SYSMAP  System.map
+  OBJCOPY arch/arm/boot/Image
+  Kernel: arch/arm/boot/Image is ready
+  UIMAGE  arch/arm/boot/uImage
+Image Name:   Linux-2.6.33-arm1
+Created:      Fri May  8 15:47:41 2015
+Image Type:   ARM Linux Kernel Image (uncompressed)
+Data Size:    3472096 Bytes = 3390.72 kB = 3.31 MB
+Load Address: a0008000
+Entry Point:  a0008001
+  Image arch/arm/boot/uImage is ready
+make[1]: Leaving directory `/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux'
+cp -f /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/boot/uImage rculinux.uImage
+rm -f .envm_log
+(grep "CONFIG_KERNEL_IN_ENVM=y" rculinux.kernel.M2S > \
+		.envm_log || true)
+([ -s .envm_log ] && \
+	(make -C /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux vImage SAMPLE=rculinux; \
+	cp -f /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/linux/arch/arm/boot/vImage \
+		rculinux.vImage)) || \
+	true;
+rm -f .envm_log

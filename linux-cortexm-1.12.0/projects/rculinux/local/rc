@@ -1,0 +1,63 @@
+#!/bin/sh
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devpts none /dev/pts
+mkdir /tmp
+mkdir /mnt
+mkdir /mnt/dcbrw
+mkdir /mnt/dcbro
+mkdir /mnt/test
+ifconfig lo 127.0.0.1
+#ifconfig eth0 192.168.1.11 netmask 255.255.255.0
+# mounts
+#mount -o nolock,rsize=1024 192.168.1.10:/export/dcs_sw /mnt
+#mount -o nolock,rsize=1024 192.168.1.0:/export/iperf /iperf
+inetd
+#dropbear
+udhcpc
+insmod /usr/share/sample2.ko
+insmod /lib/modules/2.6.33-linux/radmon.ko
+insmod /lib/modules/2.6.33-linux/ad7417.ko
+insmod /lib/modules/2.6.33-linux/ad7417_1.ko
+insmod /usr/share/rcu2bm.ko
+mknod /dev/radmon c 254 0
+mknod /dev/rcu2bm c 253 0
+mknod /dev/spidev0.0 c 153 0
+mknod /dev/spidev0.1 c 153 1
+
+# Disable Watchdog 
+i2cset -y 0 0x4e 0x0  >> /dev/null
+# Enable Serial B output on TTCrx
+echo y | i2cset 0 0x64 3 2>1 >> /dev/null
+echo y | i2cset 0 0x65 0xd3 2>1 >> /dev/null
+mknod /dev/envm c 10 235
+
+#sleep 3
+/usr/bin/chk_network
+/usr/bin/nfsmount_all
+#/usr/bin/nfsmount_cns_all
+
+#version number 
+echo "..... FPGA Fabric version number is = `peekpoke 32 0x50000044`" 
+echo "..... Bootstrap version number is = `peekpoke 32 0x50000048`" 
+echo "..... uBoot version number is = `peekpoke 32 0x5000004C`" 
+echo "..... linux version number is = `peekpoke 32 0x50000050`" 
+
+
+
+crond 
+
+source /etc/timezone
+
+dcsshare='/mnt/dcbro/rcu2'
+#dcsshare='/mnt/test'
+
+for i in `ls ${dcsshare}/boot/start_[0-9][0-9]_*.sh` ; do 
+    if [ $i ]; then
+	echo "execute $i" 
+	source $i 
+    fi
+done
+
+
