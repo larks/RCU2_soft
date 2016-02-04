@@ -1,0 +1,1946 @@
+Archive member included because of file (symbol)
+
+lib_generic/libgeneric.a(string.o)
+                              cpu/arm_cortexm3/start.o (memset)
+cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+                              cpu/arm_cortexm3/start.o (cortex_m3_irq_vec_get)
+cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+                              (__u_boot_cmd_cptf)
+cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+                              cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o) (timer_init)
+cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+                              cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o) (clock_init)
+cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+                              cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o) (envm_init)
+cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+                              cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o) (cortex_m3_soc_init)
+lib_arm/libarm.a(board.o)     cpu/arm_cortexm3/start.o (start_armboot)
+lib_arm/libarm.a(interrupts.o)
+                              lib_arm/libarm.a(board.o) (enable_interrupts)
+net/libnet.a(eth.o)           lib_arm/libarm.a(board.o) (eth_initialize)
+net/libnet.a(net.o)           lib_arm/libarm.a(board.o) (copy_filename)
+net/libnet.a(rarp.o)          net/libnet.a(net.o) (RarpRequest)
+net/libnet.a(tftp.o)          net/libnet.a(net.o) (TftpStart)
+net/libnet.a(bootp.o)         net/libnet.a(net.o) (BootpRequest)
+drivers/serial/libserial.a(serial.o)
+                              lib_arm/libarm.a(board.o) (serial_init)
+drivers/serial/libserial.a(ns16550.o)
+                              drivers/serial/libserial.a(serial.o) (NS16550_init)
+common/libcommon.a(cmd_bdinfo.o)
+                              (__u_boot_cmd_bdinfo)
+common/libcommon.a(cmd_boot.o)
+                              (__u_boot_cmd_go)
+common/libcommon.a(cmd_bootm.o)
+                              lib_arm/libarm.a(board.o) (load_addr)
+common/libcommon.a(cmd_help.o)
+                              (__u_boot_cmd_help)
+common/libcommon.a(cmd_isp.o)
+                              cpu/arm_cortexm3/start.o (exec_ComBlk_IRQHandler)
+common/libcommon.a(cmd_load.o)
+                              (__u_boot_cmd_loads)
+common/libcommon.a(cmd_mem.o)
+                              (__u_boot_cmd_md)
+common/libcommon.a(cmd_net.o)
+                              (__u_boot_cmd_bootp)
+common/libcommon.a(cmd_nvedit.o)
+                              net/libnet.a(eth.o) (get_env_id)
+common/libcommon.a(cmd_sf.o)  (__u_boot_cmd_sf)
+common/libcommon.a(cmd_version.o)
+                              (__u_boot_cmd_version)
+common/libcommon.a(command.o)
+                              common/libcommon.a(cmd_mem.o) (cmd_get_data_size)
+common/libcommon.a(console.o)
+                              cpu/arm_cortexm3/start.o (printf)
+common/libcommon.a(dlmalloc.o)
+                              common/libcommon.a(cmd_isp.o) (free)
+common/libcommon.a(env_common.o)
+                              common/libcommon.a(cmd_nvedit.o) (env_get_addr)
+common/libcommon.a(env_sf.o)  common/libcommon.a(env_common.o) (env_get_char_spec)
+common/libcommon.a(exports.o)
+                              lib_arm/libarm.a(board.o) (jumptable_init)
+common/libcommon.a(image.o)   common/libcommon.a(cmd_bootm.o) (genimg_get_os_name)
+common/libcommon.a(main.o)    common/libcommon.a(cmd_isp.o) (run_command)
+common/libcommon.a(miiphyutil.o)
+                              net/libnet.a(eth.o) (miiphy_init)
+common/libcommon.a(s_record.o)
+                              common/libcommon.a(cmd_load.o) (srec_decode)
+common/libcommon.a(stdio.o)   common/libcommon.a(console.o) (stdio_get_list)
+common/libcommon.a(xyzModem.o)
+                              common/libcommon.a(cmd_load.o) (xyzModem_error)
+board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+                              lib_arm/libarm.a(board.o) (board_init)
+lib_generic/libgeneric.a(crc16.o)
+                              common/libcommon.a(xyzModem.o) (cyg_crc16)
+lib_generic/libgeneric.a(crc32.o)
+                              common/libcommon.a(cmd_mem.o) (crc32)
+lib_generic/libgeneric.a(display_options.o)
+                              lib_arm/libarm.a(board.o) (print_size)
+lib_generic/libgeneric.a(gunzip.o)
+                              common/libcommon.a(cmd_bootm.o) (gunzip)
+lib_generic/libgeneric.a(net_utils.o)
+                              lib_arm/libarm.a(board.o) (string_to_ip)
+lib_generic/libgeneric.a(time.o)
+                              common/libcommon.a(cmd_load.o) (udelay)
+lib_generic/libgeneric.a(vsprintf.o)
+                              cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o) (simple_strtoul)
+lib_generic/libgeneric.a(zlib.o)
+                              lib_generic/libgeneric.a(gunzip.o) (inflateEnd)
+lib_generic/libgeneric.a(ctype.o)
+                              lib_generic/libgeneric.a(display_options.o) (_ctype)
+lib_generic/libgeneric.a(div64.o)
+                              lib_generic/libgeneric.a(vsprintf.o) (__div64_32)
+cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+                              lib_arm/libarm.a(board.o) (print_cpuinfo)
+lib_arm/libarm.a(bootm.o)     common/libcommon.a(cmd_bootm.o) (do_bootm_linux)
+lib_arm/libarm.a(cache.o)     common/libcommon.a(cmd_load.o) (flush_cache)
+lib_arm/libarm.a(reset.o)     common/libcommon.a(cmd_boot.o) (do_reset)
+drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+                              common/libcommon.a(cmd_isp.o) (spi_flash_free)
+drivers/mtd/spi/libspi_flash.a(spansion.o)
+                              drivers/mtd/spi/libspi_flash.a(spi_flash.o) (spi_flash_probe_spansion)
+drivers/net/libnet.a(m2s_eth.o)
+                              board/UiB/rcu-2.0/librcu-2.0.a(board.o) (m2s_eth_driver_init)
+drivers/spi/libspi.a(m2s_spi.o)
+                              drivers/mtd/spi/libspi_flash.a(spi_flash.o) (spi_claim_bus)
+lib_generic/libgeneric.a(strmhz.o)
+                              cpu/arm_cortexm3/m2s/libm2s.a(cpu.o) (strmhz)
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+                              cpu/arm_cortexm3/libarm_cortexm3.a(timer.o) (__aeabi_uldivmod)
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+                              /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+                              /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+                              /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o) (__divdi3)
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+                              /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o) (__udivdi3)
+/mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+                              /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o) (__aeabi_uidiv)
+
+Discarded input sections
+
+ .debug_abbrev  0x00000000      0x157 cpu/arm_cortexm3/start.o
+ .debug_info    0x00000000      0x22e cpu/arm_cortexm3/start.o
+ .debug_line    0x00000000       0x6c cpu/arm_cortexm3/start.o
+ .debug_loc     0x00000000       0x5c cpu/arm_cortexm3/start.o
+ .debug_pubnames
+                0x00000000       0x64 cpu/arm_cortexm3/start.o
+ .debug_aranges
+                0x00000000       0x20 cpu/arm_cortexm3/start.o
+ .debug_str     0x00000000      0x171 cpu/arm_cortexm3/start.o
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/start.o
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/start.o
+ .debug_frame   0x00000000       0x74 cpu/arm_cortexm3/start.o
+ .debug_abbrev  0x00000000      0x2de lib_generic/libgeneric.a(string.o)
+ .debug_info    0x00000000      0xaf8 lib_generic/libgeneric.a(string.o)
+ .debug_line    0x00000000      0x2d3 lib_generic/libgeneric.a(string.o)
+ .debug_loc     0x00000000      0xb95 lib_generic/libgeneric.a(string.o)
+ .debug_pubnames
+                0x00000000      0x130 lib_generic/libgeneric.a(string.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(string.o)
+ .debug_ranges  0x00000000      0x148 lib_generic/libgeneric.a(string.o)
+ .debug_str     0x00000000      0x1e8 lib_generic/libgeneric.a(string.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(string.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(string.o)
+ .debug_frame   0x00000000      0x248 lib_generic/libgeneric.a(string.o)
+ .debug_abbrev  0x00000000      0x188 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_info    0x00000000      0x3ef cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_line    0x00000000      0x198 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_loc     0x00000000       0x45 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_pubnames
+                0x00000000       0xc0 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_aranges
+                0x00000000       0x28 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_ranges  0x00000000       0x78 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_str     0x00000000      0x290 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_frame   0x00000000       0x88 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .debug_abbrev  0x00000000      0x11b cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_info    0x00000000      0x26c cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_line    0x00000000      0x127 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_loc     0x00000000      0x1e5 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_pubnames
+                0x00000000       0x4d cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_aranges
+                0x00000000       0x28 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_ranges  0x00000000       0x20 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_str     0x00000000      0x19c cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_frame   0x00000000       0x4c cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .debug_abbrev  0x00000000      0x13e cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_info    0x00000000      0x23e cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_line    0x00000000      0x1c7 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_loc     0x00000000       0xca cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_pubnames
+                0x00000000       0x5a cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_aranges
+                0x00000000       0x20 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_str     0x00000000      0x1c1 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_frame   0x00000000       0x80 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .debug_abbrev  0x00000000      0x1c0 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_info    0x00000000      0xa64 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_line    0x00000000      0x1c1 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_loc     0x00000000      0x1ce cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_pubnames
+                0x00000000       0x40 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_aranges
+                0x00000000       0x20 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_ranges  0x00000000      0x2b0 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_str     0x00000000      0x888 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_frame   0x00000000       0x48 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .debug_abbrev  0x00000000      0x105 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_info    0x00000000      0x2cb cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_line    0x00000000       0x7e cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_loc     0x00000000      0x13a cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_pubnames
+                0x00000000       0x48 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_aranges
+                0x00000000       0x30 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_ranges  0x00000000       0x28 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_str     0x00000000      0x230 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_frame   0x00000000       0x68 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .debug_abbrev  0x00000000       0x96 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_info    0x00000000      0x77b cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_line    0x00000000       0x96 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_pubnames
+                0x00000000       0x29 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_aranges
+                0x00000000       0x20 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_str     0x00000000      0x7f4 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_frame   0x00000000       0x20 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .debug_abbrev  0x00000000      0x1ea lib_arm/libarm.a(board.o)
+ .debug_info    0x00000000      0xb3d lib_arm/libarm.a(board.o)
+ .debug_line    0x00000000      0x21c lib_arm/libarm.a(board.o)
+ .debug_loc     0x00000000       0xc6 lib_arm/libarm.a(board.o)
+ .debug_pubnames
+                0x00000000      0x11f lib_arm/libarm.a(board.o)
+ .debug_aranges
+                0x00000000       0x20 lib_arm/libarm.a(board.o)
+ .debug_ranges  0x00000000       0x18 lib_arm/libarm.a(board.o)
+ .debug_str     0x00000000      0x9e1 lib_arm/libarm.a(board.o)
+ .comment       0x00000000       0x2b lib_arm/libarm.a(board.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_arm/libarm.a(board.o)
+ .debug_frame   0x00000000      0x124 lib_arm/libarm.a(board.o)
+ .debug_abbrev  0x00000000      0x10d lib_arm/libarm.a(interrupts.o)
+ .debug_info    0x00000000      0x263 lib_arm/libarm.a(interrupts.o)
+ .debug_line    0x00000000       0xed lib_arm/libarm.a(interrupts.o)
+ .debug_loc     0x00000000      0x227 lib_arm/libarm.a(interrupts.o)
+ .debug_pubnames
+                0x00000000       0xdf lib_arm/libarm.a(interrupts.o)
+ .debug_aranges
+                0x00000000       0x20 lib_arm/libarm.a(interrupts.o)
+ .debug_str     0x00000000      0x1ac lib_arm/libarm.a(interrupts.o)
+ .comment       0x00000000       0x2b lib_arm/libarm.a(interrupts.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_arm/libarm.a(interrupts.o)
+ .debug_frame   0x00000000      0x110 lib_arm/libarm.a(interrupts.o)
+ .debug_abbrev  0x00000000      0x310 net/libnet.a(eth.o)
+ .debug_info    0x00000000      0x875 net/libnet.a(eth.o)
+ .debug_line    0x00000000      0x2a7 net/libnet.a(eth.o)
+ .debug_loc     0x00000000      0x70f net/libnet.a(eth.o)
+ .debug_pubnames
+                0x00000000      0x160 net/libnet.a(eth.o)
+ .debug_aranges
+                0x00000000       0x20 net/libnet.a(eth.o)
+ .debug_ranges  0x00000000       0x88 net/libnet.a(eth.o)
+ .debug_str     0x00000000      0x3ea net/libnet.a(eth.o)
+ .comment       0x00000000       0x2b net/libnet.a(eth.o)
+ .ARM.attributes
+                0x00000000       0x31 net/libnet.a(eth.o)
+ .debug_frame   0x00000000      0x1dc net/libnet.a(eth.o)
+ .debug_abbrev  0x00000000      0x460 net/libnet.a(net.o)
+ .debug_info    0x00000000     0x1506 net/libnet.a(net.o)
+ .debug_line    0x00000000      0x5fc net/libnet.a(net.o)
+ .debug_loc     0x00000000      0xa9e net/libnet.a(net.o)
+ .debug_pubnames
+                0x00000000      0x3c3 net/libnet.a(net.o)
+ .debug_aranges
+                0x00000000       0x20 net/libnet.a(net.o)
+ .debug_ranges  0x00000000      0x1f8 net/libnet.a(net.o)
+ .debug_str     0x00000000      0x7e9 net/libnet.a(net.o)
+ .comment       0x00000000       0x2b net/libnet.a(net.o)
+ .ARM.attributes
+                0x00000000       0x31 net/libnet.a(net.o)
+ .debug_frame   0x00000000      0x244 net/libnet.a(net.o)
+ .debug_abbrev  0x00000000      0x11e net/libnet.a(rarp.o)
+ .debug_info    0x00000000      0x251 net/libnet.a(rarp.o)
+ .debug_line    0x00000000      0x118 net/libnet.a(rarp.o)
+ .debug_loc     0x00000000       0xe5 net/libnet.a(rarp.o)
+ .debug_pubnames
+                0x00000000       0x2e net/libnet.a(rarp.o)
+ .debug_aranges
+                0x00000000       0x20 net/libnet.a(rarp.o)
+ .debug_str     0x00000000      0x1a8 net/libnet.a(rarp.o)
+ .comment       0x00000000       0x2b net/libnet.a(rarp.o)
+ .ARM.attributes
+                0x00000000       0x31 net/libnet.a(rarp.o)
+ .debug_frame   0x00000000       0x64 net/libnet.a(rarp.o)
+ .debug_abbrev  0x00000000      0x234 net/libnet.a(tftp.o)
+ .debug_info    0x00000000      0x516 net/libnet.a(tftp.o)
+ .debug_line    0x00000000      0x331 net/libnet.a(tftp.o)
+ .debug_loc     0x00000000      0x2c6 net/libnet.a(tftp.o)
+ .debug_pubnames
+                0x00000000       0x53 net/libnet.a(tftp.o)
+ .debug_aranges
+                0x00000000       0x20 net/libnet.a(tftp.o)
+ .debug_ranges  0x00000000       0x48 net/libnet.a(tftp.o)
+ .debug_str     0x00000000      0x3b1 net/libnet.a(tftp.o)
+ .comment       0x00000000       0x2b net/libnet.a(tftp.o)
+ .ARM.attributes
+                0x00000000       0x31 net/libnet.a(tftp.o)
+ .debug_frame   0x00000000       0x94 net/libnet.a(tftp.o)
+ .debug_abbrev  0x00000000      0x33c net/libnet.a(bootp.o)
+ .debug_info    0x00000000      0xbd8 net/libnet.a(bootp.o)
+ .debug_line    0x00000000      0x3b9 net/libnet.a(bootp.o)
+ .debug_loc     0x00000000      0x4f2 net/libnet.a(bootp.o)
+ .debug_pubnames
+                0x00000000       0x82 net/libnet.a(bootp.o)
+ .debug_aranges
+                0x00000000       0x20 net/libnet.a(bootp.o)
+ .debug_ranges  0x00000000      0x208 net/libnet.a(bootp.o)
+ .debug_str     0x00000000      0x49d net/libnet.a(bootp.o)
+ .comment       0x00000000       0x2b net/libnet.a(bootp.o)
+ .ARM.attributes
+                0x00000000       0x31 net/libnet.a(bootp.o)
+ .debug_frame   0x00000000       0xf4 net/libnet.a(bootp.o)
+ .debug_abbrev  0x00000000      0x1ea drivers/serial/libserial.a(serial.o)
+ .debug_info    0x00000000      0x6ec drivers/serial/libserial.a(serial.o)
+ .debug_line    0x00000000      0x1f8 drivers/serial/libserial.a(serial.o)
+ .debug_loc     0x00000000      0x20e drivers/serial/libserial.a(serial.o)
+ .debug_pubnames
+                0x00000000       0xfb drivers/serial/libserial.a(serial.o)
+ .debug_aranges
+                0x00000000       0x20 drivers/serial/libserial.a(serial.o)
+ .debug_str     0x00000000      0x41e drivers/serial/libserial.a(serial.o)
+ .comment       0x00000000       0x2b drivers/serial/libserial.a(serial.o)
+ .ARM.attributes
+                0x00000000       0x31 drivers/serial/libserial.a(serial.o)
+ .debug_frame   0x00000000      0x128 drivers/serial/libserial.a(serial.o)
+ .debug_abbrev  0x00000000      0x11c drivers/serial/libserial.a(ns16550.o)
+ .debug_info    0x00000000      0x395 drivers/serial/libserial.a(ns16550.o)
+ .debug_line    0x00000000       0xbc drivers/serial/libserial.a(ns16550.o)
+ .debug_loc     0x00000000       0x9d drivers/serial/libserial.a(ns16550.o)
+ .debug_pubnames
+                0x00000000       0x69 drivers/serial/libserial.a(ns16550.o)
+ .debug_aranges
+                0x00000000       0x20 drivers/serial/libserial.a(ns16550.o)
+ .debug_str     0x00000000      0x217 drivers/serial/libserial.a(ns16550.o)
+ .comment       0x00000000       0x2b drivers/serial/libserial.a(ns16550.o)
+ .ARM.attributes
+                0x00000000       0x31 drivers/serial/libserial.a(ns16550.o)
+ .debug_frame   0x00000000       0x70 drivers/serial/libserial.a(ns16550.o)
+ .debug_abbrev  0x00000000      0x1b4 common/libcommon.a(cmd_bdinfo.o)
+ .debug_info    0x00000000      0x45a common/libcommon.a(cmd_bdinfo.o)
+ .debug_line    0x00000000      0x155 common/libcommon.a(cmd_bdinfo.o)
+ .debug_loc     0x00000000       0x8a common/libcommon.a(cmd_bdinfo.o)
+ .debug_pubnames
+                0x00000000       0x3f common/libcommon.a(cmd_bdinfo.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_bdinfo.o)
+ .debug_ranges  0x00000000       0x30 common/libcommon.a(cmd_bdinfo.o)
+ .debug_str     0x00000000      0x218 common/libcommon.a(cmd_bdinfo.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_bdinfo.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_bdinfo.o)
+ .debug_frame   0x00000000       0x30 common/libcommon.a(cmd_bdinfo.o)
+ .debug_abbrev  0x00000000       0xdf common/libcommon.a(cmd_boot.o)
+ .debug_info    0x00000000      0x22c common/libcommon.a(cmd_boot.o)
+ .debug_line    0x00000000       0xed common/libcommon.a(cmd_boot.o)
+ .debug_loc     0x00000000      0x15f common/libcommon.a(cmd_boot.o)
+ .debug_pubnames
+                0x00000000       0x56 common/libcommon.a(cmd_boot.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_boot.o)
+ .debug_str     0x00000000      0x171 common/libcommon.a(cmd_boot.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_boot.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_boot.o)
+ .debug_frame   0x00000000       0x44 common/libcommon.a(cmd_boot.o)
+ .debug_abbrev  0x00000000      0x351 common/libcommon.a(cmd_bootm.o)
+ .debug_info    0x00000000     0x10c9 common/libcommon.a(cmd_bootm.o)
+ .debug_line    0x00000000      0x442 common/libcommon.a(cmd_bootm.o)
+ .debug_loc     0x00000000      0x7a1 common/libcommon.a(cmd_bootm.o)
+ .debug_pubnames
+                0x00000000       0x8b common/libcommon.a(cmd_bootm.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_bootm.o)
+ .debug_ranges  0x00000000      0x168 common/libcommon.a(cmd_bootm.o)
+ .debug_str     0x00000000      0x63d common/libcommon.a(cmd_bootm.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_bootm.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_bootm.o)
+ .debug_frame   0x00000000      0x100 common/libcommon.a(cmd_bootm.o)
+ .debug_abbrev  0x00000000       0xd2 common/libcommon.a(cmd_help.o)
+ .debug_info    0x00000000      0x1a9 common/libcommon.a(cmd_help.o)
+ .debug_line    0x00000000       0x8e common/libcommon.a(cmd_help.o)
+ .debug_loc     0x00000000       0x8d common/libcommon.a(cmd_help.o)
+ .debug_pubnames
+                0x00000000       0x53 common/libcommon.a(cmd_help.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_help.o)
+ .debug_str     0x00000000      0x17f common/libcommon.a(cmd_help.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_help.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_help.o)
+ .debug_frame   0x00000000       0x30 common/libcommon.a(cmd_help.o)
+ .debug_abbrev  0x00000000      0x37e common/libcommon.a(cmd_isp.o)
+ .debug_info    0x00000000     0x1f99 common/libcommon.a(cmd_isp.o)
+ .debug_line    0x00000000      0x73e common/libcommon.a(cmd_isp.o)
+ .debug_loc     0x00000000      0xb40 common/libcommon.a(cmd_isp.o)
+ .debug_pubnames
+                0x00000000       0x80 common/libcommon.a(cmd_isp.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_isp.o)
+ .debug_ranges  0x00000000      0x630 common/libcommon.a(cmd_isp.o)
+ .debug_str     0x00000000     0x1166 common/libcommon.a(cmd_isp.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_isp.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_isp.o)
+ .debug_frame   0x00000000      0x1f4 common/libcommon.a(cmd_isp.o)
+ .debug_abbrev  0x00000000      0x43b common/libcommon.a(cmd_load.o)
+ .debug_info    0x00000000      0xe3f common/libcommon.a(cmd_load.o)
+ .debug_line    0x00000000      0x4fe common/libcommon.a(cmd_load.o)
+ .debug_loc     0x00000000      0xb28 common/libcommon.a(cmd_load.o)
+ .debug_pubnames
+                0x00000000      0x1ab common/libcommon.a(cmd_load.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_load.o)
+ .debug_ranges  0x00000000      0x228 common/libcommon.a(cmd_load.o)
+ .debug_str     0x00000000      0x6b9 common/libcommon.a(cmd_load.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_load.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_load.o)
+ .debug_frame   0x00000000      0x1b4 common/libcommon.a(cmd_load.o)
+ .debug_abbrev  0x00000000      0x1cb common/libcommon.a(cmd_mem.o)
+ .debug_info    0x00000000      0xa7d common/libcommon.a(cmd_mem.o)
+ .debug_line    0x00000000      0x3b2 common/libcommon.a(cmd_mem.o)
+ .debug_loc     0x00000000     0x14b1 common/libcommon.a(cmd_mem.o)
+ .debug_pubnames
+                0x00000000      0x1d1 common/libcommon.a(cmd_mem.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_mem.o)
+ .debug_ranges  0x00000000       0x78 common/libcommon.a(cmd_mem.o)
+ .debug_str     0x00000000      0x3be common/libcommon.a(cmd_mem.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_mem.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_mem.o)
+ .debug_frame   0x00000000      0x180 common/libcommon.a(cmd_mem.o)
+ .debug_abbrev  0x00000000      0x19c common/libcommon.a(cmd_net.o)
+ .debug_info    0x00000000      0x4f4 common/libcommon.a(cmd_net.o)
+ .debug_line    0x00000000      0x17e common/libcommon.a(cmd_net.o)
+ .debug_loc     0x00000000      0x363 common/libcommon.a(cmd_net.o)
+ .debug_pubnames
+                0x00000000       0xa6 common/libcommon.a(cmd_net.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_net.o)
+ .debug_ranges  0x00000000       0x40 common/libcommon.a(cmd_net.o)
+ .debug_str     0x00000000      0x29d common/libcommon.a(cmd_net.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_net.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_net.o)
+ .debug_frame   0x00000000       0x74 common/libcommon.a(cmd_net.o)
+ .debug_abbrev  0x00000000      0x270 common/libcommon.a(cmd_nvedit.o)
+ .debug_info    0x00000000      0x869 common/libcommon.a(cmd_nvedit.o)
+ .debug_line    0x00000000      0x358 common/libcommon.a(cmd_nvedit.o)
+ .debug_loc     0x00000000      0x91b common/libcommon.a(cmd_nvedit.o)
+ .debug_pubnames
+                0x00000000       0xf4 common/libcommon.a(cmd_nvedit.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_nvedit.o)
+ .debug_ranges  0x00000000       0xe0 common/libcommon.a(cmd_nvedit.o)
+ .debug_str     0x00000000      0x325 common/libcommon.a(cmd_nvedit.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_nvedit.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_nvedit.o)
+ .debug_frame   0x00000000      0x13c common/libcommon.a(cmd_nvedit.o)
+ .debug_abbrev  0x00000000      0x1f2 common/libcommon.a(cmd_sf.o)
+ .debug_info    0x00000000      0x7ba common/libcommon.a(cmd_sf.o)
+ .debug_line    0x00000000      0x1fc common/libcommon.a(cmd_sf.o)
+ .debug_loc     0x00000000      0x525 common/libcommon.a(cmd_sf.o)
+ .debug_pubnames
+                0x00000000       0x26 common/libcommon.a(cmd_sf.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_sf.o)
+ .debug_ranges  0x00000000       0xd0 common/libcommon.a(cmd_sf.o)
+ .debug_str     0x00000000      0x249 common/libcommon.a(cmd_sf.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_sf.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_sf.o)
+ .debug_frame   0x00000000       0x38 common/libcommon.a(cmd_sf.o)
+ .debug_abbrev  0x00000000       0xe0 common/libcommon.a(cmd_version.o)
+ .debug_info    0x00000000      0x195 common/libcommon.a(cmd_version.o)
+ .debug_line    0x00000000       0x8c common/libcommon.a(cmd_version.o)
+ .debug_loc     0x00000000       0x6b common/libcommon.a(cmd_version.o)
+ .debug_pubnames
+                0x00000000       0x3a common/libcommon.a(cmd_version.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(cmd_version.o)
+ .debug_str     0x00000000      0x158 common/libcommon.a(cmd_version.o)
+ .comment       0x00000000       0x2b common/libcommon.a(cmd_version.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(cmd_version.o)
+ .debug_frame   0x00000000       0x28 common/libcommon.a(cmd_version.o)
+ .debug_abbrev  0x00000000      0x1dc common/libcommon.a(command.o)
+ .debug_info    0x00000000      0x3ac common/libcommon.a(command.o)
+ .debug_line    0x00000000      0x1a8 common/libcommon.a(command.o)
+ .debug_loc     0x00000000      0x585 common/libcommon.a(command.o)
+ .debug_pubnames
+                0x00000000       0x61 common/libcommon.a(command.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(command.o)
+ .debug_ranges  0x00000000       0xe0 common/libcommon.a(command.o)
+ .debug_str     0x00000000      0x1de common/libcommon.a(command.o)
+ .comment       0x00000000       0x2b common/libcommon.a(command.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(command.o)
+ .debug_frame   0x00000000       0xa8 common/libcommon.a(command.o)
+ .debug_abbrev  0x00000000      0x39a common/libcommon.a(console.o)
+ .debug_info    0x00000000      0xa74 common/libcommon.a(console.o)
+ .debug_line    0x00000000      0x2f6 common/libcommon.a(console.o)
+ .debug_loc     0x00000000      0x598 common/libcommon.a(console.o)
+ .debug_pubnames
+                0x00000000      0x147 common/libcommon.a(console.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(console.o)
+ .debug_str     0x00000000      0x4fc common/libcommon.a(console.o)
+ .comment       0x00000000       0x2b common/libcommon.a(console.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(console.o)
+ .debug_frame   0x00000000      0x238 common/libcommon.a(console.o)
+ .debug_abbrev  0x00000000      0x2e8 common/libcommon.a(dlmalloc.o)
+ .debug_info    0x00000000      0xdd8 common/libcommon.a(dlmalloc.o)
+ .debug_line    0x00000000      0x499 common/libcommon.a(dlmalloc.o)
+ .debug_loc     0x00000000     0x1508 common/libcommon.a(dlmalloc.o)
+ .debug_pubnames
+                0x00000000       0xfd common/libcommon.a(dlmalloc.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(dlmalloc.o)
+ .debug_ranges  0x00000000      0x198 common/libcommon.a(dlmalloc.o)
+ .debug_str     0x00000000      0x54a common/libcommon.a(dlmalloc.o)
+ .comment       0x00000000       0x2b common/libcommon.a(dlmalloc.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(dlmalloc.o)
+ .debug_frame   0x00000000      0x150 common/libcommon.a(dlmalloc.o)
+ .debug_abbrev  0x00000000      0x1c9 common/libcommon.a(env_common.o)
+ .debug_info    0x00000000      0x3b3 common/libcommon.a(env_common.o)
+ .debug_line    0x00000000      0x1a1 common/libcommon.a(env_common.o)
+ .debug_loc     0x00000000       0xe0 common/libcommon.a(env_common.o)
+ .debug_pubnames
+                0x00000000       0xa3 common/libcommon.a(env_common.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(env_common.o)
+ .debug_ranges  0x00000000       0x48 common/libcommon.a(env_common.o)
+ .debug_str     0x00000000      0x247 common/libcommon.a(env_common.o)
+ .comment       0x00000000       0x2b common/libcommon.a(env_common.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(env_common.o)
+ .debug_frame   0x00000000       0x88 common/libcommon.a(env_common.o)
+ .debug_abbrev  0x00000000      0x241 common/libcommon.a(env_sf.o)
+ .debug_info    0x00000000      0x658 common/libcommon.a(env_sf.o)
+ .debug_line    0x00000000      0x1d1 common/libcommon.a(env_sf.o)
+ .debug_loc     0x00000000       0x6f common/libcommon.a(env_sf.o)
+ .debug_pubnames
+                0x00000000       0x7c common/libcommon.a(env_sf.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(env_sf.o)
+ .debug_str     0x00000000      0x2ed common/libcommon.a(env_sf.o)
+ .comment       0x00000000       0x2b common/libcommon.a(env_sf.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(env_sf.o)
+ .debug_frame   0x00000000       0x68 common/libcommon.a(env_sf.o)
+ .debug_abbrev  0x00000000      0x112 common/libcommon.a(exports.o)
+ .debug_info    0x00000000      0x2cf common/libcommon.a(exports.o)
+ .debug_line    0x00000000      0x1e3 common/libcommon.a(exports.o)
+ .debug_loc     0x00000000       0x2c common/libcommon.a(exports.o)
+ .debug_pubnames
+                0x00000000       0x3c common/libcommon.a(exports.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(exports.o)
+ .debug_str     0x00000000      0x31b common/libcommon.a(exports.o)
+ .comment       0x00000000       0x2b common/libcommon.a(exports.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(exports.o)
+ .debug_frame   0x00000000       0x58 common/libcommon.a(exports.o)
+ .debug_abbrev  0x00000000      0x3d9 common/libcommon.a(image.o)
+ .debug_info    0x00000000     0x1671 common/libcommon.a(image.o)
+ .debug_line    0x00000000      0x472 common/libcommon.a(image.o)
+ .debug_loc     0x00000000      0x93f common/libcommon.a(image.o)
+ .debug_pubnames
+                0x00000000      0x22c common/libcommon.a(image.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(image.o)
+ .debug_ranges  0x00000000      0x268 common/libcommon.a(image.o)
+ .debug_str     0x00000000      0x734 common/libcommon.a(image.o)
+ .comment       0x00000000       0x2b common/libcommon.a(image.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(image.o)
+ .debug_frame   0x00000000      0x21c common/libcommon.a(image.o)
+ .debug_abbrev  0x00000000      0x260 common/libcommon.a(main.o)
+ .debug_info    0x00000000      0x6af common/libcommon.a(main.o)
+ .debug_line    0x00000000      0x2a2 common/libcommon.a(main.o)
+ .debug_loc     0x00000000      0xb2c common/libcommon.a(main.o)
+ .debug_pubnames
+                0x00000000       0x9c common/libcommon.a(main.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(main.o)
+ .debug_ranges  0x00000000       0xb0 common/libcommon.a(main.o)
+ .debug_str     0x00000000      0x278 common/libcommon.a(main.o)
+ .comment       0x00000000       0x2b common/libcommon.a(main.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(main.o)
+ .debug_frame   0x00000000      0x100 common/libcommon.a(main.o)
+ .debug_abbrev  0x00000000      0x222 common/libcommon.a(miiphyutil.o)
+ .debug_info    0x00000000      0x705 common/libcommon.a(miiphyutil.o)
+ .debug_line    0x00000000      0x21f common/libcommon.a(miiphyutil.o)
+ .debug_loc     0x00000000      0x68b common/libcommon.a(miiphyutil.o)
+ .debug_pubnames
+                0x00000000      0x10d common/libcommon.a(miiphyutil.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(miiphyutil.o)
+ .debug_ranges  0x00000000       0x30 common/libcommon.a(miiphyutil.o)
+ .debug_str     0x00000000      0x2a4 common/libcommon.a(miiphyutil.o)
+ .comment       0x00000000       0x2b common/libcommon.a(miiphyutil.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(miiphyutil.o)
+ .debug_frame   0x00000000      0x194 common/libcommon.a(miiphyutil.o)
+ .debug_abbrev  0x00000000       0xfc common/libcommon.a(s_record.o)
+ .debug_info    0x00000000      0x1b0 common/libcommon.a(s_record.o)
+ .debug_line    0x00000000      0x11f common/libcommon.a(s_record.o)
+ .debug_loc     0x00000000      0x3b1 common/libcommon.a(s_record.o)
+ .debug_pubnames
+                0x00000000       0x22 common/libcommon.a(s_record.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(s_record.o)
+ .debug_ranges  0x00000000       0x58 common/libcommon.a(s_record.o)
+ .debug_str     0x00000000      0x12a common/libcommon.a(s_record.o)
+ .comment       0x00000000       0x2b common/libcommon.a(s_record.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(s_record.o)
+ .debug_frame   0x00000000       0x44 common/libcommon.a(s_record.o)
+ .debug_abbrev  0x00000000      0x210 common/libcommon.a(stdio.o)
+ .debug_info    0x00000000      0x59b common/libcommon.a(stdio.o)
+ .debug_line    0x00000000      0x1ba common/libcommon.a(stdio.o)
+ .debug_loc     0x00000000      0x15e common/libcommon.a(stdio.o)
+ .debug_pubnames
+                0x00000000       0x96 common/libcommon.a(stdio.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(stdio.o)
+ .debug_ranges  0x00000000       0x68 common/libcommon.a(stdio.o)
+ .debug_str     0x00000000      0x292 common/libcommon.a(stdio.o)
+ .comment       0x00000000       0x2b common/libcommon.a(stdio.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(stdio.o)
+ .debug_frame   0x00000000       0x94 common/libcommon.a(stdio.o)
+ .debug_abbrev  0x00000000      0x35f common/libcommon.a(xyzModem.o)
+ .debug_info    0x00000000      0x9d0 common/libcommon.a(xyzModem.o)
+ .debug_line    0x00000000      0x42b common/libcommon.a(xyzModem.o)
+ .debug_loc     0x00000000      0x7eb common/libcommon.a(xyzModem.o)
+ .debug_pubnames
+                0x00000000       0xd5 common/libcommon.a(xyzModem.o)
+ .debug_aranges
+                0x00000000       0x20 common/libcommon.a(xyzModem.o)
+ .debug_ranges  0x00000000       0xf0 common/libcommon.a(xyzModem.o)
+ .debug_str     0x00000000      0x373 common/libcommon.a(xyzModem.o)
+ .comment       0x00000000       0x2b common/libcommon.a(xyzModem.o)
+ .ARM.attributes
+                0x00000000       0x31 common/libcommon.a(xyzModem.o)
+ .debug_frame   0x00000000      0x14c common/libcommon.a(xyzModem.o)
+ .debug_abbrev  0x00000000      0x1e1 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_info    0x00000000     0x1792 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_line    0x00000000      0x3be board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_loc     0x00000000       0xc8 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_pubnames
+                0x00000000       0xc9 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_aranges
+                0x00000000       0x20 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_str     0x00000000     0x19d7 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .comment       0x00000000       0x2b board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .ARM.attributes
+                0x00000000       0x31 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_frame   0x00000000       0xe0 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .debug_abbrev  0x00000000       0xc6 lib_generic/libgeneric.a(crc16.o)
+ .debug_info    0x00000000      0x10e lib_generic/libgeneric.a(crc16.o)
+ .debug_line    0x00000000       0xf0 lib_generic/libgeneric.a(crc16.o)
+ .debug_loc     0x00000000       0xa5 lib_generic/libgeneric.a(crc16.o)
+ .debug_pubnames
+                0x00000000       0x20 lib_generic/libgeneric.a(crc16.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(crc16.o)
+ .debug_str     0x00000000      0x10a lib_generic/libgeneric.a(crc16.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(crc16.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(crc16.o)
+ .debug_frame   0x00000000       0x28 lib_generic/libgeneric.a(crc16.o)
+ .debug_abbrev  0x00000000      0x10b lib_generic/libgeneric.a(crc32.o)
+ .debug_info    0x00000000      0x266 lib_generic/libgeneric.a(crc32.o)
+ .debug_line    0x00000000      0x1aa lib_generic/libgeneric.a(crc32.o)
+ .debug_loc     0x00000000      0x28d lib_generic/libgeneric.a(crc32.o)
+ .debug_pubnames
+                0x00000000       0x3b lib_generic/libgeneric.a(crc32.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(crc32.o)
+ .debug_str     0x00000000      0x15c lib_generic/libgeneric.a(crc32.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(crc32.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(crc32.o)
+ .debug_frame   0x00000000       0x58 lib_generic/libgeneric.a(crc32.o)
+ .debug_abbrev  0x00000000      0x10f lib_generic/libgeneric.a(display_options.o)
+ .debug_info    0x00000000      0x25d lib_generic/libgeneric.a(display_options.o)
+ .debug_line    0x00000000      0x1d2 lib_generic/libgeneric.a(display_options.o)
+ .debug_loc     0x00000000      0x245 lib_generic/libgeneric.a(display_options.o)
+ .debug_pubnames
+                0x00000000       0x46 lib_generic/libgeneric.a(display_options.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(display_options.o)
+ .debug_str     0x00000000      0x196 lib_generic/libgeneric.a(display_options.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(display_options.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(display_options.o)
+ .debug_frame   0x00000000       0x6c lib_generic/libgeneric.a(display_options.o)
+ .debug_abbrev  0x00000000      0x144 lib_generic/libgeneric.a(gunzip.o)
+ .debug_info    0x00000000      0x3f2 lib_generic/libgeneric.a(gunzip.o)
+ .debug_line    0x00000000       0xe7 lib_generic/libgeneric.a(gunzip.o)
+ .debug_loc     0x00000000      0x277 lib_generic/libgeneric.a(gunzip.o)
+ .debug_pubnames
+                0x00000000       0x3d lib_generic/libgeneric.a(gunzip.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(gunzip.o)
+ .debug_str     0x00000000      0x1f6 lib_generic/libgeneric.a(gunzip.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(gunzip.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(gunzip.o)
+ .debug_frame   0x00000000       0x78 lib_generic/libgeneric.a(gunzip.o)
+ .debug_abbrev  0x00000000       0xd9 lib_generic/libgeneric.a(net_utils.o)
+ .debug_info    0x00000000      0x12d lib_generic/libgeneric.a(net_utils.o)
+ .debug_line    0x00000000      0x1a0 lib_generic/libgeneric.a(net_utils.o)
+ .debug_loc     0x00000000       0x88 lib_generic/libgeneric.a(net_utils.o)
+ .debug_pubnames
+                0x00000000       0x23 lib_generic/libgeneric.a(net_utils.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(net_utils.o)
+ .debug_ranges  0x00000000       0x18 lib_generic/libgeneric.a(net_utils.o)
+ .debug_str     0x00000000      0x116 lib_generic/libgeneric.a(net_utils.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(net_utils.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(net_utils.o)
+ .debug_frame   0x00000000       0x30 lib_generic/libgeneric.a(net_utils.o)
+ .debug_abbrev  0x00000000       0x73 lib_generic/libgeneric.a(time.o)
+ .debug_info    0x00000000       0xb2 lib_generic/libgeneric.a(time.o)
+ .debug_line    0x00000000       0x8d lib_generic/libgeneric.a(time.o)
+ .debug_loc     0x00000000       0x3d lib_generic/libgeneric.a(time.o)
+ .debug_pubnames
+                0x00000000       0x1d lib_generic/libgeneric.a(time.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(time.o)
+ .debug_str     0x00000000       0xf2 lib_generic/libgeneric.a(time.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(time.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(time.o)
+ .debug_frame   0x00000000       0x2c lib_generic/libgeneric.a(time.o)
+ .debug_abbrev  0x00000000      0x335 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_info    0x00000000      0xc76 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_line    0x00000000      0x604 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_loc     0x00000000      0xf02 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_pubnames
+                0x00000000       0x87 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_ranges  0x00000000      0x2a0 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_str     0x00000000      0x2b4 lib_generic/libgeneric.a(vsprintf.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(vsprintf.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_frame   0x00000000      0x180 lib_generic/libgeneric.a(vsprintf.o)
+ .debug_abbrev  0x00000000      0x2e1 lib_generic/libgeneric.a(zlib.o)
+ .debug_info    0x00000000     0x10a4 lib_generic/libgeneric.a(zlib.o)
+ .debug_line    0x00000000      0xa9f lib_generic/libgeneric.a(zlib.o)
+ .debug_loc     0x00000000     0x3491 lib_generic/libgeneric.a(zlib.o)
+ .debug_pubnames
+                0x00000000       0xce lib_generic/libgeneric.a(zlib.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(zlib.o)
+ .debug_ranges  0x00000000       0x88 lib_generic/libgeneric.a(zlib.o)
+ .debug_str     0x00000000      0x5ac lib_generic/libgeneric.a(zlib.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(zlib.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(zlib.o)
+ .debug_frame   0x00000000      0x148 lib_generic/libgeneric.a(zlib.o)
+ .debug_abbrev  0x00000000       0x4b lib_generic/libgeneric.a(ctype.o)
+ .debug_info    0x00000000       0x52 lib_generic/libgeneric.a(ctype.o)
+ .debug_line    0x00000000       0x28 lib_generic/libgeneric.a(ctype.o)
+ .debug_pubnames
+                0x00000000       0x1d lib_generic/libgeneric.a(ctype.o)
+ .debug_str     0x00000000       0x6d lib_generic/libgeneric.a(ctype.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(ctype.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(ctype.o)
+ .debug_abbrev  0x00000000       0x9e lib_generic/libgeneric.a(div64.o)
+ .debug_info    0x00000000      0x129 lib_generic/libgeneric.a(div64.o)
+ .debug_line    0x00000000       0xf7 lib_generic/libgeneric.a(div64.o)
+ .debug_loc     0x00000000      0x135 lib_generic/libgeneric.a(div64.o)
+ .debug_pubnames
+                0x00000000       0x21 lib_generic/libgeneric.a(div64.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(div64.o)
+ .debug_str     0x00000000      0x114 lib_generic/libgeneric.a(div64.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(div64.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(div64.o)
+ .debug_frame   0x00000000       0x34 lib_generic/libgeneric.a(div64.o)
+ .debug_abbrev  0x00000000       0x83 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_info    0x00000000       0xec cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_line    0x00000000       0x96 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_loc     0x00000000       0x2c cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_pubnames
+                0x00000000       0x24 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_aranges
+                0x00000000       0x20 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_str     0x00000000      0x14e cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .comment       0x00000000       0x2b cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .ARM.attributes
+                0x00000000       0x31 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_frame   0x00000000       0x30 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .debug_abbrev  0x00000000      0x227 lib_arm/libarm.a(bootm.o)
+ .debug_info    0x00000000      0xa25 lib_arm/libarm.a(bootm.o)
+ .debug_line    0x00000000      0x1c3 lib_arm/libarm.a(bootm.o)
+ .debug_loc     0x00000000       0xe7 lib_arm/libarm.a(bootm.o)
+ .debug_pubnames
+                0x00000000       0x2c lib_arm/libarm.a(bootm.o)
+ .debug_aranges
+                0x00000000       0x20 lib_arm/libarm.a(bootm.o)
+ .debug_ranges  0x00000000      0x110 lib_arm/libarm.a(bootm.o)
+ .debug_str     0x00000000      0x5ab lib_arm/libarm.a(bootm.o)
+ .comment       0x00000000       0x2b lib_arm/libarm.a(bootm.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_arm/libarm.a(bootm.o)
+ .debug_frame   0x00000000       0x38 lib_arm/libarm.a(bootm.o)
+ .debug_abbrev  0x00000000       0x57 lib_arm/libarm.a(cache.o)
+ .debug_info    0x00000000       0xa4 lib_arm/libarm.a(cache.o)
+ .debug_line    0x00000000       0x38 lib_arm/libarm.a(cache.o)
+ .debug_pubnames
+                0x00000000       0x22 lib_arm/libarm.a(cache.o)
+ .debug_aranges
+                0x00000000       0x20 lib_arm/libarm.a(cache.o)
+ .debug_str     0x00000000       0xf7 lib_arm/libarm.a(cache.o)
+ .comment       0x00000000       0x2b lib_arm/libarm.a(cache.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_arm/libarm.a(cache.o)
+ .debug_frame   0x00000000       0x20 lib_arm/libarm.a(cache.o)
+ .debug_abbrev  0x00000000       0xcf lib_arm/libarm.a(reset.o)
+ .debug_info    0x00000000      0x840 lib_arm/libarm.a(reset.o)
+ .debug_line    0x00000000       0xe1 lib_arm/libarm.a(reset.o)
+ .debug_loc     0x00000000       0x6b lib_arm/libarm.a(reset.o)
+ .debug_pubnames
+                0x00000000       0x1f lib_arm/libarm.a(reset.o)
+ .debug_aranges
+                0x00000000       0x20 lib_arm/libarm.a(reset.o)
+ .debug_str     0x00000000      0x815 lib_arm/libarm.a(reset.o)
+ .comment       0x00000000       0x2b lib_arm/libarm.a(reset.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_arm/libarm.a(reset.o)
+ .debug_frame   0x00000000       0x28 lib_arm/libarm.a(reset.o)
+ .debug_abbrev  0x00000000      0x182 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_info    0x00000000      0x659 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_line    0x00000000      0x1df drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_loc     0x00000000      0x59c drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_pubnames
+                0x00000000      0x105 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_aranges
+                0x00000000       0x20 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_str     0x00000000      0x269 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .comment       0x00000000       0x2b drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .ARM.attributes
+                0x00000000       0x31 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_frame   0x00000000      0x144 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .debug_abbrev  0x00000000      0x237 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_info    0x00000000      0x756 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_line    0x00000000      0x28f drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_loc     0x00000000      0x69d drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_pubnames
+                0x00000000       0x42 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_aranges
+                0x00000000       0x20 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_ranges  0x00000000       0xd8 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_str     0x00000000      0x2c2 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .comment       0x00000000       0x2b drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .ARM.attributes
+                0x00000000       0x31 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_frame   0x00000000       0xc4 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .debug_abbrev  0x00000000      0x227 drivers/net/libnet.a(m2s_eth.o)
+ .debug_info    0x00000000      0xfe5 drivers/net/libnet.a(m2s_eth.o)
+ .debug_line    0x00000000      0x2a1 drivers/net/libnet.a(m2s_eth.o)
+ .debug_loc     0x00000000      0x3e5 drivers/net/libnet.a(m2s_eth.o)
+ .debug_pubnames
+                0x00000000       0x2a drivers/net/libnet.a(m2s_eth.o)
+ .debug_aranges
+                0x00000000       0x20 drivers/net/libnet.a(m2s_eth.o)
+ .debug_str     0x00000000      0xa85 drivers/net/libnet.a(m2s_eth.o)
+ .comment       0x00000000       0x2b drivers/net/libnet.a(m2s_eth.o)
+ .ARM.attributes
+                0x00000000       0x31 drivers/net/libnet.a(m2s_eth.o)
+ .debug_frame   0x00000000       0xf4 drivers/net/libnet.a(m2s_eth.o)
+ .debug_abbrev  0x00000000      0x2ee drivers/spi/libspi.a(m2s_spi.o)
+ .debug_info    0x00000000     0x12aa drivers/spi/libspi.a(m2s_spi.o)
+ .debug_line    0x00000000      0x3c2 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_loc     0x00000000      0x679 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_pubnames
+                0x00000000       0xb1 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_aranges
+                0x00000000       0x20 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_ranges  0x00000000      0x148 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_str     0x00000000      0xb58 drivers/spi/libspi.a(m2s_spi.o)
+ .comment       0x00000000       0x2b drivers/spi/libspi.a(m2s_spi.o)
+ .ARM.attributes
+                0x00000000       0x31 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_frame   0x00000000      0x100 drivers/spi/libspi.a(m2s_spi.o)
+ .debug_abbrev  0x00000000       0x80 lib_generic/libgeneric.a(strmhz.o)
+ .debug_info    0x00000000       0xd6 lib_generic/libgeneric.a(strmhz.o)
+ .debug_line    0x00000000       0x40 lib_generic/libgeneric.a(strmhz.o)
+ .debug_loc     0x00000000       0x6e lib_generic/libgeneric.a(strmhz.o)
+ .debug_pubnames
+                0x00000000       0x1d lib_generic/libgeneric.a(strmhz.o)
+ .debug_aranges
+                0x00000000       0x20 lib_generic/libgeneric.a(strmhz.o)
+ .debug_str     0x00000000       0xe9 lib_generic/libgeneric.a(strmhz.o)
+ .comment       0x00000000       0x2b lib_generic/libgeneric.a(strmhz.o)
+ .ARM.attributes
+                0x00000000       0x31 lib_generic/libgeneric.a(strmhz.o)
+ .debug_frame   0x00000000       0x2c lib_generic/libgeneric.a(strmhz.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000       0x1b /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000       0x29 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+ .debug_frame   0x00000000       0x50 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000       0x1b /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+ .ARM.extab     0x00000000        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00000000        0x8 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000000       0x29 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .debug_frame   0x00000000       0x3c /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .ARM.extab     0x00000000        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x00000000        0x8 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x00000000       0x29 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000000       0x3c /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000       0x20 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000       0x1b /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+NVM              0x00000000         0x00040000         r
+RAM              0x20000000         0x00008000         rw
+RAM_BUF          0x20008000         0x00004000         r
+MALLOC           0x2000c000         0x00003000         r
+STACK            0x2000f000         0x00001000         r
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.vectors        0x00000000      0x298
+ *(.vectors)
+ .vectors       0x00000000      0x298 cpu/arm_cortexm3/start.o
+                0x00000000                vectors
+
+.kinetis_flash_conf
+ *(.kinetis_flash_conf)
+
+.lpc18xx_image_top
+ *(.lpc18xx_image_top_text)
+ *(.lpc18xx_image_top_data)
+
+.text           0x00000298    0x17de8
+ *(.text)
+ .text          0x00000298      0x124 cpu/arm_cortexm3/start.o
+                0x000002a0                default_isr
+                0x00000374                _start
+ .text          0x000003bc      0x7e0 lib_generic/libgeneric.a(string.o)
+                0x000003bc                strcpy
+                0x000003cc                strncpy
+                0x00000404                strcat
+                0x0000042c                strncat
+                0x000004a4                strcmp
+                0x000004c4                strncmp
+                0x0000053c                strchr
+                0x0000055c                strrchr
+                0x000005b0                strlen
+                0x000005c8                strnlen
+                0x00000608                strspn
+                0x00000648                strpbrk
+                0x00000680                strtok
+                0x0000072c                strsep
+                0x00000780                strswab
+                0x000007b4                memset
+                0x00000848                bcopy
+                0x00000890                memcpy
+                0x0000092c                memmove
+                0x000009d0                memcmp
+                0x00000a40                memscan
+                0x00000a80                strstr
+                0x00000b38                memchr
+                0x00000b68                strdup
+ .text          0x00000b9c       0x84 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+                0x00000b9c                cleanup_before_linux
+                0x00000ba0                cortex_m3_irq_vec_get
+                0x00000bb0                cortex_m3_mpu_add_region
+                0x00000bc0                cortex_m3_mpu_enable
+                0x00000bd4                cortex_m3_mpu_full_access
+                0x00000bf4                arch_cpu_init
+ .text          0x00000c20       0xa8 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+                0x00000c20                do_cptf
+ .text          0x00000cc8      0x104 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+                0x00000cc8                timer_init
+                0x00000cf8                reset_timer
+                0x00000d14                get_tbclk
+                0x00000d1c                __udelay
+                0x00000d6c                get_timer
+ .text          0x00000dcc      0x188 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+                0x00000dcc                clock_init
+                0x00000f34                clock_get
+                0x00000f48                clock_update
+ .text          0x00000f54        0x4 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+                0x00000f54                envm_init
+ .text          0x00000f58       0x20 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+                0x00000f58                cortex_m3_soc_init
+ .text          0x00000f78      0x1e8 lib_arm/libarm.a(board.o)
+                0x00000f78                coloured_LED_init
+                0x00000f78                __coloured_LED_init
+                0x00000f7c                red_LED_on
+                0x00000f7c                __red_LED_on
+                0x00000f80                __red_LED_off
+                0x00000f80                red_LED_off
+                0x00000f84                green_LED_on
+                0x00000f84                __green_LED_on
+                0x00000f88                __green_LED_off
+                0x00000f88                green_LED_off
+                0x00000f8c                __yellow_LED_on
+                0x00000f8c                yellow_LED_on
+                0x00000f90                __yellow_LED_off
+                0x00000f90                yellow_LED_off
+                0x00000f94                blue_LED_on
+                0x00000f94                __blue_LED_on
+                0x00000f98                blue_LED_off
+                0x00000f98                __blue_LED_off
+                0x00000f9c                hang
+                0x00001050                start_armboot
+ .text          0x00001160      0x1c8 lib_arm/libarm.a(interrupts.o)
+                0x00001160                enable_interrupts
+                0x00001164                disable_interrupts
+                0x00001168                show_regs
+                0x0000124c                bad_mode
+                0x00001264                do_irq
+                0x00001280                do_fiq
+                0x0000129c                do_not_used
+                0x000012b8                do_data_abort
+                0x000012d4                do_prefetch_abort
+                0x000012f0                do_software_interrupt
+                0x0000130c                do_undefined_instruction
+ .text          0x00001328      0x5dc net/libnet.a(eth.o)
+                0x00001328                cpu_eth_init
+                0x00001330                eth_get_dev
+                0x0000133c                eth_get_dev_by_index
+                0x00001384                eth_get_dev_index
+                0x000013b8                eth_halt
+                0x000013d4                eth_send
+                0x000013f4                eth_rx
+                0x00001410                eth_get_name
+                0x00001428                eth_get_dev_by_name
+                0x00001450                eth_set_current
+                0x000014b0                eth_try_another
+                0x0000151c                eth_register
+                0x00001564                eth_setenv_enetaddr
+                0x00001588                eth_parse_enetaddr
+                0x00001664                eth_getenv_enetaddr
+                0x000016a0                eth_getenv_enetaddr_by_index
+                0x000016d0                eth_init
+                0x00001774                eth_initialize
+ .text          0x00001904      0xca0 net/libnet.a(net.o)
+                0x00001914                NetSetHandler
+                0x00001920                NetCksumOk
+                0x00001988                NetCksum
+                0x000019dc                copy_filename
+                0x00001a4c                string_to_VLAN
+                0x00001a74                getenv_VLAN
+                0x00001a80                NetEthHdrSize
+                0x00001aac                VLAN_to_string
+                0x00001ae4                ip_to_string
+                0x00001b28                NetSetEther
+                0x00001ba0                NetSendPacket
+                0x00001ba4                NetReceive
+                0x00001f3c                ArpRequest
+                0x00001ff4                NetSetTimeout
+                0x00002014                NetStartAgain
+                0x000020c8                ArpTimeoutCheck
+                0x00002110                NetSetIP
+                0x00002204                NetSendUDPPacket
+                0x000022f0                NetLoop
+ .text          0x000025a4      0x128 net/libnet.a(rarp.o)
+                0x000025a4                RarpRequest
+ .text          0x000026cc      0x6fc net/libnet.a(tftp.o)
+                0x000027f8                TftpStart
+ .text          0x00002dc8      0x834 net/libnet.a(bootp.o)
+                0x00002f54                BootpRequest
+                0x000030e8                DhcpRequest
+ .text          0x000035fc       0xf8 drivers/serial/libserial.a(serial.o)
+                0x00003618                _serial_setbrg
+                0x00003638                serial_setbrg
+                0x0000363c                _serial_tstc
+                0x0000364c                serial_tstc
+                0x00003650                _serial_getc
+                0x00003668                serial_getc
+                0x0000366c                _serial_putc_raw
+                0x00003680                serial_putc_raw
+                0x00003684                _serial_putc
+                0x000036b8                serial_putc
+                0x000036bc                _serial_puts
+                0x000036d8                serial_puts
+                0x000036dc                serial_init
+ .text          0x000036f4       0x8c drivers/serial/libserial.a(ns16550.o)
+                0x000036f4                NS16550_init
+                0x00003724                NS16550_reinit
+                0x00003758                NS16550_putc
+                0x00003768                NS16550_getc
+                0x00003778                NS16550_tstc
+ .text          0x00003780       0xac common/libcommon.a(cmd_bdinfo.o)
+                0x00003780                do_bdinfo
+ .text          0x0000382c       0x5c common/libcommon.a(cmd_boot.o)
+                0x0000382c                do_go_exec
+                0x00003838                do_go
+ .text          0x00003888      0x908 common/libcommon.a(cmd_bootm.o)
+                0x00003888                arch_preboot_os
+                0x00003888                __arch_preboot_os
+                0x00003e78                do_bootm_subcommand
+                0x00003fa4                do_bootm
+ .text          0x00004190       0x40 common/libcommon.a(cmd_help.o)
+                0x00004190                do_help
+ .text          0x000041d0     0x12f8 common/libcommon.a(cmd_isp.o)
+                0x0000429c                delay
+                0x000045e8                exec_ECC_Error_IRQHandler
+                0x00004730                exec_ComBlk_IRQHandler
+ .text          0x000054c8      0xb8c common/libcommon.a(cmd_load.o)
+                0x000054c8                ktrans
+                0x000054e8                chk1
+                0x00005530                k_data_init
+                0x00005544                k_data_save
+                0x00005558                k_data_restore
+                0x0000556c                k_data_char
+                0x000055b8                send_pad
+                0x00005608                s1_sendpacket
+                0x00005624                handle_send_packet
+                0x000057e4                send_nack
+                0x00005844                send_ack
+                0x00005978                do_load_serial_bin
+                0x00005f84                do_load_serial
+ .text          0x00006054      0x990 common/libcommon.a(cmd_mem.o)
+                0x00006054                do_mem_crc
+                0x000060c8                do_mem_base
+                0x00006100                do_mem_mtest
+                0x00006428                do_mem_loop
+                0x00006514                do_mem_cmp
+                0x0000667c                do_mem_mw
+                0x00006744                do_mem_cp
+                0x00006920                do_mem_nm
+                0x00006938                do_mem_mm
+                0x00006950                do_mem_md
+ .text          0x000069e4      0x294 common/libcommon.a(cmd_net.o)
+                0x00006c58                do_dhcp
+                0x00006c60                do_rarpb
+                0x00006c68                do_tftpb
+                0x00006c70                do_bootp
+ .text          0x00006c78      0x74c common/libcommon.a(cmd_nvedit.o)
+                0x00006c78                get_env_id
+                0x00006c84                envmatch
+                0x00006cc4                getenv_r
+                0x00006d8c                do_saveenv
+                0x00006dac                getenv
+                0x00006e14                _do_setenv
+                0x000071d0                do_setenv
+                0x000071ec                setenv
+                0x000072e0                do_printenv
+ .text          0x000073c4      0x308 common/libcommon.a(cmd_sf.o)
+ .text          0x000076cc       0x18 common/libcommon.a(cmd_version.o)
+                0x000076cc                do_version
+ .text          0x000076e4      0x470 common/libcommon.a(command.o)
+                0x000076e4                cmd_get_data_size
+                0x00007728                cmd_usage
+                0x00007740                find_cmd_tbl
+                0x0000784c                find_cmd
+                0x00007874                _do_help
+ .text          0x00007b54      0x394 common/libcommon.a(console.o)
+                0x00007bac                fgetc
+                0x00007bc8                ftstc
+                0x00007be4                fputc
+                0x00007c00                fputs
+                0x00007c1c                disable_ctrlc
+                0x00007c2c                had_ctrlc
+                0x00007c38                clear_ctrlc
+                0x00007c44                dbg
+                0x00007c4c                console_init_f
+                0x00007c58                search_device
+                0x00007c74                console_assign
+                0x00007c9c                fprintf
+                0x00007cc8                puts
+                0x00007cdc                vprintf
+                0x00007cf8                printf
+                0x00007d20                stdio_print_current_devices
+                0x00007da8                console_init_r
+                0x00007e58                serial_printf
+                0x00007e80                putc
+                0x00007e94                tstc
+                0x00007ea8                getc
+                0x00007ebc                ctrlc
+ .text          0x00007ee8      0xbf4 common/libcommon.a(dlmalloc.o)
+                0x00007ee8                sbrk
+                0x00007f08                malloc_trim
+                0x00007fa4                free
+                0x00008138                cfree
+                0x0000813c                malloc
+                0x000085e4                memalign
+                0x000086a4                pvalloc
+                0x000086b8                valloc
+                0x000086c0                malloc_usable_size
+                0x000086f0                mallopt
+                0x00008730                calloc
+                0x000087c0                mem_malloc_init
+                0x000087dc                realloc
+ .text          0x00008adc       0xf8 common/libcommon.a(env_common.o)
+                0x00008adc                env_get_char_memory
+                0x00008af4                env_get_addr
+                0x00008b0c                env_get_char
+                0x00008b3c                env_crc_update
+                0x00008b58                set_default_env
+                0x00008b8c                env_relocate
+ .text          0x00008bd4       0xe8 common/libcommon.a(env_sf.o)
+                0x00008bd4                env_get_char_spec
+                0x00008bdc                env_init
+                0x00008bf0                saveenv
+                0x00008c58                env_relocate_spec
+ .text          0x00008cbc      0x14c common/libcommon.a(exports.o)
+                0x00008cc0                get_version
+                0x00008cc4                jumptable_init
+ .text          0x00008e08      0x848 common/libcommon.a(image.o)
+                0x00008e08                image_multi_count
+                0x00008e1c                get_table_entry_name
+                0x00008e44                genimg_get_os_name
+                0x00008e6c                genimg_get_arch_name
+                0x00008e9c                genimg_get_type_name
+                0x00008ecc                genimg_get_comp_name
+                0x00008efc                genimg_get_image
+                0x00008f00                genimg_has_config
+                0x00008f04                get_table_entry_id
+                0x00008f40                genimg_get_comp_id
+                0x00008f50                genimg_get_type_id
+                0x00008f60                genimg_get_arch_id
+                0x00008f70                genimg_get_os_id
+                0x00008f80                genimg_get_format
+                0x00008fac                image_multi_getimg
+                0x000090b0                genimg_print_size
+                0x000090d0                memmove_wd
+                0x000090d4                getenv_bootm_low
+                0x000090f8                getenv_yesno
+                0x00009110                getenv_bootm_size
+                0x00009130                image_check_hcrc
+                0x00009174                image_check_dcrc
+                0x000091c0                image_print_contents
+                0x00009444                boot_get_ramdisk
+ .text          0x00009650      0x818 common/libcommon.a(main.o)
+                0x00009650                __show_boot_progress
+                0x00009650                show_boot_progress
+                0x00009654                parse_line
+                0x000096f8                run_command
+                0x000099f0                do_run
+                0x00009bc0                readline_into_buffer
+                0x00009cfc                readline
+                0x00009d0c                main_loop
+ .text          0x00009e68      0x454 common/libcommon.a(miiphyutil.o)
+                0x00009e68                miiphy_init
+                0x00009e78                miiphy_get_current_dev
+                0x00009e88                miiphy_is_1000base_x
+                0x00009e8c                miiphy_listdev
+                0x00009ed8                miiphy_write
+                0x00009f3c                miiphy_read
+                0x00009fa0                miiphy_link
+                0x00009fdc                miiphy_duplex
+                0x0000a048                miiphy_speed
+                0x0000a0b4                miiphy_reset
+                0x0000a184                miiphy_info
+                0x0000a1e8                miiphy_set_current_dev
+                0x0000a220                miiphy_register
+ .text          0x0000a2bc      0x1fc common/libcommon.a(s_record.o)
+                0x0000a340                srec_decode
+ .text          0x0000a4b8      0x100 common/libcommon.a(stdio.o)
+                0x0000a4b8                stdio_get_list
+                0x0000a4c0                stdio_clone
+                0x0000a4f4                stdio_register
+                0x0000a520                stdio_init
+                0x0000a584                stdio_get_by_name
+ .text          0x0000a5b8      0xba0 common/libcommon.a(xyzModem.o)
+                0x0000a5b8                parse_num
+                0x0000a6c0                xyzModem_error
+                0x0000a704                xyzModem_stream_close
+                0x0000a754                CYGACC_COMM_IF_PUTC
+                0x0000a75c                CYGACC_COMM_IF_GETC_TIMEOUT
+                0x0000a7a0                xyzModem_stream_terminate
+                0x0000ac00                xyzModem_stream_read
+                0x0000af7c                xyzModem_stream_open
+ .text          0x0000b158      0x7c0 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+                0x0000b158                board_init
+                0x0000b260                dram_init
+                0x0000b52c                dram_init_no_secded
+                0x0000b7f8                misc_init_r
+                0x0000b7fc                ddl2_serdes_init
+                0x0000b8fc                checkboard
+                0x0000b914                board_eth_init
+ .text          0x0000b918       0x70 lib_generic/libgeneric.a(crc16.o)
+                0x0000b918                cyg_crc16
+ .text          0x0000b988      0x238 lib_generic/libgeneric.a(crc32.o)
+                0x0000b988                crc32_no_comp
+                0x0000bbb0                crc32
+                0x0000bbbc                crc32_wd
+ .text          0x0000bbc0      0x350 lib_generic/libgeneric.a(display_options.o)
+                0x0000bbc0                print_size
+                0x0000bc40                display_options
+                0x0000bc58                print_buffer
+ .text          0x0000bf10      0x160 lib_generic/libgeneric.a(gunzip.o)
+                0x0000bf10                zunzip
+                0x0000bfcc                gunzip
+                0x0000c058                zfree
+                0x0000c060                zalloc
+ .text          0x0000c070       0x9c lib_generic/libgeneric.a(net_utils.o)
+                0x0000c070                string_to_ip
+ .text          0x0000c10c       0x20 lib_generic/libgeneric.a(time.o)
+                0x0000c10c                udelay
+ *fill*         0x0000c12c        0x4 00
+ .text          0x0000c130     0x11d8 lib_generic/libgeneric.a(vsprintf.o)
+                0x0000c130                simple_strtoul
+                0x0000c1fc                simple_strtol
+                0x0000c218                ustrtoul
+                0x0000c27c                simple_strtoull
+                0x0000c440                panic
+                0x0000c94c                vsprintf
+                0x0000d2e8                sprintf
+ .text          0x0000d308     0x3958 lib_generic/libgeneric.a(zlib.o)
+                0x0000d308                inflate_table
+                0x0000db80                adler32
+                0x0000ddfc                zcfree
+                0x0000de04                zcalloc
+                0x0000de0c                inflateEnd
+                0x0000de68                inflateReset
+                0x0000decc                inflateInit2_
+                0x0000dfa4                inflateInit_
+                0x0000dfac                inflate_fast
+                0x0000e6d4                z_error
+                0x0000e6e8                inflate
+ .text          0x00010c60        0x0 lib_generic/libgeneric.a(ctype.o)
+ .text          0x00010c60       0xd8 lib_generic/libgeneric.a(div64.o)
+                0x00010c60                __div64_32
+ .text          0x00010d38       0x6c cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+                0x00010d38                print_cpuinfo
+ .text          0x00010da4      0x170 lib_arm/libarm.a(bootm.o)
+                0x00010da4                do_bootm_linux
+ .text          0x00010f14        0x4 lib_arm/libarm.a(cache.o)
+                0x00010f14                flush_cache
+ .text          0x00010f18       0x40 lib_arm/libarm.a(reset.o)
+                0x00010f18                do_reset
+ .text          0x00010f58      0x268 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+                0x00010f58                clear_slave_select
+                0x00010f60                set_slave_select
+                0x00010f68                spi_flash_free
+                0x00010f7c                spi_flash_write_m2s
+                0x00010f90                spi_flash_read_m2s
+                0x00010fa4                spi_flash_cmd_m2s
+                0x00010fb8                spi_flash_cmd_write
+                0x00011020                spi_flash_cmd_read
+                0x00011088                spi_flash_read_common
+                0x000110b8                spi_flash_cmd
+                0x00011120                spi_flash_probe
+ .text          0x000111c0      0x50c drivers/mtd/spi/libspi_flash.a(spansion.o)
+                0x000111c0                spi_flash_probe_spansion
+                0x00011534                spansion_erase
+ .text          0x000116cc      0x4c0 drivers/net/libnet.a(m2s_eth.o)
+                0x000116d0                m2s_eth_driver_init
+ .text          0x00011b8c      0x67c drivers/spi/libspi.a(m2s_spi.o)
+                0x00011b8c                spi_init
+                0x00011b90                spi_claim_bus
+                0x00011c40                spi_release_bus
+                0x00011ca0                spi_xfer
+                0x00011ee8                MSS_SPI_set_slave_select
+                0x00011f84                MSS_SPI_transfer_block
+                0x000120f0                spi_free_slave
+                0x0001210c                spi_setup_slave
+ .text          0x00012208       0x58 lib_generic/libgeneric.a(strmhz.o)
+                0x00012208                strmhz
+ .text          0x00012260       0x2c /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+                0x00012260                __aeabi_uldivmod
+ .text          0x0001228c       0x58 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+                0x0001228c                __gnu_uldivmod_helper
+                0x000122b8                __gnu_ldivmod_helper
+ .text          0x000122e4        0x4 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+                0x000122e4                __aeabi_ldiv0
+                0x000122e4                __aeabi_idiv0
+ .text          0x000122e8      0x364 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+                0x000122e8                __divdi3
+ .text          0x0001264c      0x300 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+                0x0001264c                __udivdi3
+ *fill*         0x0001294c        0x4 00
+ .text          0x00012950      0x278 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+                0x00012950                __udivsi3
+                0x00012950                __aeabi_uidiv
+                0x00012bac                __aeabi_uidivmod
+ *(.rodata*)
+ .rodata        0x00012bc8       0x60 cpu/arm_cortexm3/start.o
+                0x00012c08                g_m2s_ddrc_0_config
+ .rodata.str1.4
+                0x00012c28       0xc0 cpu/arm_cortexm3/start.o
+                                 0xc8 (size before relaxing)
+ .rodata.str1.4
+                0x00012ce8       0xa2 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+                                 0xa4 (size before relaxing)
+ *fill*         0x00012d8a        0x2 00
+ .rodata        0x00012d8c       0x1c cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .rodata        0x00012da8       0x40 lib_arm/libarm.a(board.o)
+                0x00012da8                version_string
+ .rodata.str1.4
+                0x00012de8       0xd8 lib_arm/libarm.a(board.o)
+                                 0xdc (size before relaxing)
+ .rodata        0x00012ec0       0x80 lib_arm/libarm.a(interrupts.o)
+ .rodata.str1.4
+                0x00012f40      0x297 lib_arm/libarm.a(interrupts.o)
+                                0x29c (size before relaxing)
+ *fill*         0x000131d7        0x1 00
+ .rodata        0x000131d8        0x8 net/libnet.a(eth.o)
+ .rodata.str1.4
+                0x000131e0       0xe8 net/libnet.a(eth.o)
+                                 0xec (size before relaxing)
+ .rodata        0x000132c8        0x8 net/libnet.a(net.o)
+ .rodata.str1.4
+                0x000132d0      0x20d net/libnet.a(net.o)
+                                0x214 (size before relaxing)
+ *fill*         0x000134dd        0x3 00
+ .rodata.str1.4
+                0x000134e0       0x57 net/libnet.a(rarp.o)
+                                 0x58 (size before relaxing)
+ *fill*         0x00013537        0x1 00
+ .rodata.str1.4
+                0x00013538      0x2d5 net/libnet.a(tftp.o)
+                                0x30c (size before relaxing)
+ *fill*         0x0001380d        0x3 00
+ .rodata.str1.4
+                0x00013810      0x26e net/libnet.a(bootp.o)
+                                0x2b0 (size before relaxing)
+ *fill*         0x00013a7e        0x2 00
+ .rodata        0x00013a80       0x10 drivers/serial/libserial.a(serial.o)
+ .rodata.str1.4
+                0x00013a90       0xb7 common/libcommon.a(cmd_bdinfo.o)
+                                 0xc0 (size before relaxing)
+ *fill*         0x00013b47        0x1 00
+ .rodata.str1.4
+                0x00013b48       0x99 common/libcommon.a(cmd_boot.o)
+                                 0x9c (size before relaxing)
+ *fill*         0x00013be1        0x3 00
+ .rodata        0x00013be4       0x4c common/libcommon.a(cmd_bootm.o)
+ .rodata.str1.4
+                0x00013c30      0x5bb common/libcommon.a(cmd_bootm.o)
+                                0x5e0 (size before relaxing)
+ *fill*         0x000141eb        0x1 00
+ .rodata.str1.4
+                0x000141ec       0x3d common/libcommon.a(cmd_help.o)
+                                 0x40 (size before relaxing)
+ *fill*         0x00014229        0x3 00
+ .rodata        0x0001422c       0x20 common/libcommon.a(cmd_isp.o)
+                0x00014248                apb_divisors_mask
+ .rodata.str1.4
+                0x0001424c      0x80c common/libcommon.a(cmd_isp.o)
+                                0x83c (size before relaxing)
+ .rodata.str1.4
+                0x00014a58      0x2ac common/libcommon.a(cmd_load.o)
+                                0x2cc (size before relaxing)
+ .rodata        0x00014d04       0x20 common/libcommon.a(cmd_mem.o)
+ .rodata.str1.4
+                0x00014d24      0x487 common/libcommon.a(cmd_mem.o)
+                                0x498 (size before relaxing)
+ *fill*         0x000151ab        0x1 00
+ .rodata.str1.4
+                0x000151ac      0x140 common/libcommon.a(cmd_net.o)
+                                0x184 (size before relaxing)
+ .rodata.str1.4
+                0x000152ec      0x1cc common/libcommon.a(cmd_nvedit.o)
+                                0x234 (size before relaxing)
+ .rodata.str1.4
+                0x000154b8       0xe5 common/libcommon.a(cmd_sf.o)
+                                0x160 (size before relaxing)
+ *fill*         0x0001559d        0x3 00
+ .rodata.str1.4
+                0x000155a0       0x26 common/libcommon.a(cmd_version.o)
+                                 0x28 (size before relaxing)
+ *fill*         0x000155c6        0x2 00
+ .rodata        0x000155c8       0x58 common/libcommon.a(command.o)
+ .rodata.str1.4
+                0x00015620       0x6d common/libcommon.a(command.o)
+                                 0x70 (size before relaxing)
+ *fill*         0x0001568d        0x3 00
+ .rodata.str1.4
+                0x00015690       0x75 common/libcommon.a(console.o)
+                                 0x7c (size before relaxing)
+ *fill*         0x00015705        0x3 00
+ .rodata.str1.4
+                0x00015708       0x33 common/libcommon.a(env_common.o)
+                                 0x34 (size before relaxing)
+ *fill*         0x0001573b        0x1 00
+ .rodata.str1.4
+                0x0001573c       0x6a common/libcommon.a(env_sf.o)
+                                 0xa0 (size before relaxing)
+ *fill*         0x000157a6        0x2 00
+ .rodata.str1.4
+                0x000157a8      0x5ab common/libcommon.a(image.o)
+                                0x634 (size before relaxing)
+ *fill*         0x00015d53        0x1 00
+ .rodata.str1.4
+                0x00015d54      0x114 common/libcommon.a(main.o)
+                                0x138 (size before relaxing)
+ .rodata.str1.4
+                0x00015e68      0x17a common/libcommon.a(miiphyutil.o)
+                                0x180 (size before relaxing)
+ *fill*         0x00015fe2        0x2 00
+ .rodata.str1.4
+                0x00015fe4        0x7 common/libcommon.a(stdio.o)
+                                 0x20 (size before relaxing)
+ *fill*         0x00015feb        0x1 00
+ .rodata        0x00015fec       0x20 common/libcommon.a(xyzModem.o)
+ .rodata.str1.4
+                0x0001600c      0x242 common/libcommon.a(xyzModem.o)
+                                0x24c (size before relaxing)
+ *fill*         0x0001624e        0x2 00
+ .rodata        0x00016250      0x110 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+                0x00016250                g_m2s_serdes_0_config
+                0x000162d8                g_m2s_serdes_1_config
+ .rodata.str1.4
+                0x00016360       0x2f board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+                                 0x30 (size before relaxing)
+ *fill*         0x0001638f        0x1 00
+ .rodata        0x00016390      0x200 lib_generic/libgeneric.a(crc16.o)
+ .rodata        0x00016590      0x400 lib_generic/libgeneric.a(crc32.o)
+ .rodata.str1.4
+                0x00016990       0x17 lib_generic/libgeneric.a(display_options.o)
+                                 0x48 (size before relaxing)
+ *fill*         0x000169a7        0x1 00
+ .rodata.str1.4
+                0x000169a8       0x8d lib_generic/libgeneric.a(gunzip.o)
+                                 0x90 (size before relaxing)
+ *fill*         0x00016a35        0x3 00
+ .rodata        0x00016a38       0x24 lib_generic/libgeneric.a(vsprintf.o)
+                0x00016a48                hex_asc
+ .rodata.str1.4
+                0x00016a5c        0xf lib_generic/libgeneric.a(vsprintf.o)
+                                 0x10 (size before relaxing)
+ *fill*         0x00016a6b        0x1 00
+ .rodata        0x00016a6c      0x9d0 lib_generic/libgeneric.a(zlib.o)
+                0x00017414                z_errmsg
+ .rodata.str1.4
+                0x0001743c      0x481 lib_generic/libgeneric.a(zlib.o)
+                                0x48c (size before relaxing)
+ *fill*         0x000178bd        0x3 00
+ .rodata.str1.4
+                0x000178c0       0x64 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .rodata.str1.4
+                0x00017924       0x97 lib_arm/libarm.a(bootm.o)
+                                 0xac (size before relaxing)
+ *fill*         0x000179bb        0x1 00
+ .rodata.str1.4
+                0x000179bc       0x22 lib_arm/libarm.a(reset.o)
+                                 0x24 (size before relaxing)
+ *fill*         0x000179de        0x2 00
+ .rodata.str1.4
+                0x000179e0      0x147 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+                                0x148 (size before relaxing)
+ *fill*         0x00017b27        0x1 00
+ .rodata.str1.4
+                0x00017b28      0x2b2 drivers/mtd/spi/libspi_flash.a(spansion.o)
+                                0x2b4 (size before relaxing)
+ *fill*         0x00017dda        0x2 00
+ .rodata        0x00017ddc       0x68 drivers/net/libnet.a(m2s_eth.o)
+ .rodata.str1.4
+                0x00017e44      0x1a1 drivers/net/libnet.a(m2s_eth.o)
+                                0x1a8 (size before relaxing)
+ *fill*         0x00017fe5        0x3 00
+ .rodata.str1.4
+                0x00017fe8       0x8c drivers/spi/libspi.a(m2s_spi.o)
+ .rodata.str1.4
+                0x00018074        0xc lib_generic/libgeneric.a(strmhz.o)
+
+.data           0x20000000      0xe70 load address 0x00018080
+                0x20000000                _data_start = .
+                0x00018080                _data_lma_start = LOADADDR (.data)
+ *(.data)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/start.o
+ .data          0x20000000        0x0 lib_generic/libgeneric.a(string.o)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .data          0x20000000        0x0 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .data          0x20000000       0x30 lib_arm/libarm.a(board.o)
+                0x20000000                init_sequence
+ .data          0x20000030        0x0 lib_arm/libarm.a(interrupts.o)
+ .data          0x20000030        0x0 net/libnet.a(eth.o)
+ .data          0x20000030        0xc net/libnet.a(net.o)
+                0x20000030                NetOurVLAN
+                0x20000032                NetOurNativeVLAN
+                0x20000034                NetBcastAddr
+ .data          0x2000003c        0x0 net/libnet.a(rarp.o)
+ .data          0x2000003c       0x18 net/libnet.a(tftp.o)
+                0x20000048                TftpRRQTimeoutCountMax
+                0x20000050                TftpRRQTimeoutMSecs
+ .data          0x20000054        0x0 net/libnet.a(bootp.o)
+ .data          0x20000054        0x0 drivers/serial/libserial.a(serial.o)
+ .data          0x20000054        0x0 drivers/serial/libserial.a(ns16550.o)
+ .data          0x20000054        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .data          0x20000054        0x0 common/libcommon.a(cmd_boot.o)
+ .data          0x20000054       0x7c common/libcommon.a(cmd_bootm.o)
+                0x20000054                load_addr
+                0x20000058                cmd_bootm_sub
+ .data          0x200000d0        0x0 common/libcommon.a(cmd_help.o)
+ .data          0x200000d0       0x10 common/libcommon.a(cmd_isp.o)
+ .data          0x200000e0        0x4 common/libcommon.a(cmd_load.o)
+ .data          0x200000e4        0x4 common/libcommon.a(cmd_mem.o)
+                0x200000e4                dp_last_length
+ .data          0x200000e8        0x0 common/libcommon.a(cmd_net.o)
+ .data          0x200000e8        0x4 common/libcommon.a(cmd_nvedit.o)
+ .data          0x200000ec        0x0 common/libcommon.a(cmd_sf.o)
+ .data          0x200000ec        0x0 common/libcommon.a(cmd_version.o)
+ .data          0x200000ec        0x0 common/libcommon.a(command.o)
+ .data          0x200000ec        0x0 common/libcommon.a(console.o)
+ .data          0x200000ec      0x414 common/libcommon.a(dlmalloc.o)
+ .data          0x20000500      0x2c0 common/libcommon.a(env_common.o)
+                0x20000500                default_environment
+ .data          0x200007c0        0x4 common/libcommon.a(env_sf.o)
+                0x200007c0                env_name_spec
+ .data          0x200007c4        0x0 common/libcommon.a(exports.o)
+ .data          0x200007c4      0x210 common/libcommon.a(image.o)
+ .data          0x200009d4       0x10 common/libcommon.a(main.o)
+ .data          0x200009e4        0x0 common/libcommon.a(miiphyutil.o)
+ .data          0x200009e4        0x0 common/libcommon.a(s_record.o)
+ .data          0x200009e4        0xc common/libcommon.a(stdio.o)
+                0x200009e4                stdio_names
+ .data          0x200009f0        0x4 common/libcommon.a(xyzModem.o)
+ .data          0x200009f4        0x0 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(crc16.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(crc32.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(display_options.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(gunzip.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(net_utils.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(time.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .data          0x200009f4        0x0 lib_generic/libgeneric.a(zlib.o)
+ .data          0x200009f4      0x100 lib_generic/libgeneric.a(ctype.o)
+                0x200009f4                _ctype
+ .data          0x20000af4        0x0 lib_generic/libgeneric.a(div64.o)
+ .data          0x20000af4        0x0 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .data          0x20000af4        0x0 lib_arm/libarm.a(bootm.o)
+ .data          0x20000af4        0x0 lib_arm/libarm.a(cache.o)
+ .data          0x20000af4        0x0 lib_arm/libarm.a(reset.o)
+ .data          0x20000af4        0x0 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .data          0x20000af4      0x140 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .data          0x20000c34       0x38 drivers/net/libnet.a(m2s_eth.o)
+ .data          0x20000c6c        0x0 drivers/spi/libspi.a(m2s_spi.o)
+ .data          0x20000c6c        0x0 lib_generic/libgeneric.a(strmhz.o)
+ .data          0x20000c6c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x20000c6c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+ .data          0x20000c6c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+ .data          0x20000c6c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .data          0x20000c6c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .data          0x20000c6c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+                0x20000c6c                . = ALIGN (0x4)
+ *(.ramcode)
+ .ramcode       0x20000c6c       0x20 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+                0x20000c6c                reset_cpu
+ .ramcode       0x20000c8c       0x2c cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+                0x20000c8c                envm_write_and_reset
+ .ramcode       0x20000cb8      0x1a4 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+                0x20000cb8                envm_write_page_part
+                0x20000d2c                envm_write
+ *fill*         0x20000e5c        0x4 00
+ .ramcode.stub  0x20000e60       0x10 linker stubs
+                0x20000e70                _data_end = .
+
+.u_boot_cmd     0x00018ef0      0x26c
+                0x00018ef0                . = ALIGN (0x4)
+                0x00018ef0                __u_boot_cmd_start = .
+ *(.u_boot_cmd)
+ .u_boot_cmd    0x00018ef0       0x14 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+                0x00018ef0                __u_boot_cmd_cptf
+ .u_boot_cmd    0x00018f04       0x14 common/libcommon.a(cmd_bdinfo.o)
+                0x00018f04                __u_boot_cmd_bdinfo
+ .u_boot_cmd    0x00018f18       0x28 common/libcommon.a(cmd_boot.o)
+                0x00018f18                __u_boot_cmd_go
+                0x00018f2c                __u_boot_cmd_reset
+ .u_boot_cmd    0x00018f40       0x14 common/libcommon.a(cmd_bootm.o)
+                0x00018f40                __u_boot_cmd_bootm
+ .u_boot_cmd    0x00018f54       0x28 common/libcommon.a(cmd_help.o)
+                0x00018f54                __u_boot_cmd_help
+                0x00018f68                __u_boot_cmd_question_mark
+ .u_boot_cmd    0x00018f7c       0x14 common/libcommon.a(cmd_isp.o)
+                0x00018f7c                __u_boot_cmd_isp
+ .u_boot_cmd    0x00018f90       0x3c common/libcommon.a(cmd_load.o)
+                0x00018f90                __u_boot_cmd_loads
+                0x00018fa4                __u_boot_cmd_loadb
+                0x00018fb8                __u_boot_cmd_loady
+ .u_boot_cmd    0x00018fcc       0xc8 common/libcommon.a(cmd_mem.o)
+                0x00018fcc                __u_boot_cmd_md
+                0x00018fe0                __u_boot_cmd_mm
+                0x00018ff4                __u_boot_cmd_nm
+                0x00019008                __u_boot_cmd_mw
+                0x0001901c                __u_boot_cmd_cp
+                0x00019030                __u_boot_cmd_cmp
+                0x00019044                __u_boot_cmd_crc32
+                0x00019058                __u_boot_cmd_base
+                0x0001906c                __u_boot_cmd_loop
+                0x00019080                __u_boot_cmd_mtest
+ .u_boot_cmd    0x00019094       0x50 common/libcommon.a(cmd_net.o)
+                0x00019094                __u_boot_cmd_bootp
+                0x000190a8                __u_boot_cmd_tftpboot
+                0x000190bc                __u_boot_cmd_rarpboot
+                0x000190d0                __u_boot_cmd_dhcp
+ .u_boot_cmd    0x000190e4       0x50 common/libcommon.a(cmd_nvedit.o)
+                0x000190e4                __u_boot_cmd_saveenv
+                0x000190f8                __u_boot_cmd_printenv
+                0x0001910c                __u_boot_cmd_setenv
+                0x00019120                __u_boot_cmd_run
+ .u_boot_cmd    0x00019134       0x14 common/libcommon.a(cmd_sf.o)
+                0x00019134                __u_boot_cmd_sf
+ .u_boot_cmd    0x00019148       0x14 common/libcommon.a(cmd_version.o)
+                0x00019148                __u_boot_cmd_version
+                0x0001915c                __u_boot_cmd_end = .
+
+.bss            0x20000e70     0x3cec
+                0x20000e70                _bss_start = .
+ *(.bss)
+ .bss           0x20000e70        0x4 cpu/arm_cortexm3/start.o
+                0x20000e70                _armboot_start
+ .bss           0x20000e74        0x4 lib_generic/libgeneric.a(string.o)
+                0x20000e74                ___strtok
+ .bss           0x20000e78        0x0 cpu/arm_cortexm3/libarm_cortexm3.a(cpu.o)
+ .bss           0x20000e78        0x0 cpu/arm_cortexm3/libarm_cortexm3.a(cmd_cptf.o)
+ .bss           0x20000e78       0x10 cpu/arm_cortexm3/libarm_cortexm3.a(timer.o)
+ .bss           0x20000e88       0x18 cpu/arm_cortexm3/m2s/libm2s.a(clock.o)
+ .bss           0x20000ea0        0x0 cpu/arm_cortexm3/m2s/libm2s.a(envm.o)
+ .bss           0x20000ea0        0x0 cpu/arm_cortexm3/m2s/libm2s.a(soc.o)
+ .bss           0x20000ea0        0x4 lib_arm/libarm.a(board.o)
+                0x20000ea0                monitor_flash_len
+ .bss           0x20000ea4        0x0 lib_arm/libarm.a(interrupts.o)
+ .bss           0x20000ea4       0x14 net/libnet.a(eth.o)
+ .bss           0x20000eb8     0x19d0 net/libnet.a(net.o)
+                0x20000eb8                NetState
+                0x20000ec0                NetOurEther
+                0x20000ec8                NetRxPacket
+                0x20000ecc                NetRxPacketLen
+                0x20000ed0                NetOurIP
+                0x20000ed4                NetArpWaitPacketIP
+                0x20000ed8                NetArpWaitPacketMAC
+                0x20000edc                NetArpWaitReplyIP
+                0x20000ee0                NetArpWaitTxPacket
+                0x20000ee4                NetArpWaitTxPacketSize
+                0x20000ee8                NetServerIP
+                0x20000eec                NetServerEther
+                0x20000ef4                NetTxPacket
+                0x20000ef8                NetOurSubnetMask
+                0x20000efc                NetOurGatewayIP
+                0x20000f14                NetRestartWrap
+                0x20000f1c                NetArpWaitTimerStart
+                0x20000f20                NetArpWaitTry
+                0x20000f24                NetIPID
+                0x20000f28                NetEtherNullAddr
+                0x20000f30                PktBuf
+                0x20002150                NetRxPackets
+                0x20002158                NetArpWaitPacketBuf
+                0x2000277c                NetBootFileXferSize
+                0x20002780                NetOurDNSIP
+                0x20002784                NetOurNISDomain
+                0x200027a4                NetOurHostName
+                0x200027c4                NetOurRootPath
+                0x20002804                NetBootFileSize
+                0x20002808                BootFile
+ .bss           0x20002888        0x4 net/libnet.a(rarp.o)
+                0x20002888                RarpTry
+ .bss           0x2000288c       0xb4 net/libnet.a(tftp.o)
+ .bss           0x20002940       0x14 net/libnet.a(bootp.o)
+                0x20002940                dhcp_state
+                0x20002944                BootpTry
+                0x20002948                BootpID
+                0x2000294c                dhcp_leasetime
+                0x20002950                NetDHCPServerIP
+ .bss           0x20002954        0x0 drivers/serial/libserial.a(serial.o)
+ .bss           0x20002954        0x0 drivers/serial/libserial.a(ns16550.o)
+ .bss           0x20002954        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .bss           0x20002954        0x0 common/libcommon.a(cmd_boot.o)
+ .bss           0x20002954       0x8c common/libcommon.a(cmd_bootm.o)
+ .bss           0x200029e0        0x0 common/libcommon.a(cmd_help.o)
+ .bss           0x200029e0      0x458 common/libcommon.a(cmd_isp.o)
+ .bss           0x20002e38       0x60 common/libcommon.a(cmd_load.o)
+                0x20002e48                os_data_init
+                0x20002e58                os_data_char
+                0x20002e5c                his_quote
+                0x20002e60                his_pad_count
+                0x20002e64                his_pad_char
+                0x20002e65                his_eol
+                0x20002e68                send_ptr
+                0x20002e6c                send_parms
+ .bss           0x20002e98       0x14 common/libcommon.a(cmd_mem.o)
+                0x20002e9c                mm_last_addr
+                0x20002ea0                mm_last_size
+                0x20002ea4                dp_last_addr
+                0x20002ea8                dp_last_size
+ .bss           0x20002eac        0x0 common/libcommon.a(cmd_net.o)
+ .bss           0x20002eac        0x0 common/libcommon.a(cmd_nvedit.o)
+ .bss           0x20002eac        0x4 common/libcommon.a(cmd_sf.o)
+ .bss           0x20002eb0        0x0 common/libcommon.a(cmd_version.o)
+ .bss           0x20002eb0        0x0 common/libcommon.a(command.o)
+ .bss           0x20002eb0        0x8 common/libcommon.a(console.o)
+ .bss           0x20002eb8       0x44 common/libcommon.a(dlmalloc.o)
+                0x20002eb8                mem_malloc_brk
+                0x20002ebc                mem_malloc_start
+                0x20002ec0                mem_malloc_end
+ .bss           0x20002efc        0x0 common/libcommon.a(env_common.o)
+ .bss           0x20002efc        0x8 common/libcommon.a(env_sf.o)
+                0x20002f00                env_ptr
+ .bss           0x20002f04        0x0 common/libcommon.a(exports.o)
+ .bss           0x20002f04        0x0 common/libcommon.a(image.o)
+ .bss           0x20002f04      0x200 common/libcommon.a(main.o)
+                0x20002f04                console_buffer
+ .bss           0x20003104        0xc common/libcommon.a(miiphyutil.o)
+ .bss           0x20003110        0x0 common/libcommon.a(s_record.o)
+ .bss           0x20003110       0x48 common/libcommon.a(stdio.o)
+                0x2000314c                stdio_devices
+ .bss           0x20003158      0xc40 common/libcommon.a(xyzModem.o)
+ .bss           0x20003d98        0x0 board/UiB/rcu-2.0/librcu-2.0.a(board.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(crc16.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(crc32.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(display_options.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(gunzip.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(net_utils.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(time.o)
+ .bss           0x20003d98        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .bss           0x20003d98        0x4 lib_generic/libgeneric.a(zlib.o)
+                0x20003d98                z_verbose
+ .bss           0x20003d9c        0x0 lib_generic/libgeneric.a(ctype.o)
+ .bss           0x20003d9c        0x0 lib_generic/libgeneric.a(div64.o)
+ .bss           0x20003d9c        0x0 cpu/arm_cortexm3/m2s/libm2s.a(cpu.o)
+ .bss           0x20003d9c        0x4 lib_arm/libarm.a(bootm.o)
+ .bss           0x20003da0        0x0 lib_arm/libarm.a(cache.o)
+ .bss           0x20003da0        0x0 lib_arm/libarm.a(reset.o)
+ .bss           0x20003da0        0x0 drivers/mtd/spi/libspi_flash.a(spi_flash.o)
+ .bss           0x20003da0        0x0 drivers/mtd/spi/libspi_flash.a(spansion.o)
+ .bss           0x20003da0      0xc2c drivers/net/libnet.a(m2s_eth.o)
+ .bss           0x200049cc      0x190 drivers/spi/libspi.a(m2s_spi.o)
+ .bss           0x20004b5c        0x0 lib_generic/libgeneric.a(strmhz.o)
+ .bss           0x20004b5c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x20004b5c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+ .bss           0x20004b5c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+ .bss           0x20004b5c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .bss           0x20004b5c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .bss           0x20004b5c        0x0 /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+ *(COMMON)
+                0x20004b5c                _bss_end = .
+
+.stack
+ *(.stack)
+
+/DISCARD/
+ *(*)
+                0x00000000                _mem_nvm_base = 0x0
+                0x00040000                _mem_nvm_size = 0x40000
+                0x20000000                _mem_ram_base = 0x20000000
+                0x00008000                _mem_ram_size = 0x8000
+                0x20008000                _mem_ram_buf_base = 0x20008000
+                0x00004000                _mem_ram_buf_size = 0x4000
+                0x2000c000                _mem_malloc_base = 0x2000c000
+                0x00003000                _mem_malloc_size = 0x3000
+                0x2000f000                _mem_stack_base = 0x2000f000
+                0x00001000                _mem_stack_size = 0x1000
+                0x20010000                _mem_stack_end = 0x20010000
+LOAD cpu/arm_cortexm3/start.o
+START GROUP
+LOAD lib_generic/libgeneric.a
+LOAD lib_generic/lzma/liblzma.a
+LOAD lib_generic/lzo/liblzo.a
+LOAD cpu/arm_cortexm3/libarm_cortexm3.a
+LOAD cpu/arm_cortexm3/m2s/libm2s.a
+LOAD lib_arm/libarm.a
+LOAD fs/cramfs/libcramfs.a
+LOAD fs/fat/libfat.a
+LOAD fs/fdos/libfdos.a
+LOAD fs/jffs2/libjffs2.a
+LOAD fs/reiserfs/libreiserfs.a
+LOAD fs/ext2/libext2fs.a
+LOAD fs/yaffs2/libyaffs2.a
+LOAD fs/ubifs/libubifs.a
+LOAD net/libnet.a
+LOAD disk/libdisk.a
+LOAD drivers/bios_emulator/libatibiosemu.a
+LOAD drivers/block/libblock.a
+LOAD drivers/dma/libdma.a
+LOAD drivers/fpga/libfpga.a
+LOAD drivers/gpio/libgpio.a
+LOAD drivers/hwmon/libhwmon.a
+LOAD drivers/i2c/libi2c.a
+LOAD drivers/input/libinput.a
+LOAD drivers/misc/libmisc.a
+LOAD drivers/mmc/libmmc.a
+LOAD drivers/mtd/libmtd.a
+LOAD drivers/mtd/nand/libnand.a
+LOAD drivers/mtd/onenand/libonenand.a
+LOAD drivers/mtd/ubi/libubi.a
+LOAD drivers/mtd/spi/libspi_flash.a
+LOAD drivers/net/libnet.a
+LOAD drivers/net/phy/libphy.a
+LOAD drivers/pci/libpci.a
+LOAD drivers/pcmcia/libpcmcia.a
+LOAD drivers/power/libpower.a
+LOAD drivers/spi/libspi.a
+LOAD drivers/rtc/librtc.a
+LOAD drivers/serial/libserial.a
+LOAD drivers/twserial/libtws.a
+LOAD drivers/usb/gadget/libusb_gadget.a
+LOAD drivers/usb/host/libusb_host.a
+LOAD drivers/usb/musb/libusb_musb.a
+LOAD drivers/usb/phy/libusb_phy.a
+LOAD drivers/video/libvideo.a
+LOAD drivers/watchdog/libwatchdog.a
+LOAD common/libcommon.a
+LOAD libfdt/libfdt.a
+LOAD api/libapi.a
+LOAD post/libpost.a
+LOAD board/UiB/rcu-2.0/librcu-2.0.a
+END GROUP
+LOAD /mnt/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/thumb2/libgcc.a
+OUTPUT(u-boot elf32-littlearm)

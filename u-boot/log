@@ -1,0 +1,766 @@
+for dir in tools examples/standalone examples/api cpu/arm_cortexm3 /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3/ ; do \
+			make -C $dir _depend ; done
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/tools'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/tools'
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/standalone'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/standalone'
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/api'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/api'
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make[1]: Nothing to be done for `_depend'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make -C tools all
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/tools'
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/tools'
+make -C examples/standalone all
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/standalone'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/standalone'
+make -C examples/api all
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/api'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/examples/api'
+make -C cpu/arm_cortexm3 start.o
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make[1]: `start.o' is up to date.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make -C lib_generic/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_generic'
+make[1]: `libgeneric.a' is up to date.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_generic'
+make -C lib_generic/lzma/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_generic/lzma'
+arm-uclinuxeabi-ar crv liblzma.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_generic/lzma'
+make -C lib_generic/lzo/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_generic/lzo'
+arm-uclinuxeabi-ar crv liblzo.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_generic/lzo'
+make -C cpu/arm_cortexm3/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3'
+make -C cpu/arm_cortexm3/m2s/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3/m2s'
+make[1]: `libm2s.a' is up to date.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3/m2s'
+make -C lib_arm/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_arm'
+arm-uclinuxeabi-gcc  -g  -Os   -g2 -mthumb -mcpu=cortex-m3 -fsigned-char -O2 -fno-builtin-puts -fno-common -ffixed-r8 -D__KERNEL__ -I/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include -fno-builtin -ffreestanding -isystem /rcu2/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -DCONFIG_MEM_NVM_BASE="0x00000000" -DCONFIG_MEM_NVM_LEN="(256 * 1024)" -DCONFIG_MEM_NVM_UBOOT_OFF="0x0" -DCONFIG_MEM_RAM_BASE="0x20000000" -DCONFIG_MEM_RAM_LEN="(32 * 1024)" -DCONFIG_MEM_RAM_BUF_LEN="(16 * 1024)" -DCONFIG_MEM_MALLOC_LEN="(12 * 1024)" -DCONFIG_MEM_STACK_LEN="(4 * 1024)" -I/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3 -Wall -Wstrict-prototypes -fno-stack-protector   -o board.o board.c -c
+arm-uclinuxeabi-ar crv libarm.a board.o bootm.o cache.o cache-cp15.o interrupts.o reset.o
+r - board.o
+r - bootm.o
+r - cache.o
+r - cache-cp15.o
+r - interrupts.o
+r - reset.o
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/lib_arm'
+make -C fs/cramfs/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/cramfs'
+arm-uclinuxeabi-ar crv libcramfs.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/cramfs'
+make -C fs/fat/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/fat'
+arm-uclinuxeabi-ar crv libfat.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/fat'
+make -C fs/fdos/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/fdos'
+arm-uclinuxeabi-ar crv libfdos.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/fdos'
+make -C fs/jffs2/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/jffs2'
+arm-uclinuxeabi-ar crv libjffs2.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/jffs2'
+make -C fs/reiserfs/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/reiserfs'
+arm-uclinuxeabi-ar crv libreiserfs.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/reiserfs'
+make -C fs/ext2/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/ext2'
+arm-uclinuxeabi-ar crv libext2fs.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/ext2'
+make -C fs/yaffs2/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/yaffs2'
+arm-uclinuxeabi-ar crv libyaffs2.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/yaffs2'
+make -C fs/ubifs/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/ubifs'
+arm-uclinuxeabi-ar crv libubifs.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/fs/ubifs'
+make -C net/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/net'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/net'
+make -C disk/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/disk'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/disk'
+make -C drivers/bios_emulator/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/bios_emulator'
+arm-uclinuxeabi-ar crv libatibiosemu.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/bios_emulator'
+make -C drivers/block/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/block'
+arm-uclinuxeabi-ar crv libblock.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/block'
+make -C drivers/dma/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/dma'
+arm-uclinuxeabi-ar crv libdma.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/dma'
+make -C drivers/fpga/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/fpga'
+arm-uclinuxeabi-ar crv libfpga.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/fpga'
+make -C drivers/gpio/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/gpio'
+arm-uclinuxeabi-ar crv libgpio.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/gpio'
+make -C drivers/hwmon/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/hwmon'
+arm-uclinuxeabi-ar crv libhwmon.a 
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/hwmon'
+make -C drivers/i2c/
+make[1]: Entering directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/i2c'
+arm-uclinuxeabi-gcc  -g  -Os   -g2 -mthumb -mcpu=cortex-m3 -fsigned-char -O2 -fno-builtin-puts -fno-common -ffixed-r8 -D__KERNEL__ -I/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include -fno-builtin -ffreestanding -isystem /rcu2/GIT-ALICE-RCU2/RCU2/software/linux-cortexm-1.12.0/tools/arm-2010q1/bin/../lib/gcc/arm-uclinuxeabi/4.4.1/include -pipe  -DCONFIG_ARM -D__ARM__ -DCONFIG_MEM_NVM_BASE="0x00000000" -DCONFIG_MEM_NVM_LEN="(256 * 1024)" -DCONFIG_MEM_NVM_UBOOT_OFF="0x0" -DCONFIG_MEM_RAM_BASE="0x20000000" -DCONFIG_MEM_RAM_LEN="(32 * 1024)" -DCONFIG_MEM_RAM_BUF_LEN="(16 * 1024)" -DCONFIG_MEM_MALLOC_LEN="(12 * 1024)" -DCONFIG_MEM_STACK_LEN="(4 * 1024)" -I/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/cpu/arm_cortexm3 -Wall -Wstrict-prototypes -fno-stack-protector   -o mss_i2c.o mss_i2c.c -c
+In file included from mss_i2c.c:10:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:420: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:420: error: expected declaration specifiers or '...' before 'u16'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:432: error: expected specifier-qualifier-list before 'u32'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:461: error: expected specifier-qualifier-list before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:601: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:689: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:690: warning: type defaults to 'int' in declaration of 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:690: error: expected ';', ',' or ')' before '*' token
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:770: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:771: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:772: error: expected declaration specifiers or '...' before 'u16'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:773: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:859: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:860: warning: type defaults to 'int' in declaration of 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:860: error: expected ';', ',' or ')' before '*' token
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:979: error: expected declaration specifiers or '...' before 'u32'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1037: error: expected declaration specifiers or '...' before 'u32'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1098: warning: type defaults to 'int' in declaration of 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1098: error: expected ';', ',' or ')' before '*' token
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1155: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1156: error: expected declaration specifiers or '...' before 'u16'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1222: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1437: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1500: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1560: error: expected declaration specifiers or '...' before 'u8'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1885: error: expected specifier-qualifier-list before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1916: error: expected specifier-qualifier-list before 'uint32_t'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:114,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch-cortexm3/hardware.h:34: error: expected specifier-qualifier-list before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch-cortexm3/hardware.h:54: error: expected specifier-qualifier-list before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch-cortexm3/hardware.h:94: error: expected specifier-qualifier-list before 'uint32_t'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:120,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch-m2s/m2s.h:188: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'clock_get'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/part.h:26,
+                 from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:135,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/ide.h:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'lbaint_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/ide.h:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ide_read'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/ide.h:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ide_write'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:135,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/part.h:39: error: expected specifier-qualifier-list before 'lbaint_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/part.h:88: error: expected specifier-qualifier-list before 'ulong'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:47,
+                 from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:137,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/lmb.h:40: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/lmb.h:41: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/lmb.h:43: error: expected declaration specifiers or '...' before 'ulong'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:48,
+                 from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:137,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot.h:43: error: expected specifier-qualifier-list before 'ulong'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:137,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:178: error: expected specifier-qualifier-list before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:193: error: expected specifier-qualifier-list before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:211: error: expected specifier-qualifier-list before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:312: error: expected ')' before 'os'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:313: error: expected ')' before 'arch'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:314: error: expected ')' before 'type'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:315: error: expected ')' before 'comp'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:320: error: expected ')' before 'size'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:330: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'genimg_get_image'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:333: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:333: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:333: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:356: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_header_size'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:366: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_magic'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:367: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_hcrc'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:368: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_time'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:369: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_size'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:370: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_load'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:371: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_ep'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:372: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_dcrc'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:379: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_os'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:380: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_arch'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:381: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_type'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:382: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_comp'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_get_name':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:386: error: 'image_header_t' has no member named 'ih_name'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:389: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_data_size'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:405: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_data'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:410: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_image_size'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:414: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_get_image_end'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:424: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_magic':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:424: error: 'image_header_t' has no member named 'ih_magic'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:424: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:424: error: (Each undeclared identifier is reported only once
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:424: error: for each function it appears in.)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:425: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_hcrc':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:425: error: 'image_header_t' has no member named 'ih_hcrc'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:425: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:426: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_time':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:426: error: 'image_header_t' has no member named 'ih_time'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:426: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:427: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_size':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:427: error: 'image_header_t' has no member named 'ih_size'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:427: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:428: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_load':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:428: error: 'image_header_t' has no member named 'ih_load'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:428: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:429: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_ep':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:429: error: 'image_header_t' has no member named 'ih_ep'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:429: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:430: error: expected declaration specifiers or '...' before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_dcrc':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:430: error: 'image_header_t' has no member named 'ih_dcrc'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:430: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:437: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_os':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:437: error: 'image_header_t' has no member named 'ih_os'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:437: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:438: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_arch':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:438: error: 'image_header_t' has no member named 'ih_arch'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:438: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:439: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_type':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:439: error: 'image_header_t' has no member named 'ih_type'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:439: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:440: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_set_comp':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:440: error: 'image_header_t' has no member named 'ih_comp'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:440: error: 'val' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:451: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getenv_bootm_low'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:453: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_check_magic':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:458: warning: implicit declaration of function 'image_get_magic'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:460: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_check_type':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:462: warning: implicit declaration of function 'image_get_type'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:462: error: 'type' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:464: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_check_arch':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:466: warning: implicit declaration of function 'image_get_arch'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:466: error: 'arch' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:468: error: expected declaration specifiers or '...' before 'uint8_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_check_os':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:470: warning: implicit declaration of function 'image_get_os'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:470: error: 'os' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:473: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'image_multi_count'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:474: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:475: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:475: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h: In function 'image_check_target_arch':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/image.h:483: error: too many arguments to function 'image_check_arch'
+In file included from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:243: error: expected ')' before 'addr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:255: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:256: error: expected declaration specifiers or '...' before 'ulong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:261: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'monitor_flash_len'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:268: error: expected ')' before 'addr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:270: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'load_addr'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:293,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot-arm.h:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before '_armboot_start'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot-arm.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before '_bss_start'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot-arm.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before '_bss_end'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot-arm.h:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IRQ_STACK_START'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot-arm.h:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'FIQ_STACK_START'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/u-boot-arm.h:64: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_timer_masked'
+In file included from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:418: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_pir'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:422: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_pvr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:423: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_svr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:424: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'rd_ic_cst'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:425: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:426: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:427: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'rd_dc_cst'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:428: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:429: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:436: error: expected ')' before 'gd_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:437: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_endaddr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:438: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:481: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_tbclk'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:501: error: expected ')' before 'addr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:572: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_bus_freq'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:618: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'get_timer'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:619: error: expected ')' before 't'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:625: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'dpram_base'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:626: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'dpram_base_align'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:627: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'dpram_alloc'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:628: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'dpram_alloc_align'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:629: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:630: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'post_word_load'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:631: warning: parameter names (without types) in function declaration
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:632: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'bootcount_load'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:639: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'lcd_setmem'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:642: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'vfd_setmem'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:645: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'video_setmem'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:659: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'usec2ticks'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:660: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ticks2usec'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:669,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:72: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'IPaddr_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:153: error: expected specifier-qualifier-list before 'ushort'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:172: error: expected specifier-qualifier-list before 'ushort'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:193: error: expected specifier-qualifier-list before 'ushort'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:222: error: expected specifier-qualifier-list before 'ushort'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:264: error: expected specifier-qualifier-list before 'ushort'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:316: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetOurGatewayIP'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:317: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetOurSubnetMask'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:318: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetOurDNSIP'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:325: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetBootFileSize'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:327: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetBootFileXferSize'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:330: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetOurIP'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:331: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetServerIP'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:342: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetOurVLAN'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:343: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetOurNativeVLAN'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:346: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'CDPNativeVLAN'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:347: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'CDPApplianceVLAN'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:397: error: expected declaration specifiers or '...' before 'uint'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:400: error: expected declaration specifiers or '...' before 'IPaddr_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:404: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetCksum'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:408: error: expected ')' before 'thand_f'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:414: error: expected declaration specifiers or '...' before 'IPaddr_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:427: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetReadIP'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:435: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NetReadLong'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:443: error: expected declaration specifiers or '...' before 'IPaddr_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h: In function 'NetWriteIP':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:445: error: 'ip' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h: In function 'NetCopyIP':
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:451: error: 'IPaddr_t' undeclared (first use in this function)
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h: At top level:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:455: error: expected ')' before '*' token
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:500: error: expected ')' before 'x'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:503: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'string_to_ip'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:506: error: expected ')' before 'x'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:509: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'string_to_VLAN'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/net.h:512: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getenv_VLAN'
+In file included from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:670: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'getenv_IPaddr'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:679: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'simple_strtoul'
+In file included from /rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/common.h:692,
+                 from mss_i2c.c:13:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/u-boot/crc.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'crc32'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/u-boot/crc.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'crc32_wd'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/u-boot/crc.h:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'crc32_no_comp'
+In file included from mss_i2c.c:15:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/malloc.h:943: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'mem_malloc_start'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/malloc.h:944: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'mem_malloc_end'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/malloc.h:945: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'mem_malloc_brk'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/malloc.h:947: error: expected ')' before 'start'
+In file included from mss_i2c.c:17:
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch/comblk.h:14: error: expected specifier-qualifier-list before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch/comblk.h:29: error: expected specifier-qualifier-list before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch/comblk.h:47: error: expected specifier-qualifier-list before 'uint32_t'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/asm/arch/comblk.h:52: error: expected specifier-qualifier-list before 'uint32_t'
+mss_i2c.c:110: error: conflicting types for 'MSS_I2C_init'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:598: note: previous declaration of 'MSS_I2C_init' was here
+mss_i2c.c: In function 'MSS_I2C_init':
+mss_i2c.c:133: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:134: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:135: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:135: warning: implicit declaration of function 'BITBAND_ADDRESS'
+mss_i2c.c:141: error: 'volatile struct NVIC_TypeDef' has no member named 'ICPR'
+mss_i2c.c:143: error: 'volatile struct m2s_sysreg' has no member named 'Gsoft_reset_cr'
+mss_i2c.c:145: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:146: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:147: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:153: error: 'volatile struct NVIC_TypeDef' has no member named 'ICPR'
+mss_i2c.c:159: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:159: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:162: error: 'mss_i2c_instance_t' has no member named 'ser_address'
+mss_i2c.c:162: error: 'uint_fast8_t' undeclared (first use in this function)
+mss_i2c.c:162: error: expected ';' before 'ser_address'
+mss_i2c.c:164: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:165: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:166: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:167: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:167: error: 'mss_i2c_instance_t' has no member named 'ser_address'
+mss_i2c.c:168: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:117: warning: unused variable 'primask'
+mss_i2c.c: In function 'MSS_I2C_write':
+mss_i2c.c:193: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:195: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:199: error: 'mss_i2c_instance_t' has no member named 'pending_transaction'
+mss_i2c.c:202: error: 'mss_i2c_instance_t' has no member named 'target_addr'
+mss_i2c.c:202: error: 'uint_fast8_t' undeclared (first use in this function)
+mss_i2c.c:202: error: expected ';' before 'serial_addr'
+mss_i2c.c:204: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:206: error: 'mss_i2c_instance_t' has no member named 'master_tx_buffer'
+mss_i2c.c:207: error: 'mss_i2c_instance_t' has no member named 'master_tx_size'
+mss_i2c.c:208: error: 'mss_i2c_instance_t' has no member named 'master_tx_idx'
+mss_i2c.c:211: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:212: error: 'mss_i2c_instance_t' has no member named 'options'
+mss_i2c.c:214: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:215: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:217: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:225: error: 'mss_i2c_instance_t' has no member named 'bus_status'
+mss_i2c.c:226: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:227: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:230: error: 'volatile struct NVIC_TypeDef' has no member named 'ICPR'
+mss_i2c.c:230: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:230: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:235: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c:235: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:235: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:185: warning: unused variable 'primask'
+mss_i2c.c: At top level:
+mss_i2c.c:244: error: conflicting types for 'MSS_I2C_read'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:767: note: previous declaration of 'MSS_I2C_read' was here
+mss_i2c.c: In function 'MSS_I2C_read':
+mss_i2c.c:261: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:262: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:266: error: 'mss_i2c_instance_t' has no member named 'pending_transaction'
+mss_i2c.c:269: error: 'mss_i2c_instance_t' has no member named 'target_addr'
+mss_i2c.c:271: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:273: error: 'mss_i2c_instance_t' has no member named 'master_rx_buffer'
+mss_i2c.c:274: error: 'mss_i2c_instance_t' has no member named 'master_rx_size'
+mss_i2c.c:275: error: 'mss_i2c_instance_t' has no member named 'master_rx_idx'
+mss_i2c.c:278: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:279: error: 'mss_i2c_instance_t' has no member named 'options'
+mss_i2c.c:281: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:282: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:284: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:292: error: 'mss_i2c_instance_t' has no member named 'bus_status'
+mss_i2c.c:293: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:294: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:297: error: 'volatile struct NVIC_TypeDef' has no member named 'ICPR'
+mss_i2c.c:297: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:297: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:302: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c:302: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:302: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:253: warning: unused variable 'primask'
+mss_i2c.c: In function 'MSS_I2C_write_read':
+mss_i2c.c:334: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:335: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:339: error: 'mss_i2c_instance_t' has no member named 'pending_transaction'
+mss_i2c.c:342: error: 'mss_i2c_instance_t' has no member named 'target_addr'
+mss_i2c.c:342: error: 'uint_fast8_t' undeclared (first use in this function)
+mss_i2c.c:342: error: expected ';' before 'serial_addr'
+mss_i2c.c:344: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:345: error: 'mss_i2c_instance_t' has no member named 'master_tx_buffer'
+mss_i2c.c:346: error: 'mss_i2c_instance_t' has no member named 'master_tx_size'
+mss_i2c.c:347: error: 'mss_i2c_instance_t' has no member named 'master_tx_idx'
+mss_i2c.c:349: error: 'mss_i2c_instance_t' has no member named 'master_rx_buffer'
+mss_i2c.c:350: error: 'mss_i2c_instance_t' has no member named 'master_rx_size'
+mss_i2c.c:351: error: 'mss_i2c_instance_t' has no member named 'master_rx_idx'
+mss_i2c.c:354: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:355: error: 'mss_i2c_instance_t' has no member named 'options'
+mss_i2c.c:357: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:358: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:360: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:368: error: 'mss_i2c_instance_t' has no member named 'bus_status'
+mss_i2c.c:369: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:370: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:373: error: 'volatile struct NVIC_TypeDef' has no member named 'ICPR'
+mss_i2c.c:373: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:373: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:378: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c:378: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:378: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:328: warning: unused variable 'primask'
+mss_i2c.c: In function 'MSS_I2C_get_status':
+mss_i2c.c:396: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c: At top level:
+mss_i2c.c:404: error: conflicting types for 'MSS_I2C_wait_complete'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:976: note: previous declaration of 'MSS_I2C_wait_complete' was here
+mss_i2c.c: In function 'MSS_I2C_wait_complete':
+mss_i2c.c:414: error: 'mss_i2c_instance_t' has no member named 'master_timeout_ms'
+mss_i2c.c:418: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c: At top level:
+mss_i2c.c:428: error: conflicting types for 'MSS_I2C_system_tick'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1034: note: previous declaration of 'MSS_I2C_system_tick' was here
+mss_i2c.c: In function 'MSS_I2C_system_tick':
+mss_i2c.c:434: error: 'mss_i2c_instance_t' has no member named 'master_timeout_ms'
+mss_i2c.c:435: error: 'mss_i2c_instance_t' has no member named 'master_timeout_ms'
+mss_i2c.c:436: error: 'mss_i2c_instance_t' has no member named 'master_timeout_ms'
+mss_i2c.c:441: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:442: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:443: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:449: error: 'mss_i2c_instance_t' has no member named 'master_timeout_ms'
+mss_i2c.c: In function 'MSS_I2C_set_slave_tx_buffer':
+mss_i2c.c:471: error: 'mss_i2c_instance_t' has no member named 'slave_tx_buffer'
+mss_i2c.c:472: error: 'mss_i2c_instance_t' has no member named 'slave_tx_size'
+mss_i2c.c:473: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:465: warning: unused variable 'primask'
+mss_i2c.c: At top level:
+mss_i2c.c:482: error: conflicting types for 'MSS_I2C_set_slave_rx_buffer'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1152: note: previous declaration of 'MSS_I2C_set_slave_rx_buffer' was here
+mss_i2c.c: In function 'MSS_I2C_set_slave_rx_buffer':
+mss_i2c.c:495: error: 'mss_i2c_instance_t' has no member named 'slave_rx_buffer'
+mss_i2c.c:496: error: 'mss_i2c_instance_t' has no member named 'slave_rx_size'
+mss_i2c.c:497: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:489: warning: unused variable 'primask'
+mss_i2c.c: At top level:
+mss_i2c.c:506: error: conflicting types for 'MSS_I2C_set_slave_mem_offset_length'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1219: note: previous declaration of 'MSS_I2C_set_slave_mem_offset_length' was here
+mss_i2c.c: In function 'MSS_I2C_set_slave_mem_offset_length':
+mss_i2c.c:516: error: 'mss_i2c_instance_t' has no member named 'slave_mem_offset_length'
+mss_i2c.c:518: error: 'mss_i2c_instance_t' has no member named 'slave_mem_offset_length'
+mss_i2c.c: In function 'MSS_I2C_register_write_handler':
+mss_i2c.c:534: error: 'mss_i2c_instance_t' has no member named 'slave_write_handler'
+mss_i2c.c: In function 'MSS_I2C_enable_slave':
+mss_i2c.c:553: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:556: error: 'mss_i2c_instance_t' has no member named 'is_slave_enabled'
+mss_i2c.c:562: error: expected expression before '/' token
+mss_i2c.c:546: warning: unused variable 'primask'
+mss_i2c.c: In function 'MSS_I2C_disable_slave':
+mss_i2c.c:582: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:585: error: 'mss_i2c_instance_t' has no member named 'is_slave_enabled'
+mss_i2c.c:575: warning: unused variable 'primask'
+mss_i2c.c: In function 'enable_slave_if_required':
+mss_i2c.c:598: error: 'mss_i2c_instance_t' has no member named 'is_slave_enabled'
+mss_i2c.c:599: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c: In function 'mss_i2c_isr':
+mss_i2c.c:623: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:631: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:632: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:632: error: 'mss_i2c_instance_t' has no member named 'target_addr'
+mss_i2c.c:633: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:633: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:634: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:635: error: 'mss_i2c_instance_t' has no member named 'master_tx_idx'
+mss_i2c.c:636: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:637: error: 'mss_i2c_instance_t' has no member named 'master_rx_idx'
+mss_i2c.c:645: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:646: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:653: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:653: error: 'mss_i2c_instance_t' has no member named 'pending_transaction'
+mss_i2c.c:654: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:654: error: 'mss_i2c_instance_t' has no member named 'pending_transaction'
+mss_i2c.c:660: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:666: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:667: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:668: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:675: error: 'mss_i2c_instance_t' has no member named 'master_tx_idx'
+mss_i2c.c:675: error: 'mss_i2c_instance_t' has no member named 'master_tx_size'
+mss_i2c.c:676: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:676: error: 'mss_i2c_instance_t' has no member named 'master_tx_buffer'
+mss_i2c.c:676: error: 'mss_i2c_instance_t' has no member named 'master_tx_idx'
+mss_i2c.c:678: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:681: error: 'mss_i2c_instance_t' has no member named 'dir'
+mss_i2c.c:682: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:689: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:690: error: 'mss_i2c_instance_t' has no member named 'options'
+mss_i2c.c:693: error: 'mss_i2c_instance_t' has no member named 'bus_status'
+mss_i2c.c:695: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:699: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:699: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:699: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:702: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:712: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:713: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:719: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:731: error: 'mss_i2c_instance_t' has no member named 'master_rx_size'
+mss_i2c.c:732: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:733: error: 'mss_i2c_instance_t' has no member named 'master_rx_size'
+mss_i2c.c:734: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:736: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:737: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:738: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:739: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:744: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:745: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:751: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:757: error: 'mss_i2c_instance_t' has no member named 'master_rx_buffer'
+mss_i2c.c:757: error: 'mss_i2c_instance_t' has no member named 'master_rx_idx'
+mss_i2c.c:757: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:759: error: 'mss_i2c_instance_t' has no member named 'master_rx_idx'
+mss_i2c.c:759: error: 'mss_i2c_instance_t' has no member named 'master_rx_size'
+mss_i2c.c:763: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:769: error: 'mss_i2c_instance_t' has no member named 'master_rx_buffer'
+mss_i2c.c:769: error: 'mss_i2c_instance_t' has no member named 'master_rx_idx'
+mss_i2c.c:769: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:771: error: 'mss_i2c_instance_t' has no member named 'options'
+mss_i2c.c:774: error: 'mss_i2c_instance_t' has no member named 'bus_status'
+mss_i2c.c:777: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:785: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:785: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:785: error: 'mss_i2c_instance_t' has no member named 'irqn'
+mss_i2c.c:793: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:794: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:800: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:802: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:803: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:806: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:808: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:818: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:824: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:825: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:826: error: 'mss_i2c_instance_t' has no member named 'random_read_addr'
+mss_i2c.c:831: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:833: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:834: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:836: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:847: error: 'mss_i2c_instance_t' has no member named 'slave_rx_buffer'
+mss_i2c.c:848: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:848: error: 'mss_i2c_instance_t' has no member named 'slave_rx_size'
+mss_i2c.c:850: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:851: error: 'mss_i2c_instance_t' has no member named 'slave_rx_buffer'
+mss_i2c.c:851: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:860: error: 'mss_i2c_instance_t' has no member named 'random_read_addr'
+mss_i2c.c:860: error: 'mss_i2c_instance_t' has no member named 'random_read_addr'
+mss_i2c.c:866: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:866: error: 'mss_i2c_instance_t' has no member named 'slave_rx_size'
+mss_i2c.c:868: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:878: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:880: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:880: error: 'mss_i2c_instance_t' has no member named 'slave_mem_offset_length'
+mss_i2c.c:882: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:882: error: 'mss_i2c_instance_t' has no member named 'random_read_addr'
+mss_i2c.c:886: error: 'mss_i2c_instance_t' has no member named 'slave_write_handler'
+mss_i2c.c:889: error: 'mss_i2c_instance_t' has no member named 'slave_write_handler'
+mss_i2c.c:889: error: 'mss_i2c_instance_t' has no member named 'slave_rx_buffer'
+mss_i2c.c:889: error: 'mss_i2c_instance_t' has no member named 'slave_rx_idx'
+mss_i2c.c:897: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:901: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:905: error: 'mss_i2c_instance_t' has no member named 'is_slave_enabled'
+mss_i2c.c:911: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:921: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:931: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:934: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:936: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:943: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:951: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:956: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:960: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:962: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:975: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:976: error: 'mss_i2c_instance_t' has no member named 'random_read_addr'
+mss_i2c.c:978: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:983: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:985: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:986: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:989: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:989: error: 'mss_i2c_instance_t' has no member named 'slave_tx_size'
+mss_i2c.c:993: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:998: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:998: error: 'mss_i2c_instance_t' has no member named 'slave_tx_buffer'
+mss_i2c.c:998: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:1001: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:1001: error: 'mss_i2c_instance_t' has no member named 'slave_tx_size'
+mss_i2c.c:1003: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:1006: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:1015: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:1016: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:1019: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:1022: error: 'mss_i2c_instance_t' has no member named 'is_transaction_pending'
+mss_i2c.c:1024: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:1031: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:1041: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:1046: error: 'mss_i2c_instance_t' has no member named 'transaction'
+mss_i2c.c:1051: error: 'mss_i2c_instance_t' has no member named 'slave_tx_idx'
+mss_i2c.c:1055: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:1057: error: 'mss_i2c_instance_t' has no member named 'master_status'
+mss_i2c.c:1060: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:1062: error: 'mss_i2c_instance_t' has no member named 'slave_status'
+mss_i2c.c:1072: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c:1077: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c: At top level:
+mss_i2c.c:1092: error: conflicting types for 'MSS_I2C_smbus_init'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1434: note: previous declaration of 'MSS_I2C_smbus_init' was here
+mss_i2c.c: In function 'MSS_I2C_smbus_init':
+mss_i2c.c:1099: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c:1102: error: 'mss_i2c_instance_t' has no member named 'hw_reg'
+mss_i2c.c: At top level:
+mss_i2c.c:1109: error: conflicting types for 'MSS_I2C_enable_smbus_irq'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1497: note: previous declaration of 'MSS_I2C_enable_smbus_irq' was here
+mss_i2c.c: In function 'MSS_I2C_enable_smbus_irq':
+mss_i2c.c:1124: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1126: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1129: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c:1135: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1136: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1139: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c:1148: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1149: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1152: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c:1158: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1160: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1163: error: 'volatile struct NVIC_TypeDef' has no member named 'ISER'
+mss_i2c.c: At top level:
+mss_i2c.c:1173: error: conflicting types for 'MSS_I2C_disable_smbus_irq'
+/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/include/mss_i2c.h:1557: note: previous declaration of 'MSS_I2C_disable_smbus_irq' was here
+mss_i2c.c: In function 'MSS_I2C_disable_smbus_irq':
+mss_i2c.c:1187: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1189: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1195: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1197: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1197: error: 'I2C0_SMBBus_IRQn' undeclared (first use in this function)
+mss_i2c.c:1205: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1207: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1212: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c:1214: error: 'volatile struct NVIC_TypeDef' has no member named 'ICER'
+mss_i2c.c:1214: error: 'I2C1_SMBBus_IRQn' undeclared (first use in this function)
+mss_i2c.c: In function 'MSS_I2C_suspend_smbus_slave':
+mss_i2c.c:1229: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_resume_smbus_slave':
+mss_i2c.c:1242: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_reset_smbus':
+mss_i2c.c:1254: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_set_smbus_alert':
+mss_i2c.c:1267: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_clear_smbus_alert':
+mss_i2c.c:1280: error: 'mss_i2c_instance_t' has no member named 'hw_smb_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_set_gca':
+mss_i2c.c:1294: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_clear_gca':
+mss_i2c.c:1307: error: 'mss_i2c_instance_t' has no member named 'hw_reg_bit'
+mss_i2c.c: In function 'MSS_I2C_set_user_data':
+mss_i2c.c:1320: error: 'mss_i2c_instance_t' has no member named 'p_user_data'
+mss_i2c.c: In function 'MSS_I2C_get_user_data':
+mss_i2c.c:1332: error: 'mss_i2c_instance_t' has no member named 'p_user_data'
+make[1]: *** [mss_i2c.o] Error 1
+make[1]: Leaving directory `/rcu2/GIT-ALICE-RCU2/RCU2/software/rcu2_4_me/rcu2/u-boot/drivers/i2c'
+make: *** [drivers/i2c/libi2c.a] Error 2
