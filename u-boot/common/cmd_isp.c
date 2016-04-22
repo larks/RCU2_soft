@@ -28,7 +28,7 @@ void delay(uint32_t time);
 void exec_ComBlk_IRQHandler(void);
 
 /*------------------------------------------------------------------------------
- * some external functions to be used in this application 
+ * some external functions to be used in this application
  * serial console, clock frequency updates, run_command, reset
  * dram_init, dram_init_no_secded, and board_init to re-init the boards after FF is over
 */
@@ -36,7 +36,7 @@ static NS16550_t serial_ports = (NS16550_t)CONFIG_SYS_NS16550_COM1;
 extern void NS16550_init(NS16550_t com_port, int baud_divisor);
 extern void clock_update(enum clock clck, unsigned long val);
 extern int run_command (const char *cmd, int flag);
-extern int do_reset (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);		
+extern int do_reset (cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
 extern int dram_init(void);
 //extern int dram_init_no_secded(void);
 extern int board_init(void);
@@ -59,9 +59,9 @@ static void exec_comblk_send_cmd_with_ptr(u8 cmd_opcode,
 					  u32 cmd_params_ptr,
 					  u8 * p_response,
 					  u16 response_size);
-static void exec_comblk_send_paged_cmd(u8 * p_cmd, 
+static void exec_comblk_send_paged_cmd(u8 * p_cmd,
 				       u16 cmd_size,
-				       u8 * p_response, 
+				       u8 * p_response,
 				       u16 response_size);
 void exec_comblk_get_serial_number_out(u8 *p_response);
 static void exec_comblk_get_serial_number(void);
@@ -77,7 +77,7 @@ static void exec_clock_revert(void);
 
 
 /*------------------------------------------------------------------------------
- * For COMBLK transactions 
+ * For COMBLK transactions
  */
 #define SERIAL_NUMBER_REQUEST_CMD   1;
 #define DESIGN_VERSION_REQUEST_CMD  5;
@@ -96,7 +96,7 @@ static void exec_clock_revert(void);
 
 
 /*------------------------------------------------------------------------------
- * Service response lengths: 
+ * Service response lengths:
  */
 #define STANDARD_SERV_RESP_LENGTH                       6u
 #define SERIAL_NUMBER_SERV_RESP_LENGTH                  6u
@@ -184,7 +184,7 @@ static u8 design_version[2];
 # define CONFIG_SF_DEFAULT_MODE		SPI_MODE_3
 #endif
 static struct spi_flash *spi_flash;
-#define BUFFER_A_SIZE  1024 
+#define BUFFER_A_SIZE  1024
 #define SPI_CLOCK_FF  50000000  //in FF state, 50MHz SPI clock is only the solution...
 
 
@@ -198,7 +198,7 @@ static ulong SPI_DATA_ADDR = 0;
 
 
 /*------------------------------------------------------------------------------
- * clock settings in FF state 
+ * clock settings in FF state
  */
 const u32 apb_divisors_mask = 0x00000EFCU;
 //const u32 apb_divisors_mask = 0xa403100;
@@ -211,21 +211,21 @@ static unsigned long clock_base[CLOCK_END];
 
 
 /* ------------------------------------------------------------------------------
- * IPS programming results 
+ * IPS programming results
  */
 static u8 isp_programming_results[3]; //={0xff,0xff,0xff};
 
 
 /* ------------------------------------------------------------------------------
  *  For SECDED driver.... This is just template.... (should be moved somewhere else)
- */ 
+ */
 //void exec_ECC_Error_IRQHandler(void);
 //#define ECC_Error_IRQn   29
 
 
 /* ------------------------------------------------------------------------------
  *  usart debug mode
- */ 
+ */
 static u8 debug_uart ;
 
 static u8 chip_select;
@@ -240,7 +240,7 @@ static unsigned int exec_clock_mss_divisor(unsigned int r, unsigned int s)
   v = (r & (0x7<<s)) >> s;
 
   /*
-   * Translate the bit representation of the divisor to 
+   * Translate the bit representation of the divisor to
    * a value ready to be used in calculation of a clock.
    */
   switch (v) {
@@ -257,7 +257,7 @@ static unsigned int exec_clock_mss_divisor(unsigned int r, unsigned int s)
 }
 
 static void exec_clock_mss_learn(u32 m2s_sys_clock, u32 mode)
-{  
+{
 
   u32 r1 = M2S_SYSREG->mssddr_facc1_cr;
   u32 r2 = M2S_SYSREG->mssddr_pll_status_low_cr;
@@ -270,7 +270,7 @@ static void exec_clock_mss_learn(u32 m2s_sys_clock, u32 mode)
      * its value at run time. All clocks derived from CLK_BASE
      * can be calculated at run time (and we do just that).
      */
-    
+
     clock_base[CLOCK_SYSREF] = m2s_sys_clock; //CONFIG_SYS_M2S_SYSREF;
     /*
      * Respectively:
@@ -287,11 +287,11 @@ static void exec_clock_mss_learn(u32 m2s_sys_clock, u32 mode)
     clock_base[CLOCK_FPGA] = clock_base[CLOCK_SYSREF] / exec_clock_mss_divisor(r1, 13);
   }else if(mode==1){ //standby FF state
     clock_base[CLOCK_SYSREF] = m2s_sys_clock;
-    clock_base[CLOCK_SYSTICK] = m2s_sys_clock; 
-    clock_base[CLOCK_DDR] = m2s_sys_clock; 
-    clock_base[CLOCK_PCLK0] = m2s_sys_clock; 
-    clock_base[CLOCK_PCLK1] = m2s_sys_clock; 
-    clock_base[CLOCK_FPGA] = m2s_sys_clock; 
+    clock_base[CLOCK_SYSTICK] = m2s_sys_clock;
+    clock_base[CLOCK_DDR] = m2s_sys_clock;
+    clock_base[CLOCK_PCLK0] = m2s_sys_clock;
+    clock_base[CLOCK_PCLK1] = m2s_sys_clock;
+    clock_base[CLOCK_FPGA] = m2s_sys_clock;
 
   }
 }
@@ -302,10 +302,10 @@ static int exec_calc_divisor(NS16550_t port){
   u32 baudrate = 115200;
   u32 MODE_X_DIV = 16;
   u32 NS16550_CLK = clock_base[CLOCK_PCLK1];
-  
+
   return (NS16550_CLK + (baudrate * (MODE_X_DIV / 2))) /
     (MODE_X_DIV * baudrate);
- 
+
 }
 
 static void exec_spi_flash_probe(u32 speed)
@@ -314,7 +314,7 @@ static void exec_spi_flash_probe(u32 speed)
   unsigned int cs = chip_select;
   unsigned int mode = CONFIG_SF_DEFAULT_MODE;
   struct spi_flash *new;
-    
+
   if (spi_flash)
     spi_flash_free(spi_flash);
 
@@ -335,17 +335,17 @@ static void exec_spi_flash_probe(u32 speed)
     printf("Failed to initialize SPI flash at %u:%u\n", bus, cs);
     return ;
   }
-  
+
   spi_flash = new;
-  
+
   printf("%u KiB %s at %u:%u is now current device\n",
 	spi_flash->size >> 10, spi_flash->name, bus, cs);
-  
+
 
 
   ////dump the SPI related register
   /*
-  struct m2s_spi_slave *s = container_of(slave, struct m2s_spi_slave, slave); 
+  struct m2s_spi_slave *s = container_of(slave, struct m2s_spi_slave, slave);
   printf("MSS SPI %p\n", MSS_SPI(s));
   printf(" --- control = 0x%x \n", MSS_SPI(s)->control);
   printf(" --- txrxdf_size = 0x%x \n", MSS_SPI(s)->txrxdf_size);
@@ -362,7 +362,7 @@ static void exec_spi_flash_probe(u32 speed)
   //NVIC_EnableIRQ( this_spi->irqn );
   //NVIC->ISER[((uint32_t)(ComBlk_SPI0) >> 5)] = (1 << ((uint32_t)(ComBlk_SPI0) & 0x1F)); /* enable interrupt */
 
-  return ;  
+  return ;
 }
 
 
@@ -373,10 +373,10 @@ static int exec_spi_flash_read(long offset)
   unsigned long len = 64; //BUFFER_A_SIZE; //128;
   int ret;
   void *buf;
-  
+
   printf("exec_spi_flash_read. flash at 0x%p (spi=%p)\n", spi_flash, spi_flash->spi);
   delay(10000);
-  
+
 
   buf = (u8 *)malloc(len);
   if (!buf) {
@@ -395,14 +395,14 @@ static int exec_spi_flash_read(long offset)
   printf("\n");
   print_buffer(buf, buf, 4, len/4, 4);
   free(buf);
-  return 1;  
+  return 1;
 }
 
 
 static void process_sys_ctrl_command(u8 cmd_opcode)
 {
   //g_async_event_handler(cmd_opcode);
-  
+
   if (cmd_opcode == FLASH_FREEZE_SHUTDOWN_OPCODE){
 
     if(debug_uart==1){
@@ -412,7 +412,7 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
     u32 running_on_standby_clock;
     volatile u32 timeout;
     //u32 clock_divisor;
-    //const u32 apb_divisors_mask = 0x00000EFC;      
+    //const u32 apb_divisors_mask = 0x00000EFC;
     //
     // Wait for the System Controller to switch the system's clock
     // from the main clock to the  standby clock. This should take place
@@ -423,15 +423,22 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
     //M2S_SYSREG->soft_reset_cr |= (((u32) 0x01 << 9)); //SYSREG_SPI0_SOFTRESET_MASK;
 
 
-    timeout = 100000;
-    do
+    /*timeout = 100000;*/
+		timeout = 100; /*IDEA: What happens now?*/
+#ifdef DEBUG_TIME_CODE
+	clock_t start = clock(), diff;
+#endif
+		do
       {
 	running_on_standby_clock = M2S_SYSREG->mssddr_facc1_cr & 0x00001000;
 	--timeout;
       }
     while ((running_on_standby_clock == 0) && (timeout != 0));
-
-
+#ifdef DEBUG_TIME_CODE
+	diff = clock() - start;
+	int msec = diff*1000 / CLOCKS_PER_SEC;
+	printf("Flash Freeze start took %d secs and %d msecs\n", msec/1000, msec%1000);
+#endif
     //
     // Set the clock divisors to zero in order to set the AHB
     // to APB bridge's clock ratio between the AHB and APB busses to 1.
@@ -440,29 +447,29 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
     //
     M2S_SYSREG->mssddr_facc1_cr &= ~apb_divisors_mask;
     //M2S_SYSREG->mssddr_facc1_cr |= apb_divisors_mask;
-    
 
-    
-    //  M2S_SYSREG->mssddr_facc2_cr = 0x1e01; 
+
+
+    //  M2S_SYSREG->mssddr_facc2_cr = 0x1e01;
 
     //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x01 << 9)); //SYSREG_SPI0_SOFTRESET_MASK;
 
-    ///exec_spi_flash_probe(CONFIG_SF_DEFAULT_SPEED);    
+    ///exec_spi_flash_probe(CONFIG_SF_DEFAULT_SPEED);
 
-    
+
     //// uart and spi flash are already re-initialized in exec_clock_switch
-    
+
     //exec_clock_mss_learn(50000000);
-    //clock_divisor = exec_calc_divisor(serial_ports); 
+    //clock_divisor = exec_calc_divisor(serial_ports);
     //NS16550_init(serial_ports, clock_divisor);
-      
+
 
 
 
     /*
-    printf(" acc1=0x%x, facc2=0x%x, clk0=%d, clk1=%d, SPI clock=%d timeout=%d\n", 
-	   M2S_SYSREG->mssddr_facc1_cr, 
-	   M2S_SYSREG->mssddr_facc2_cr, 
+    printf(" acc1=0x%x, facc2=0x%x, clk0=%d, clk1=%d, SPI clock=%d timeout=%d\n",
+	   M2S_SYSREG->mssddr_facc1_cr,
+	   M2S_SYSREG->mssddr_facc2_cr,
 	   clk1, clk2, SPI_CLOCK_FF, timeout);
     printf("FLASH_FREEZE_SHUTDOWN_OPCODE\n");
     */
@@ -486,7 +493,7 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
     //
 
     /*
-    u32 pll_locked;    
+    u32 pll_locked;
     do {
       pll_locked = M2S_SYSREG->mssddr_pll_status & 0x1;
     } while(pll_locked);
@@ -495,7 +502,7 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
     } while(pll_locked==0x2);
     */
 
-    //M2S_SYSREG->soft_reset_cr |= (((u32) 0x01 << 7)); 
+    //M2S_SYSREG->soft_reset_cr |= (((u32) 0x01 << 7));
 
 
 
@@ -507,26 +514,26 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
       }
     while ((running_on_standby_clock != 0) && (timeout != 0));
 
-    // Restore the MSS clock dividers to their normal operations value. 
-    
+    // Restore the MSS clock dividers to their normal operations value.
+
     //M2S_SYSREG->mssddr_facc1_cr = g_initial_mssddr_facc1_cr;
-    
 
 
-    
-    //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x01 << 7)); 
 
-    
+
+    //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x01 << 7));
+
+
     //exec_clock_revert();
 
     //// this needs to be updated.......
     //exec_clock_mss_learn(50000000);
-    //clock_divisor = exec_calc_divisor(serial_ports); 
+    //clock_divisor = exec_calc_divisor(serial_ports);
     //NS16550_init(serial_ports, clock_divisor);
     /*
-    printf(" facc1=0x%x, facc2=0x%x, clk0=%d, clk1=%d. SPI clock=%d\n", 
-	   M2S_SYSREG->mssddr_facc1_cr, 
-	   M2S_SYSREG->mssddr_facc2_cr, 
+    printf(" facc1=0x%x, facc2=0x%x, clk0=%d, clk1=%d. SPI clock=%d\n",
+	   M2S_SYSREG->mssddr_facc1_cr,
+	   M2S_SYSREG->mssddr_facc2_cr,
 	   clk1, clk2, SPI_CLOCK_FF);
     printf("FLASH_FREEZE_EXIT_OPCODE\n");
     */
@@ -536,16 +543,16 @@ static void process_sys_ctrl_command(u8 cmd_opcode)
 
   }else{
     //
-    //if ((event_opcode == POR_DIGEST_ERROR_OPCODE) ||		       
-    //((event_opcode >= TAMPER_ATTEMPT_DETECT_OPCODE_RANGE_MIN) &&	
-    //(event_opcode <= TAMPER_FAILURE_DETECT_OPCODE_RANGE_MAX)) ||	
-    //(event_opcode == TAMPER_CLOCK_MONITOR_ERROR_OPCODE) ||		
-    //((event_opcode >= TAMPER_HARDWARE_MONITOR_ERROR_OPCODE_RANGE_MIN) && 
+    //if ((event_opcode == POR_DIGEST_ERROR_OPCODE) ||
+    //((event_opcode >= TAMPER_ATTEMPT_DETECT_OPCODE_RANGE_MIN) &&
+    //(event_opcode <= TAMPER_FAILURE_DETECT_OPCODE_RANGE_MAX)) ||
+    //(event_opcode == TAMPER_CLOCK_MONITOR_ERROR_OPCODE) ||
+    //((event_opcode >= TAMPER_HARDWARE_MONITOR_ERROR_OPCODE_RANGE_MIN) &&
     //(event_opcode <= TAMPER_HARDWARE_MONITOR_ERROR_OPCODE_RANGE_MAX))){
     //;
     //}
   }
-  
+
 }
 
 
@@ -565,21 +572,21 @@ static void exec_comblk_init(void){
   }
 
   printf("NVIC (init) : max_irq = %d, ICER = 0x%x (%p), IP = 0x%x (%p)\n",
-	 max_irq, NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)], 
+	 max_irq, NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)],
 	 &(NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)]),
-	 NVIC->IP[((uint32_t)(ComBlk_IRQn) >> 5)], 
+	 NVIC->IP[((uint32_t)(ComBlk_IRQn) >> 5)],
 	 &(NVIC->IP[((uint32_t)(ComBlk_IRQn) >> 5)]));
 
 
   printf("NVIC : CPU ID = 0x%x, ICSR = 0x%x, INTR_CTRL = 0x%x at %x(%x)\n",
-	 SCB->CPUID, SCB->ICSR, NVIC_CTR->data, (u32)NVIC_CTR, NVIC_CTR_BASE); 
+	 SCB->CPUID, SCB->ICSR, NVIC_CTR->data, (u32)NVIC_CTR, NVIC_CTR_BASE);
 
 
   /* Clear enable */
   NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)] = (1 << ((uint32_t)(ComBlk_IRQn) & 0x1F));
   COMBLK->INT_ENABLE = 0u;
   NVIC->ICPR[((uint32_t)(ComBlk_IRQn) >> 5)] = (1 << ((uint32_t)(ComBlk_IRQn) & 0x1F)); /* Clear pending interrupt */
-  
+
   g_comblk_cmd_opcode = 0u;
   g_comblk_p_cmd = 0u;
   g_comblk_cmd_size = 0u;
@@ -591,10 +598,10 @@ static void exec_comblk_init(void){
 
   g_comblk_state = COMBLK_IDLE;
 
-  
+
   COMBLK->CONTROL |= CR_ENABLE_MASK;
   COMBLK->CONTROL &= ~CR_LOOPBACK_MASK;
-  
+
   COMBLK->INT_ENABLE &= ~TXTOKAY_MASK;
   COMBLK->INT_ENABLE |= RCVOKAY_MASK;
 
@@ -604,8 +611,8 @@ static void exec_comblk_init(void){
   printf("NVIC : ICER = 0x%x (%p), ICPR = 0x%x (%p), ISER = 0x%x (%p), ISPR = 0x%x (%p) ICSR = 0x%x, CCR=0x%x\n",
 	 NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)]),
 	 NVIC->ICPR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ICPR[((uint32_t)(ComBlk_IRQn) >> 5)]),
-	 NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)]), 
-	 NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)]), 
+	 NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)]),
+	 NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)]),
 	 SCB->ICSR, SCB->CCR);
 
 }
@@ -613,16 +620,16 @@ static void exec_comblk_init(void){
 static void exec_send_cmd_opcode(uint8_t opcode)
 {
   volatile u32 tx_okay;
-  
+
   COMBLK->CONTROL &= ~CR_SIZETX_MASK;
-  
+
   /* Wait for space to become available in Tx FIFO. */
   do {
     tx_okay = COMBLK->STATUS & TXTOKAY_MASK;
   } while(0u == tx_okay);
-  
+
   COMBLK->FRAME_START8 = opcode;
-  
+
 }
 
 
@@ -632,7 +639,7 @@ static u32 exec_read_page_from_flash(u8 * g_buffer, u32 size){
 
   if(g_src_image_target_address+readout_size > SPI_DATA_ADDR + SPI_FILE_SIZE){
     readout_size = SPI_DATA_ADDR + SPI_FILE_SIZE-g_src_image_target_address;
-  }                                                                                                                               
+  }
 
   if(g_src_image_target_address>=SPI_DATA_ADDR + SPI_FILE_SIZE){
     return 0;
@@ -647,17 +654,17 @@ static u32 exec_read_page_from_flash(u8 * g_buffer, u32 size){
 
 static u32 exec_comblk_read_page_handler(u8 const ** pp_next_page){
   u32 length;
-  
+
 
   length = exec_read_page_from_flash(g_flash_rd_buf, BUFFER_A_SIZE);
 
   *pp_next_page = g_flash_rd_buf;
-  
+
   if(debug_uart==1){
-    printf("read_page_handler(%d): facc1=0x%x, facc2=0x%x, PLL=0x%x, 0x%x, %d, 0x%lx (0x%lx)\n", 
+    printf("read_page_handler(%d): facc1=0x%x, facc2=0x%x, PLL=0x%x, 0x%x, %d, 0x%lx (0x%lx)\n",
 	   g_mode,  M2S_SYSREG->mssddr_facc1_cr, M2S_SYSREG->mssddr_facc2_cr,
-	   M2S_SYSREG->mssddr_pll_status , 
-	   g_flash_rd_buf[0], length, g_src_image_target_address-SPI_DATA_ADDR, 
+	   M2S_SYSREG->mssddr_pll_status ,
+	   g_flash_rd_buf[0], length, g_src_image_target_address-SPI_DATA_ADDR,
 	   SPI_FILE_SIZE);
   }
   return length;
@@ -678,7 +685,7 @@ static u32 exec_fill_tx_fifo(const u8 * p_cmd, u32 cmd_size){
       ++size_sent;
       tx_okay = COMBLK->STATUS & TXTOKAY_MASK;
     }
-    
+
   return size_sent;
 }
 
@@ -688,7 +695,7 @@ static void exec_handle_tx_okay_irq(void){
   switch(g_comblk_state)
     {
       /*----------------------------------------------------------------------
-       * The TX_OKAY interrupt should only be enabled for states COMBLK_TX_CMD   
+       * The TX_OKAY interrupt should only be enabled for states COMBLK_TX_CMD
        * and COMBLK_TX_DATA.
        */
     case COMBLK_TX_CMD:
@@ -724,7 +731,7 @@ static void exec_handle_tx_okay_irq(void){
 	  exec_abort_current_cmd();
 	}
       break;
-            
+
     case COMBLK_TX_DATA:
       if(g_comblk_data_size > 0u)
 	{
@@ -751,7 +758,7 @@ static void exec_handle_tx_okay_irq(void){
 	  exec_abort_current_cmd();
 	}
       break;
-           
+
     case COMBLK_TX_PAGED_DATA:
       /*
        * Read a page of data if required.
@@ -776,7 +783,7 @@ static void exec_handle_tx_okay_irq(void){
 	    }
 	  }
 	}
-                
+
       /*
        * Transmit the page data or move to COMBLK_WAIT_RESPONSE state if
        * no further page data could be obtained by the call to the page
@@ -795,7 +802,7 @@ static void exec_handle_tx_okay_irq(void){
 	  g_comblk_p_data = &g_comblk_p_data[size_sent];
 	}
       break;
-                 
+
       /*----------------------------------------------------------------------
        * The TX_OKAY interrupt should NOT be enabled for states COMBLK_IDLE,
        * COMBLK_WAIT_RESPONSE and COMBLK_RX_RESPONSE.
@@ -818,9 +825,9 @@ static void exec_handle_tx_okay_irq(void){
 static void exec_handle_rx_okay_irq(void){
 
   u16 data16;
-  u16 is_command;    
+  u16 is_command;
   u8 data8;
-    
+
   data16 = (u16)COMBLK->DATA8;
   is_command = data16 & DATA8_COMMAND_MASK;
   data8 = (u8)data16;
@@ -843,11 +850,11 @@ static void exec_handle_rx_okay_irq(void){
 	      process_sys_ctrl_command(rxed_opcode);
 	    }
 	  else
-	    {  
+	    {
 	      g_comblk_response_idx = 0;
 	      g_comblk_p_response[g_comblk_response_idx] = data8;
 	      g_comblk_response_idx++;
-	      g_comblk_p_response[g_comblk_response_idx] = 0x00u;                
+	      g_comblk_p_response[g_comblk_response_idx] = 0x00u;
 	      g_comblk_state = COMBLK_RX_RESPONSE;
 	    }
 	}
@@ -856,7 +863,7 @@ static void exec_handle_rx_okay_irq(void){
 
       /*----------------------------------------------------------------------
        * The RCV_OKAY interrupt should only be enabled for states
-       * COMBLK_WAIT_RESPONSE and COMBLK_RX_RESPONSE. 
+       * COMBLK_WAIT_RESPONSE and COMBLK_RX_RESPONSE.
        */
     case COMBLK_WAIT_RESPONSE:
       if(is_command)
@@ -876,7 +883,7 @@ static void exec_handle_rx_okay_irq(void){
 	    }
 	}
       break;
-      
+
     case COMBLK_RX_RESPONSE:
       if(is_command)
 	{
@@ -897,12 +904,12 @@ static void exec_handle_rx_okay_irq(void){
 	      if(g_comblk_response_idx < g_comblk_response_size)
 		{
 		  u8 rxed_data;
-		  
+
 		  rxed_data = (u8)data8;
 		  g_comblk_p_response[g_comblk_response_idx] = rxed_data;
 		  ++g_comblk_response_idx;
 		}
-	      
+
 	      if(g_comblk_response_idx == g_comblk_response_size)
 		{
 		  exec_complete_request(g_comblk_response_idx);
@@ -911,10 +918,10 @@ static void exec_handle_rx_okay_irq(void){
 	    }
 	}
       break;
-      
+
       /*----------------------------------------------------------------------
        * The RCV_OKAY interrupt should NOT be enabled for states
-       * COMBLK_IDLE, COMBLK_TX_CMD and COMBLK_TX_DATA. 
+       * COMBLK_IDLE, COMBLK_TX_CMD and COMBLK_TX_DATA.
        */
     case COMBLK_TX_PAGED_DATA:
       /* This is needed because when there is an error, we need to terminate loading the data */
@@ -944,17 +951,17 @@ static void exec_handle_rx_okay_irq(void){
 	  process_sys_ctrl_command(rxed_opcode);
 	}
       break;
-      
+
     default:
       exec_complete_request(0u);
       g_comblk_state = COMBLK_IDLE;
       break;
     }
-  
+
 }
 
 static void exec_complete_request(u16 response_length){
-  
+
   ////g_isp_completion_handler(p_response[1]);
 
   g_request_in_progress = 0;
@@ -968,13 +975,13 @@ static void exec_abort_current_cmd(void){
   if(g_request_in_progress){
 
     uint32_t flush_in_progress;
-        
+
     /*
      * Call completion handler just in case we are in a multi threaded system
      * to avoid a task lockup.
      */
     exec_complete_request(g_comblk_response_idx);
-        
+
     /*
      * Flush the FIFOs
      */
@@ -1005,40 +1012,40 @@ void exec_ComBlk_IRQHandler(void){
 
 
 
-  //delay(10000);  
+  //delay(10000);
   status = (u8)COMBLK->STATUS;
-  
+
   /* Mask off interrupt that are not enabled.*/
   status &= COMBLK->INT_ENABLE;
-  
+
   rcv_okay = status & RCVOKAY_MASK;
-  
-  //printf("COMBLK: ComBLK_IRQHandler %02x %02x %d \n", 
+
+  //printf("COMBLK: ComBLK_IRQHandler %02x %02x %d \n",
   // 	   COMBLK->STATUS, COMBLK->INT_ENABLE, status);
-  
+
   /*
     printf("NVIC in IRQ Handler : ICER = 0x%x (%p), ICPR = 0x%x (%p), ISER = 0x%x (%p), ISPR = 0x%x (%p) ISCR = 0x%x, CCR=0x%x\n",
     NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)]),
     NVIC->ICPR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ICPR[((uint32_t)(ComBlk_IRQn) >> 5)]),
-    NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)]), 
-    NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)]), 
+    NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)]),
+    NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->ISPR[((uint32_t)(ComBlk_IRQn) >> 5)]),
     SCB->ICSR, SCB->CCR);
     */
-    
-    
+
+
   if(rcv_okay)
     {
-      //delay(10000);  
+      //delay(10000);
       exec_handle_rx_okay_irq();
     }
-  
+
   tx_okay = status & TXTOKAY_MASK;
   if(tx_okay)
     {
-      //delay(10000);  
+      //delay(10000);
       exec_handle_tx_okay_irq();
     }
-  
+
 }
 
 
@@ -1046,7 +1053,7 @@ static void exec_comblk_send_cmd_with_ptr(u8 cmd_opcode,
 					  u32 cmd_params_ptr,
 					  u8 * p_response,
 					  u16 response_size){
-  
+
   volatile u32 tx_okay;
 
   NVIC->ICER[((uint32_t)(ComBlk_IRQn) >> 5)] = (1 << ((uint32_t)(ComBlk_IRQn) & 0x1F));
@@ -1066,41 +1073,41 @@ static void exec_comblk_send_cmd_with_ptr(u8 cmd_opcode,
   g_comblk_response_size = response_size;
   g_comblk_response_idx = 0u;
 
-  exec_send_cmd_opcode(g_comblk_cmd_opcode); 
-  
+  exec_send_cmd_opcode(g_comblk_cmd_opcode);
+
   COMBLK->CONTROL |= CR_SIZETX_MASK;
-  
+
   /* Wait for space to become available in Tx FIFO. */
   do {
     tx_okay = COMBLK->STATUS & TXTOKAY_MASK;
   } while(0u == tx_okay);
-  
+
   COMBLK->DATA32  = cmd_params_ptr;
-  
-  COMBLK->CONTROL &= ~CR_SIZETX_MASK;    
+
+  COMBLK->CONTROL &= ~CR_SIZETX_MASK;
   g_comblk_state = COMBLK_WAIT_RESPONSE;
 
 
   COMBLK->INT_ENABLE |= RCVOKAY_MASK;
   NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)] = (1 << ((uint32_t)(ComBlk_IRQn) & 0x1F)); /* enable interrupt */
 
-  //printf("IRQ active register = 0x%x (%p)\n", 
+  //printf("IRQ active register = 0x%x (%p)\n",
   //NVIC->IABR[((uint32_t)(ComBlk_IRQn) >> 5)], &(NVIC->IABR[((uint32_t)(ComBlk_IRQn) >> 5)]));
 
   //udelay(10000);
-  
+
   delay(10000);
-  
+
   //exec_ComBlk_IRQHandler();
 
 }
 
 
-static void exec_comblk_send_paged_cmd(u8 * p_cmd, 
+static void exec_comblk_send_paged_cmd(u8 * p_cmd,
 				u16 cmd_size,
-				u8 * p_response, 
+				u8 * p_response,
 				u16 response_size){
-  
+
   u32 size_sent;
   u8 irq_enable = 0u;
 
@@ -1138,13 +1145,13 @@ static void exec_comblk_send_paged_cmd(u8 * p_cmd,
     g_comblk_state = COMBLK_TX_PAGED_DATA;
     irq_enable = TXTOKAY_MASK | RCVOKAY_MASK;
   }
-  
-  COMBLK->INT_ENABLE |= irq_enable;   
+
+  COMBLK->INT_ENABLE |= irq_enable;
   NVIC->ISER[((uint32_t)(ComBlk_IRQn) >> 5)] = (1 << ((uint32_t)(ComBlk_IRQn) & 0x1F)); /* enable interrupt */
 
 }
 
-		      
+
 
 void exec_comblk_get_serial_number_out(u8 *p_response){
 
@@ -1160,8 +1167,8 @@ void exec_comblk_get_serial_number_out(u8 *p_response){
 				(u32) p_serial_number,
 				response,
 				response_length);
-  
-  
+
+
   while(response_length!=g_comblk_response_idx){
     ;
   }
@@ -1169,7 +1176,7 @@ void exec_comblk_get_serial_number_out(u8 *p_response){
 
   actual_response_length = g_comblk_response_idx;
 
-  if( (response_length == actual_response_length) && 
+  if( (response_length == actual_response_length) &&
       (cmd_opcode == response[0])){
     status = response[1];
   }else{
@@ -1178,20 +1185,20 @@ void exec_comblk_get_serial_number_out(u8 *p_response){
 
 
   printf("COMBLK: MSS_SYS_get_serial_number result : status = %d, opcode = %d size=%d\n", status, response[0], g_comblk_response_idx);
-  printf("COMBLK: Device serial number at 0x%x = %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x\n", 
+  printf("COMBLK: Device serial number at 0x%x = %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x\n",
 	 (u32)p_serial_number, p_serial_number[0],p_serial_number[1],p_serial_number[2],p_serial_number[3],
 	 p_serial_number[4],p_serial_number[5],p_serial_number[6],p_serial_number[7],
 	 p_serial_number[8],p_serial_number[9],p_serial_number[10],p_serial_number[11],
 	 p_serial_number[12],p_serial_number[13],p_serial_number[14],p_serial_number[15]);
 
-  
+
   for(i=0;i<16;i++){
     p_response[i] = p_serial_number[i];
   }
 }
 
 static void exec_comblk_get_serial_number(void){
-  
+
   u8  p_serial_number[16]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
   u8  cmd_opcode = 0;
   u8  response[6];
@@ -1204,8 +1211,8 @@ static void exec_comblk_get_serial_number(void){
 				(u32) p_serial_number,
 				response,
 				response_length);
-  
-  
+
+
   while(response_length!=g_comblk_response_idx){
     ;
   }
@@ -1213,7 +1220,7 @@ static void exec_comblk_get_serial_number(void){
 
   actual_response_length = g_comblk_response_idx;
 
-  if( (response_length == actual_response_length) && 
+  if( (response_length == actual_response_length) &&
       (cmd_opcode == response[0])){
     status = response[1];
   }else{
@@ -1222,7 +1229,7 @@ static void exec_comblk_get_serial_number(void){
 
 
   printf("COMBLK: MSS_SYS_get_serial_number result : status = %d, opcode = %d size=%d\n", status, response[0], g_comblk_response_idx);
-  printf("COMBLK: Device serial number at 0x%x = %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x\n", 
+  printf("COMBLK: Device serial number at 0x%x = %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x\n",
 	 (u32)p_serial_number, p_serial_number[0],p_serial_number[1],p_serial_number[2],p_serial_number[3],
 	 p_serial_number[4],p_serial_number[5],p_serial_number[6],p_serial_number[7],
 	 p_serial_number[8],p_serial_number[9],p_serial_number[10],p_serial_number[11],
@@ -1232,7 +1239,7 @@ static void exec_comblk_get_serial_number(void){
 
 static void exec_comblk_get_design_version(void)
 {
-  
+
   u8 p_design_version[2]={0,0};
   u8 cmd_opcode = 0;
   u8 response[6];
@@ -1250,14 +1257,14 @@ static void exec_comblk_get_design_version(void)
 				response_length);
 
 
-  
+
   while(response_length!=g_comblk_response_idx){
     ;
   }
 
   actual_response_length = g_comblk_response_idx;
-  
-  if( (response_length == actual_response_length) && 
+
+  if( (response_length == actual_response_length) &&
       (cmd_opcode == response[0]))
     {
       status = response[1];
@@ -1268,7 +1275,7 @@ static void exec_comblk_get_design_version(void)
     }
 
   printf("COMBLK: MSS_SYS_get_design_version result : status = %d, opcode = %d, size = %d\n", status, response[0], g_comblk_response_idx);
-  printf("COMBLK: Fabric Design Version at 0x%x = %02x %02x\n", 
+  printf("COMBLK: Fabric Design Version at 0x%x = %02x %02x\n",
 	 (u32) p_design_version, p_design_version[0],p_design_version[1]);
 
   if(status==0){
@@ -1276,13 +1283,13 @@ static void exec_comblk_get_design_version(void)
   }else{
     design_version[0] = 0xff;
   }
-  
+
 }
 
 static void exec_clock_switch(void){
-  
+
   u32 running_on_standby_clock;
-  
+
   volatile u32 timeout;
   //volatile u32 timeout2;
   u32 clk1;
@@ -1298,11 +1305,11 @@ static void exec_clock_switch(void){
 
 
   ////// disable FPGA/FIC0/FIC1
-  //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 26));   
-  //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 25));   
-  //  M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 16));   
-  M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 18));   
-  M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 19));   
+  //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 26));
+  //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 25));
+  //  M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 16));
+  M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 18));
+  M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x1 << 19));
 
 
   //udelay(10000);
@@ -1311,11 +1318,11 @@ static void exec_clock_switch(void){
 
   //delay(DELAY_MORE_THAN_10US);
   delay(10000000);
-  M2S_SYSREG->mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr & ((u32)(FACC_STANDBY_SEL << FACC_STANDBY_SHIFT) & FACC_STANDBY_SEL_MASK);  
+  M2S_SYSREG->mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr & ((u32)(FACC_STANDBY_SEL << FACC_STANDBY_SHIFT) & FACC_STANDBY_SEL_MASK);
   delay(10000000);
-  M2S_SYSREG->mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr | ((u32)(MSS_25_50MHZ_EN << MSS_25_50MHZ_EN_SHIFT) & MSS_25_50MHZ_EN_MASK);  
+  M2S_SYSREG->mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr | ((u32)(MSS_25_50MHZ_EN << MSS_25_50MHZ_EN_SHIFT) & MSS_25_50MHZ_EN_MASK);
   delay(10000000);
-  M2S_SYSREG->mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr | ((u32)(MSS_1MHZ_EN << MSS_1MHZ_EN_SHIFT) & MSS_1MHZ_EN_MASK);        
+  M2S_SYSREG->mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr | ((u32)(MSS_1MHZ_EN << MSS_1MHZ_EN_SHIFT) & MSS_1MHZ_EN_MASK);
 
 
   if(M2S_SYSREG->mssddr_facc2_cr !=0x600){
@@ -1332,13 +1339,13 @@ static void exec_clock_switch(void){
 
   delay(10000000);
 
-  //M2S_SYSREG->mssddr_facc2_cr = 0x1e01; 
+  //M2S_SYSREG->mssddr_facc2_cr = 0x1e01;
 
-  //M2S_SYSREG->mssddr_facc2_cr & ((u32)(FACC_STANDBY_SEL << FACC_STANDBY_SHIFT) & FACC_STANDBY_SEL_MASK); 
-  
+  //M2S_SYSREG->mssddr_facc2_cr & ((u32)(FACC_STANDBY_SEL << FACC_STANDBY_SHIFT) & FACC_STANDBY_SEL_MASK);
+
   //delay(DELAY_MORE_THAN_10US);
 
-  /// enable standby clock 
+  /// enable standby clock
   /// maybe stack here??????
 
   //timeout2 = DELAY_MORE_THAN_10US;
@@ -1359,13 +1366,16 @@ static void exec_clock_switch(void){
     }
   while ((running_on_standby_clock == 0U) && (timeout != 0U));
   wait_for_clock_switch = 0;  //now clock is standby
-  M2S_SYSREG->mssddr_facc1_cr &= ~apb_divisors_mask;  
-  //// end of Torsten's test       
+  M2S_SYSREG->mssddr_facc1_cr &= ~apb_divisors_mask;
+  //// end of Torsten's test
   */
 
 
   M2S_SYSREG->mssddr_facc1_cr |= (1<<12);
-
+#ifdef DEBUG_TIME_CODE
+// Time the clock switch
+clock_t start = clock(), diff;
+#endif
   timeout = DELAY_MORE_THAN_10US;
   do
     {
@@ -1373,11 +1383,15 @@ static void exec_clock_switch(void){
       --timeout;
     }
   while ((running_on_standby_clock == 0U) && (timeout != 0U));
-
-
+#ifdef DEBUG_TIME_CODE
+diff  = clock() - start;
+int msec = diff * 1000 / CLOCKS_PER_SEC;
+printf("The clock was switched within %d seconds and %d milliseconds,"
+       " the timeout was in the end: %d", msec/1000, msec%1000, timeout);
+#endif
   /// this setting is necessary. otherwise programming fails... why?
   delay(10000000);
-  M2S_SYSREG->mssddr_facc1_cr &= ~apb_divisors_mask;  
+  M2S_SYSREG->mssddr_facc1_cr &= ~apb_divisors_mask;
   delay(10000000);
 
   if(M2S_SYSREG->mssddr_facc1_cr!=0xa403101){
@@ -1389,9 +1403,9 @@ static void exec_clock_switch(void){
 
   if(debug_uart==1){
     exec_clock_mss_learn(50000000, 1);
-    clock_divisor = exec_calc_divisor(serial_ports); 
+    clock_divisor = exec_calc_divisor(serial_ports);
     NS16550_init(serial_ports, clock_divisor);
-    
+
     delay(1000000);
     clock_update(CLOCK_SYSREF, clock_base[CLOCK_SYSREF]);
     clock_update(CLOCK_SYSTICK, clock_base[CLOCK_SYSTICK]);
@@ -1399,16 +1413,16 @@ static void exec_clock_switch(void){
     clock_update(CLOCK_PCLK0, clock_base[CLOCK_PCLK0]);
     clock_update(CLOCK_PCLK1, clock_base[CLOCK_PCLK1]);
     clock_update(CLOCK_FPGA, clock_base[CLOCK_FPGA]);
-    
+
     clk1 = clock_base[CLOCK_PCLK0];
     clk2 = clock_get(CLOCK_PCLK0);
-    
+
     delay(100000);
     NS16550_init(serial_ports, clock_divisor);
     /*
-      printf(" facc1=0x%x, facc2=0x%x, clk0=%d, clk1=%d (div=%d). SPI clock=%d timeout=%d timeout2=%d\n", 
-      M2S_SYSREG->mssddr_facc1_cr, 
-      M2S_SYSREG->mssddr_facc2_cr, 
+      printf(" facc1=0x%x, facc2=0x%x, clk0=%d, clk1=%d (div=%d). SPI clock=%d timeout=%d timeout2=%d\n",
+      M2S_SYSREG->mssddr_facc1_cr,
+      M2S_SYSREG->mssddr_facc2_cr,
       clk1, clk2, clock_divisor, SPI_CLOCK_FF,
       timeout, timeout2);
     */
@@ -1424,22 +1438,22 @@ static void exec_clock_revert(void){
   volatile u32 timeout;
   u32 running_on_standby_clock;
   u32 clock_divisor;
-  
+
   //delay(DELAY_MORE_THAN_10US);
 
 
-  //  M2S_SYSREG->mssddr_facc2_cr =  g_initial_mssddr_facc2_cr;    
+  //  M2S_SYSREG->mssddr_facc2_cr =  g_initial_mssddr_facc2_cr;
   /*
-  u32 pll_locked;    
+  u32 pll_locked;
   // Wait for fabric PLL to lock. //
   do {
     pll_locked = M2S_SYSREG->mssddr_pll_status & 0x1;
   } while(!pll_locked);
-    
-  // Negate MPLL bypass. 
+
+  // Negate MPLL bypass.
   M2S_SYSREG->mssddr_pll_status_high_cr &= ~0x1;
-    
-  // Wait for MPLL to lock. 
+
+  // Wait for MPLL to lock.
   do {
     pll_locked = M2S_SYSREG->mssddr_pll_status & 0x2;
   } while(!pll_locked);
@@ -1447,10 +1461,10 @@ static void exec_clock_revert(void){
   */
 
 
-  /// this is for Torsten's test 
+  /// this is for Torsten's test
   /*
   M2S_SYSREG->mssddr_facc1_cr &= ~(1<<12);
-  
+
   timeout = DELAY_MORE_THAN_10US;
   do
     {
@@ -1458,60 +1472,60 @@ static void exec_clock_revert(void){
       --timeout;
     }
   while ((running_on_standby_clock != 0U) && (timeout != 0U));
-  
-  
+
+
   M2S_SYSREG->mssddr_facc1_cr = g_initial_mssddr_facc1_cr;
   */
   //// end of Torsten's test
 
 
   //delay(10000000);
-  ////clock is reverted 
+  ////clock is reverted
   //M2S_SYSREG->envm_cr = g_initial_envm_cr ;
-  
-  
+
+
   //delay(10000);
-  //M2S_SYSREG->mssddr_facc2_cr =  g_initial_mssddr_facc2_cr;    
-  
+  //M2S_SYSREG->mssddr_facc2_cr =  g_initial_mssddr_facc2_cr;
+
 
   ////////////
-  //// wait for the PLL clock is locked 
+  //// wait for the PLL clock is locked
   ///////////
   /*
-  u32 pll_locked;    
+  u32 pll_locked;
   // Wait for fabric PLL to lock. //
   do {
     pll_locked = M2S_SYSREG->mssddr_pll_status & 0x1;
   } while(!pll_locked);
-    
-  // Negate MPLL bypass. 
+
+  // Negate MPLL bypass.
   M2S_SYSREG->mssddr_pll_status_high_cr &= ~0x1;
-    
-  // Wait for MPLL to lock. 
+
+  // Wait for MPLL to lock.
   do {
     pll_locked = M2S_SYSREG->mssddr_pll_status & 0x2;
   } while(!pll_locked);
   */
 
-  
-  
+
+
   exec_clock_mss_learn(160000000, 0);
   if(debug_uart==1){
-    clock_divisor = exec_calc_divisor(serial_ports); 
+    clock_divisor = exec_calc_divisor(serial_ports);
     NS16550_init(serial_ports, clock_divisor);
-    
+
     clock_update(CLOCK_SYSREF, clock_base[CLOCK_SYSREF]);
     clock_update(CLOCK_SYSTICK, clock_base[CLOCK_SYSTICK]);
     clock_update(CLOCK_DDR, clock_base[CLOCK_DDR]);
     clock_update(CLOCK_PCLK0, clock_base[CLOCK_PCLK0]);
     clock_update(CLOCK_PCLK1, clock_base[CLOCK_PCLK1]);
-    clock_update(CLOCK_FPGA, clock_base[CLOCK_FPGA]);    
-    
+    clock_update(CLOCK_FPGA, clock_base[CLOCK_FPGA]);
+
     delay(10000);
     NS16550_init(serial_ports, clock_divisor);
     printf(" facc1 = 0x%x, facc2=0x%x PLL=0x%x\n",
-	   M2S_SYSREG->mssddr_facc1_cr, 
-	   M2S_SYSREG->mssddr_facc2_cr, 
+	   M2S_SYSREG->mssddr_facc1_cr,
+	   M2S_SYSREG->mssddr_facc2_cr,
 	   M2S_SYSREG->mssddr_pll_status);
   }
   delay(10000);
@@ -1522,9 +1536,9 @@ static void exec_start_isp(uint8_t mode){
 
   u8 isp_prog_request[2];
 
-  /* 
-   * Set the eNVM's frequency range to its maximum. This is required to ensure 
-   * successful eNVM programming on all devices. 
+  /*
+   * Set the eNVM's frequency range to its maximum. This is required to ensure
+   * successful eNVM programming on all devices.
    */
   //  M2S_SYSREG->envm_cr = (g_initial_envm_cr & ~NVM_FREQRNG_MASK) | NVM_FREQRNG_MAX;
 
@@ -1551,7 +1565,7 @@ static void exec_start_isp(uint8_t mode){
   //delay(DELAY_MORE_THAN_10US);
 
   /*
-  printf("MSS_SYS_start_isp = %d (response[1]) %d (response length) %d (opcode) \n", 
+  printf("MSS_SYS_start_isp = %d (response[1]) %d (response length) %d (opcode) \n",
 	 g_isp_response[1], g_comblk_response_idx, g_isp_response[0]);
   */
 
@@ -1567,12 +1581,12 @@ static void exec_start_isp(uint8_t mode){
   if(g_mode == MSS_SYS_PROG_VERIFY){
     delay(1000000);
     /*
-    ////clock is reverted 
+    ////clock is reverted
     M2S_SYSREG->envm_cr = g_initial_envm_cr ;
     M2S_SYSREG->mssddr_facc1_cr = g_initial_mssddr_facc1_cr;
-    
+
     delay(1000000);
-    M2S_SYSREG->mssddr_facc2_cr =  g_initial_mssddr_facc2_cr;    
+    M2S_SYSREG->mssddr_facc2_cr =  g_initial_mssddr_facc2_cr;
 
     volatile u32 timeout;
     u32 running_on_standby_clock;
@@ -1585,25 +1599,25 @@ static void exec_start_isp(uint8_t mode){
 	--timeout;
       }
     while ((running_on_standby_clock != 0U) && (timeout != 0U));
-    
+
 
     M2S_SYSREG->mssddr_facc1_cr = g_initial_mssddr_facc1_cr;
 
 
     exec_clock_mss_learn(160000000, 0);
-    clock_divisor = exec_calc_divisor(serial_ports); 
+    clock_divisor = exec_calc_divisor(serial_ports);
     NS16550_init(serial_ports, clock_divisor);
-    
+
     clock_update(CLOCK_SYSREF, clock_base[CLOCK_SYSREF]);
     clock_update(CLOCK_SYSTICK, clock_base[CLOCK_SYSTICK]);
     clock_update(CLOCK_DDR, clock_base[CLOCK_DDR]);
     clock_update(CLOCK_PCLK0, clock_base[CLOCK_PCLK0]);
     clock_update(CLOCK_PCLK1, clock_base[CLOCK_PCLK1]);
-    clock_update(CLOCK_FPGA, clock_base[CLOCK_FPGA]);    
-    
+    clock_update(CLOCK_FPGA, clock_base[CLOCK_FPGA]);
+
     udelay(1000);
     printf(" facc1 = 0x%x, facc2=0x%x\n",
-	   M2S_SYSREG->mssddr_facc1_cr, 
+	   M2S_SYSREG->mssddr_facc1_cr,
 	   M2S_SYSREG->mssddr_facc2_cr);
     */
   }
@@ -1614,7 +1628,7 @@ void delay(uint32_t val){
 
   volatile uint32_t timeout ;
   timeout = val;
-  
+
   do{
     --timeout;
   }while (timeout != 0);
@@ -1652,13 +1666,13 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 
   char isp_result[20];
   const char *cmd;
-  const char *s ; 
+  const char *s ;
   //int inc=0;
   //int ival=0;
   /* need at least two arguments */
   if (argc < 2)
     goto usage;
-  
+
   cmd = argv[1];
 
   chip_select = 0;
@@ -1673,15 +1687,15 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
   printf(" *** SPI Flash chip_select = %d\n", chip_select);
 
   asm volatile ("cpsie i");
-  
+
 
   g_initial_envm_cr = M2S_SYSREG->envm_cr;
   g_initial_mssddr_facc1_cr = M2S_SYSREG->mssddr_facc1_cr;
   g_initial_mssddr_facc2_cr = M2S_SYSREG->mssddr_facc2_cr;
-  
+
   printf("SYSREG_ENVM_CR = 0x%x\n", g_initial_envm_cr);
   printf("SYSREG_MSSDDR_FACC1_CR = 0x%x\n", g_initial_mssddr_facc1_cr);
-  printf("SYSREG_MSSDDR_FACC2_CR = 0x%x\n", g_initial_mssddr_facc2_cr);  
+  printf("SYSREG_MSSDDR_FACC2_CR = 0x%x\n", g_initial_mssddr_facc2_cr);
   delay(10000);
 
 
@@ -1723,7 +1737,7 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
   }
 
   //////
-  
+
   if(strcmp(cmd, "c") == 0){
     exec_comblk_init();
     //exec_clock_mss_learn(CONFIG_SYS_M2S_SYSREF);
@@ -1739,8 +1753,8 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
     exec_comblk_init();
     exec_clock_switch();
     goto done;
-  }else if(strcmp(cmd, "b") == 0){ //clock change 
-    
+  }else if(strcmp(cmd, "b") == 0){ //clock change
+
     exec_comblk_init();
     exec_spi_flash_probe(CONFIG_SF_DEFAULT_SPEED);
     exec_spi_flash_read(SPI_DATA_ADDR);
@@ -1752,8 +1766,8 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
     exec_spi_flash_read(SPI_DATA_ADDR);
     printf(" ######## \n");
 
-    ////clock is reverted 
-    exec_clock_revert();    
+    ////clock is reverted
+    exec_clock_revert();
     goto done;
   }else if(strcmp(cmd, "t") == 0){
     //exec_comblk_init();
@@ -1778,14 +1792,14 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
     printf("Authentication... Please wait (5 min.)...\n");
     //exec_spi_flash_read();
     g_src_image_target_address = SPI_DATA_ADDR;
-    exec_start_isp(MSS_SYS_PROG_AUTHENTICATE);    
-      sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x", 
+    exec_start_isp(MSS_SYS_PROG_AUTHENTICATE);
+      sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x",
 	    isp_programming_results[0],
 	    isp_programming_results[1],
 	    isp_programming_results[2]);
     setenv("ISP_PROG_RESULT", isp_result);
     saveenv();
-  
+
     goto done;
   }else if(strcmp(cmd, "p") == 0){
     exec_comblk_init();
@@ -1823,14 +1837,14 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
     //exec_clock_revert();
     delay(DELAY_MORE_THAN_10US);
     /*
-    sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x", 
+    sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x",
 	    isp_programming_results[0],
 	    isp_programming_results[1],
 	    isp_programming_results[2]);
     printf("Results : %s\n", isp_result);
     setenv("ISP_PROG_RESULT", isp_result);
     setenv("bootcmd","run flashboot");
-    saveenv();   
+    saveenv();
     */
 
     goto done;
@@ -1838,8 +1852,8 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
     setenv("bootcmd","run flashboot");
     saveenv();
 
-    exec_comblk_init();    
-    exec_spi_flash_probe(CONFIG_SF_DEFAULT_SPEED); 
+    exec_comblk_init();
+    exec_spi_flash_probe(CONFIG_SF_DEFAULT_SPEED);
     printf("Programmig and Verifying... Please wait (5 min.)...\n");
     exec_clock_switch();
     //exec_spi_flash_probe(SPI_CLOCK_FF); //this is necessary???
@@ -1855,7 +1869,7 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
       /*
       exec_clock_revert();
       delay(DELAY_MORE_THAN_10US);
-      sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x", 
+      sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x",
 	      isp_programming_results[0],
 	      isp_programming_results[1],
 	      isp_programming_results[2]);
@@ -1869,13 +1883,13 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 
     g_src_image_target_address = SPI_DATA_ADDR;
     exec_start_isp(MSS_SYS_PROG_VERIFY);
-    
+
     if(g_isp_response[1]!=0){
       delay(DELAY_MORE_THAN_10US);
       /*
       exec_clock_revert();
       delay(DELAY_MORE_THAN_10US);
-      sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x", 
+      sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x",
 	      isp_programming_results[0],
 	      isp_programming_results[1],
 	      isp_programming_results[2]);
@@ -1890,10 +1904,10 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
     delay(DELAY_MORE_THAN_10US);
     //exec_clock_revert();
     delay(DELAY_MORE_THAN_10US);
-    //do_reset (NULL, 0, 0, NULL);    
+    //do_reset (NULL, 0, 0, NULL);
 
     /*
-    sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x", 
+    sprintf(isp_result,"A:0x%02x, P:0x%02x, V:0x%02x",
 	    isp_programming_results[0],
 	    isp_programming_results[1],
 	    isp_programming_results[2]);
@@ -1908,7 +1922,7 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
   }else if(strcmp(cmd, "boot") == 0){
     goto boot;
   }else if(strcmp(cmd, "ddr") == 0){
-    M2S_SYSREG->mddr_cr &= ~(1 << 0);    
+    M2S_SYSREG->mddr_cr &= ~(1 << 0);
     board_init();
     dram_init();
     //saveenv();
@@ -1946,21 +1960,21 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
       //exec_comblk_init();
       //exec_spi_flash_probe(SPI_CLOCK_FF);
       //exec_spi_flash_read(SPI_DATA_ADDR);
-      ////clock is reverted 
+      ////clock is reverted
       for(ival=0;ival<20;ival++){
 	dump[ival] = ival;
       }
-      exec_clock_revert();          
+      exec_clock_revert();
       //M2S_SYSREG->soft_reset_cr &= ~(((u32) 0x01 << 7)); //SYSREG_SPI0_SOFTRESET_MASK;
       //exec_clock_mss_learn(160000000, 0);
-      //u32 clock_divisor = exec_calc_divisor(serial_ports); 
+      //u32 clock_divisor = exec_calc_divisor(serial_ports);
       //NS16550_init(serial_ports, clock_divisor);
 
       printf(" dump the moemry after clock switch\n");
       for(ival=0;ival<20;ival++){
 	printf(" 0x%x, ", dump[ival]);
       }
-      
+
     }
     goto done;
   }
@@ -1972,14 +1986,14 @@ static int do_isp_prog(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[])
 
  boot:
   asm volatile ("cpsid i");
-  s = getenv ("bootcmd");  
-  run_command (s, 0);           
+  s = getenv ("bootcmd");
+  run_command (s, 0);
   return 1;
 
  done:
   asm volatile ("cpsid i");
   return 1;
-  
+
  usage:
   asm volatile ("cpsid i");
   cmd_usage(cmdtp);
