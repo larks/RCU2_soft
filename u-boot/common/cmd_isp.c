@@ -17,6 +17,8 @@
 #include <asm/arch/m2s.h>
 #include <malloc.h>
 
+#define DEBUG_TIME_CODE 1
+
 /*------------------------------------------------------------------------------
  * delay routines...
  */
